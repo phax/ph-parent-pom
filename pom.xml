@@ -3,7 +3,7 @@
   <modelVersion>4.0.0</modelVersion>
   <groupId>com.helger</groupId>
   <artifactId>parent-pom</artifactId>
-  <version>2-SNAPSHOT</version>
+  <version>1.1-SNAPSHOT</version>
   <packaging>pom</packaging>
   <name>ph-parent-pom</name>
   <description>Generic parent POM for Java 1.6+ applications</description>
@@ -306,6 +306,8 @@
               <exclude>**/*.cer</exclude>
               <!-- CSV files -->
               <exclude>**/*.csv</exclude>
+              <!-- Certificate file -->
+              <exclude>**/*.der</exclude>
               <!-- Binary word documents -->
               <exclude>**/*.doc*</exclude>
               <!-- Font files -->
