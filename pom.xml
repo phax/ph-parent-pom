@@ -532,9 +532,9 @@
           <version>2.4</version>
         </plugin>
         <plugin>
-          <groupId>com.phloc.maven</groupId>
-          <artifactId>buildinfo-maven-plugin</artifactId>
-          <version>1.1.2</version>
+          <groupId>com.helger.maven</groupId>
+          <artifactId>ph-buildinfo-maven-plugin</artifactId>
+          <version>1.2.0</version>
         </plugin>
         <plugin>
           <groupId>com.phloc.maven</groupId>
@@ -565,6 +565,46 @@
           <configuration>
             <lifecycleMappingMetadata>
               <pluginExecutions>
+                <pluginExecution>
+                  <pluginExecutionFilter>
+                    <groupId>com.helger.maven</groupId>
+                    <artifactId>ph-buildinfo-maven-plugin</artifactId>
+                    <versionRange>[1.0.0,)</versionRange>
+                    <goals>
+                      <goal>generate-buildinfo</goal>
+                    </goals>
+                  </pluginExecutionFilter>
+                  <action>
+                    <ignore />
+                  </action>
+                </pluginExecution>
+                <pluginExecution>
+                  <pluginExecutionFilter>
+                    <groupId>com.helger.maven</groupId>
+                    <artifactId>ph-dirindex-maven-plugin</artifactId>
+                    <versionRange>[1.0.0,)</versionRange>
+                    <goals>
+                      <goal>generate-dirindex</goal>
+                    </goals>
+                  </pluginExecutionFilter>
+                  <action>
+                    <execute runOnIncremental="false" />
+                  </action>
+                </pluginExecution>
+                <pluginExecution>
+                  <pluginExecutionFilter>
+                    <groupId>com.helger.maven</groupId>
+                    <artifactId>ph-javacc-maven-plugin</artifactId>
+                    <versionRange>[1,)</versionRange>
+                    <goals>
+                      <goal>javacc</goal>
+                      <goal>jjtree-javacc</goal>
+                    </goals>
+                  </pluginExecutionFilter>
+                  <action>
+                    <execute runOnIncremental="false" />
+                  </action>
+                </pluginExecution>
                 <pluginExecution>
                   <pluginExecutionFilter>
                     <groupId>com.phloc.maven</groupId>
@@ -628,6 +668,20 @@
                   </pluginExecutionFilter>
                   <action>
                     <ignore />
+                  </action>
+                </pluginExecution>
+                <pluginExecution>
+                  <pluginExecutionFilter>
+                    <groupId>com.phloc.maven</groupId>
+                    <artifactId>phlocjavacc-maven-plugin</artifactId>
+                    <versionRange>[2.7,)</versionRange>
+                    <goals>
+                      <goal>javacc</goal>
+                      <goal>jjtree-javacc</goal>
+                    </goals>
+                  </pluginExecutionFilter>
+                  <action>
+                    <execute runOnIncremental="false" />
                   </action>
                 </pluginExecution>
                 <pluginExecution>
@@ -766,16 +820,16 @@
                 </pluginExecution>
                 <pluginExecution>
                   <pluginExecutionFilter>
-                    <groupId>com.phloc.maven</groupId>
-                    <artifactId>phlocjavacc-maven-plugin</artifactId>
-                    <versionRange>[2.7,)</versionRange>
+                    <groupId>org.apache.maven.plugins</groupId>
+                    <artifactId>maven-plugin-plugin</artifactId>
+                    <versionRange>[1,)</versionRange>
                     <goals>
-                      <goal>javacc</goal>
-                      <goal>jjtree-javacc</goal>
+                      <goal>descriptor</goal>
+                      <goal>helpmojo</goal>
                     </goals>
                   </pluginExecutionFilter>
                   <action>
-                    <execute runOnIncremental="false" />
+                    <ignore></ignore>
                   </action>
                 </pluginExecution>
               </pluginExecutions>
@@ -876,8 +930,8 @@
       </plugin>
       <!-- Create build information for all artefacts -->
       <plugin>
-        <groupId>com.phloc.maven</groupId>
-        <artifactId>buildinfo-maven-plugin</artifactId>
+        <groupId>com.helger.maven</groupId>
+        <artifactId>ph-buildinfo-maven-plugin</artifactId>
         <executions>
           <execution>
             <goals>
