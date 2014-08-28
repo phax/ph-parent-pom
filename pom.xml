@@ -620,6 +620,19 @@
                 <pluginExecution>
                   <pluginExecutionFilter>
                     <groupId>com.helger.maven</groupId>
+                    <artifactId>ph-sch2xslt-maven-plugin</artifactId>
+                    <versionRange>[1.0.0-SNAPSHOT,)</versionRange>
+                    <goals>
+                      <goal>convert</goal>
+                    </goals>
+                  </pluginExecutionFilter>
+                  <action>
+                    <execute runOnIncremental="false" />
+                  </action>
+                </pluginExecution>
+                <pluginExecution>
+                  <pluginExecutionFilter>
+                    <groupId>com.helger.maven</groupId>
                     <artifactId>ph-javacc-maven-plugin</artifactId>
                     <versionRange>[1,)</versionRange>
                     <goals>
