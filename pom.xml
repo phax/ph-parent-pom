@@ -332,6 +332,8 @@
               <exclude>**/*.eot</exclude>
               <!-- IntelliJ Idea project files -->
               <exclude>**/*.iml</exclude>
+              <!-- JavaCC input files -->
+              <exclude>**/*.jj</exclude>
               <!-- JJTree input files -->
               <exclude>**/*.jjt</exclude>
               <!-- Java KeyStore files -->
@@ -359,7 +361,7 @@
               <exclude>**/*.test</exclude>
               <!-- TrueType fonts -->
               <exclude>**/*.ttf</exclude>
-              <!-- Generic text documents -->
+              <!-- Generic text file -->
               <exclude>**/*.txt</exclude>
               <!-- Wiki source files -->
               <exclude>**/*.wiki</exclude>
