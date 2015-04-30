@@ -292,7 +292,7 @@
         <plugin>
           <groupId>com.mycila</groupId>
           <artifactId>license-maven-plugin</artifactId>
-          <version>2.9</version>
+          <version>2.11</version>
           <configuration>
             <header>src/etc/license-template.txt</header>
             <strictCheck>true</strictCheck>
@@ -331,6 +331,8 @@
               <exclude>**/*.jjt</exclude>
               <!-- Java KeyStore files -->
               <exclude>**/*.jks</exclude>
+              <!-- MD5 hash files -->
+              <exclude>**/*.md5</exclude>
               <!-- Minified CSS/JS files - usually generated -->
               <exclude>**/*.min.css</exclude>
               <exclude>**/*.min.js</exclude>
@@ -348,6 +350,12 @@
               <exclude>**/*.policy</exclude>
               <!-- Powerpoint files -->
               <exclude>**/*.ppt*</exclude>
+              <!-- SHA1 hash files -->
+              <exclude>**/*.sha1</exclude>
+              <!-- SHA256 hash files -->
+              <exclude>**/*.sha256</exclude>
+              <!-- SHA512 hash files -->
+              <exclude>**/*.sha512</exclude>
               <!-- Binary Flash files -->
               <exclude>**/*.swf</exclude>
               <!-- Files marked as test -->
@@ -368,7 +376,7 @@
         <plugin>
           <groupId>org.apache.felix</groupId>
           <artifactId>maven-bundle-plugin</artifactId>
-          <version>2.5.3</version>
+          <version>2.5.4</version>
           <extensions>true</extensions>
           <configuration>
             <supportedProjectTypes>
@@ -386,7 +394,7 @@
         <plugin>
           <groupId>org.apache.maven.plugins</groupId>
           <artifactId>maven-assembly-plugin</artifactId>
-          <version>2.5.3</version>
+          <version>2.5.4</version>
         </plugin>
         <plugin>
           <groupId>org.apache.maven.plugins</groupId>
@@ -396,7 +404,7 @@
         <plugin>
           <groupId>org.apache.maven.plugins</groupId>
           <artifactId>maven-compiler-plugin</artifactId>
-          <version>3.2</version>
+          <version>3.3</version>
         </plugin>
         <plugin>
           <groupId>org.apache.maven.plugins</groupId>
@@ -451,7 +459,7 @@
         <plugin>
           <groupId>org.apache.maven.plugins</groupId>
           <artifactId>maven-javadoc-plugin</artifactId>
-          <version>2.10.1</version>
+          <version>2.10.3</version>
         </plugin>
         <plugin>
           <groupId>org.apache.maven.plugins</groupId>
@@ -481,7 +489,7 @@
         <plugin>
           <groupId>org.apache.maven.plugins</groupId>
           <artifactId>maven-release-plugin</artifactId>
-          <version>2.5.1</version>
+          <version>2.5.2</version>
         </plugin>
         <plugin>
           <groupId>org.apache.maven.plugins</groupId>
