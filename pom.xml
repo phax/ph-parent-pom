@@ -51,9 +51,13 @@
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     <junit.version>4.12</junit.version>
-    <slf4j.version>1.7.10</slf4j.version>
+    <slf4j.version>1.7.12</slf4j.version>
     <javax.servlet-api.version>3.1.0</javax.servlet-api.version>
     <jsp-api.version>2.1</jsp-api.version>
+    <!-- Eclipse Maven integration settings -->
+    <m2e.jaxrs.activation>false</m2e.jaxrs.activation>
+    <m2e.jpa.activation>false</m2e.jpa.activation>
+    <m2e.jsf.activation>false</m2e.jsf.activation>
   </properties>
 
   <!-- Who are we? -->
@@ -298,17 +302,26 @@
             <strictCheck>true</strictCheck>
             <encoding>${project.build.sourceEncoding}</encoding>
             <mapping>
+              <!-- OASIS Content Value Association -->
               <cva>XML_STYLE</cva>
+              <!-- OASIS GeneriCode -->
               <gc>XML_STYLE</gc>
+              <!-- Java files -->
               <jav>JAVADOC_STYLE</jav>
+              <!-- JavaCC source files -->
+              <jj>JAVADOC_STYLE</jj>
+              <!-- JavaCC JJTree source files -->
               <jjt>JAVADOC_STYLE</jjt>
+              <!-- Schematron files -->
               <sch>XML_STYLE</sch>
+              <!-- SVG images -->
               <svg>XML_STYLE</svg>
-              <svxml>XML_STYLE</svxml>
+              <!-- WebService WSDL -->
               <wsdl>XML_STYLE</wsdl>
+              <!-- JAXB Binding Files -->
               <xjb>XML_STYLE</xjb>
+              <!-- XSLT files -->
               <xslt>XML_STYLE</xslt>
-              <xvml>XML_STYLE</xvml>
             </mapping>
             <excludes>
               <exclude>**/NOTICE</exclude>
@@ -327,10 +340,12 @@
               <exclude>**/*.iml</exclude>
               <!-- JavaCC input files -->
               <exclude>**/*.jj</exclude>
-              <!-- JJTree input files -->
+              <!-- JavaCC JJTree input files -->
               <exclude>**/*.jjt</exclude>
               <!-- Java KeyStore files -->
               <exclude>**/*.jks</exclude>
+              <!-- Automatically created mapping files -->
+              <exclude>**/*.map</exclude>
               <!-- MD5 hash files -->
               <exclude>**/*.md5</exclude>
               <!-- Minified CSS/JS files - usually generated -->
@@ -367,9 +382,11 @@
               <!-- Wiki source files -->
               <exclude>**/*.wiki</exclude>
               <!-- Font files -->
-              <exclude>**/*.woff</exclude>
+              <exclude>**/*.woff*</exclude>
               <!-- Excel files -->
               <exclude>**/*.xls*</exclude>
+              <!-- Special index file which requires special formatting! -->
+              <exclude>src/main/webapp/**/*.jsp</exclude>
             </excludes>
           </configuration>
         </plugin>
@@ -566,6 +583,10 @@
           <groupId>com.helger.maven</groupId>
           <artifactId>ph-jscompress-maven-plugin</artifactId>
           <version>2.0.0</version>
+          <configuration>
+            <forceCreation>false</forceCreation>
+            <recursive>true</recursive>
+          </configuration>
         </plugin>
         <plugin>
           <groupId>com.helger.maven</groupId>
