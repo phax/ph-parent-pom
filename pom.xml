@@ -587,7 +587,7 @@
         <plugin>
           <groupId>com.helger.maven</groupId>
           <artifactId>ph-jscompress-maven-plugin</artifactId>
-          <version>2.0.1</version>
+          <version>2.0.2</version>
           <configuration>
             <forceCreation>false</forceCreation>
             <recursive>true</recursive>
