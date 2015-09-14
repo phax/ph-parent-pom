@@ -556,7 +556,7 @@
             net.sourceforge.cobertura.coveragedata.CoverageDataFileHandler saveCoverageData -->
           <groupId>org.codehaus.mojo</groupId>
           <artifactId>cobertura-maven-plugin</artifactId>
-          <version>2.5.1</version>
+          <version>2.5.2</version>
         </plugin>
         <!-- FindBugs starting from 3.0.0 requires JDK 1.7+ runtime -->
         <plugin>
