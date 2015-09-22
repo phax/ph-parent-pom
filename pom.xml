@@ -324,8 +324,6 @@
               <xslt>XML_STYLE</xslt>
             </mapping>
             <excludes>
-              <exclude>**/NOTICE</exclude>
-              <exclude>**/LICENSE</exclude>
               <!-- Certificate file -->
               <exclude>**/*.cer</exclude>
               <!-- CSV files -->
@@ -336,6 +334,8 @@
               <exclude>**/*.doc*</exclude>
               <!-- Font files -->
               <exclude>**/*.eot</exclude>
+              <!-- Icon files -->
+              <exclude>**/*.ico</exclude>
               <!-- IntelliJ Idea project files -->
               <exclude>**/*.iml</exclude>
               <!-- JavaCC input files -->
@@ -385,6 +385,9 @@
               <exclude>**/*.woff*</exclude>
               <!-- Excel files -->
               <exclude>**/*.xls*</exclude>
+              <!-- Special license files without extension -->
+              <exclude>**/NOTICE</exclude>
+              <exclude>**/LICENSE</exclude>
               <!-- Special index file which requires special formatting! -->
               <exclude>src/main/webapp/**/*.jsp</exclude>
             </excludes>
