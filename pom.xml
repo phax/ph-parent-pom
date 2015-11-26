@@ -338,12 +338,16 @@
               <exclude>**/*.ico</exclude>
               <!-- IntelliJ Idea project files -->
               <exclude>**/*.iml</exclude>
+              <!-- Image files -->
+              <exclude>**/*.JPG*</exclude>
               <!-- JavaCC input files -->
               <exclude>**/*.jj</exclude>
               <!-- JavaCC JJTree input files -->
               <exclude>**/*.jjt</exclude>
               <!-- Java KeyStore files -->
               <exclude>**/*.jks</exclude>
+              <!-- Log files -->
+              <exclude>**/*.log</exclude>
               <!-- Automatically created mapping files -->
               <exclude>**/*.map</exclude>
               <!-- MD5 hash files -->
