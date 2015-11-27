@@ -304,6 +304,8 @@
             <mapping>
               <!-- OASIS Content Value Association -->
               <cva>XML_STYLE</cva>
+              <!-- JAXB episode files -->
+              <episode>XML_STYLE</episode>
               <!-- OASIS GeneriCode -->
               <gc>XML_STYLE</gc>
               <!-- Java files -->
@@ -330,10 +332,14 @@
               <exclude>**/*.csv</exclude>
               <!-- Certificate file -->
               <exclude>**/*.der</exclude>
+              <!-- Dictionary file -->
+              <exclude>**/*.dict</exclude>
               <!-- Binary word documents -->
               <exclude>**/*.doc*</exclude>
               <!-- Font files -->
               <exclude>**/*.eot</exclude>
+              <!-- Eclipse preference files -->
+              <exclude>**/*.epf</exclude>
               <!-- Icon files -->
               <exclude>**/*.ico</exclude>
               <!-- IntelliJ Idea project files -->
@@ -392,6 +398,7 @@
               <!-- Special license files without extension -->
               <exclude>**/NOTICE</exclude>
               <exclude>**/LICENSE</exclude>
+              <exclude>**/LICENSE2</exclude>
               <!-- Special index file which requires special formatting! -->
               <exclude>src/main/webapp/**/*.jsp</exclude>
             </excludes>
