@@ -21,10 +21,10 @@
   <modelVersion>4.0.0</modelVersion>
   <groupId>com.helger</groupId>
   <artifactId>parent-pom</artifactId>
-  <version>1.4.3-SNAPSHOT</version>
+  <version>1.8.0-SNAPSHOT</version>
   <packaging>pom</packaging>
   <name>ph-parent-pom</name>
-  <description>Generic parent POM for Java 1.6+ applications</description>
+  <description>Generic parent POM for Java 1.8+ applications</description>
   <url>https://github.com/phax/ph-parent-pom</url>
   <inceptionYear>2014</inceptionYear>
 
@@ -809,7 +809,7 @@
     </pluginManagement>
 
     <plugins>
-      <!-- Compile as Java 1.6 code (lifecycle: compile) -->
+      <!-- Compile as Java 1.8 code (lifecycle: compile) -->
       <plugin>
         <groupId>org.apache.maven.plugins</groupId>
         <artifactId>maven-compiler-plugin</artifactId>
@@ -817,10 +817,10 @@
           <!-- fork needs to be false to compile JAXB resources. Otherwise 
             the problem with the forward slash in package-info.java on Windows occurs! -->
           <fork>false</fork>
-          <source>1.6</source>
-          <target>1.6</target>
+          <source>1.8</source>
+          <target>1.8</target>
           <showWarnings>true</showWarnings>
-          <maxmem>768m</maxmem>
+          <maxmem>1g</maxmem>
           <compilerArguments>
             <encoding>${project.build.sourceEncoding}</encoding>
           </compilerArguments>
@@ -891,7 +891,7 @@
         <groupId>org.apache.maven.plugins</groupId>
         <artifactId>maven-idea-plugin</artifactId>
         <configuration>
-          <jdkLevel>1.6</jdkLevel>
+          <jdkLevel>1.8</jdkLevel>
           <linkModules>true</linkModules>
           <downloadSources>true</downloadSources>
           <downloadJavadocs>true</downloadJavadocs>
@@ -1018,7 +1018,7 @@
           <linkXref>true</linkXref>
           <sourceEncoding>${project.build.sourceEncoding}</sourceEncoding>
           <minimumTokens>30</minimumTokens>
-          <targetJdk>1.6</targetJdk>
+          <targetJdk>1.8</targetJdk>
         </configuration>
       </plugin>
       <!-- Generate a FindBugs report. May require the environment variable 
