@@ -611,7 +611,7 @@
         <plugin>
           <groupId>com.helger.maven</groupId>
           <artifactId>ph-csscompress-maven-plugin</artifactId>
-          <version>1.5.0</version>
+          <version>1.5.1</version>
           <configuration>
             <forceCompress>false</forceCompress>
             <removeUnnecessaryCode>true</removeUnnecessaryCode>
@@ -627,19 +627,6 @@
           <configuration>
             <lifecycleMappingMetadata>
               <pluginExecutions>
-                <pluginExecution>
-                  <pluginExecutionFilter>
-                    <groupId>com.helger.maven</groupId>
-                    <artifactId>ph-csscompress-maven-plugin</artifactId>
-                    <versionRange>[1.0.0-SNAPSHOT,)</versionRange>
-                    <goals>
-                      <goal>csscompress</goal>
-                    </goals>
-                  </pluginExecutionFilter>
-                  <action>
-                    <execute runOnIncremental="false" />
-                  </action>
-                </pluginExecution>
                 <pluginExecution>
                   <pluginExecutionFilter>
                     <groupId>com.helger.maven</groupId>
@@ -669,61 +656,8 @@
                 </pluginExecution>
                 <pluginExecution>
                   <pluginExecutionFilter>
-                    <groupId>org.codehaus.mojo</groupId>
-                    <artifactId>javacc-maven-plugin</artifactId>
-                    <versionRange>[2.0,)</versionRange>
-                    <goals>
-                      <goal>javacc</goal>
-                      <goal>jjtree-javacc</goal>
-                    </goals>
-                  </pluginExecutionFilter>
-                  <action>
-                    <execute runOnIncremental="false" />
-                  </action>
-                </pluginExecution>
-                <pluginExecution>
-                  <pluginExecutionFilter>
                     <groupId>org.jvnet.jaxb2.maven2</groupId>
                     <artifactId>maven-jaxb2-plugin</artifactId>
-                    <versionRange>[0.7,)</versionRange>
-                    <goals>
-                      <goal>generate</goal>
-                    </goals>
-                  </pluginExecutionFilter>
-                  <action>
-                    <ignore />
-                  </action>
-                </pluginExecution>
-                <pluginExecution>
-                  <pluginExecutionFilter>
-                    <groupId>org.jvnet.jaxb2.maven2</groupId>
-                    <artifactId>maven-jaxb20-plugin</artifactId>
-                    <versionRange>[0.7,)</versionRange>
-                    <goals>
-                      <goal>generate</goal>
-                    </goals>
-                  </pluginExecutionFilter>
-                  <action>
-                    <ignore />
-                  </action>
-                </pluginExecution>
-                <pluginExecution>
-                  <pluginExecutionFilter>
-                    <groupId>org.jvnet.jaxb2.maven2</groupId>
-                    <artifactId>maven-jaxb21-plugin</artifactId>
-                    <versionRange>[0.7,)</versionRange>
-                    <goals>
-                      <goal>generate</goal>
-                    </goals>
-                  </pluginExecutionFilter>
-                  <action>
-                    <ignore />
-                  </action>
-                </pluginExecution>
-                <pluginExecution>
-                  <pluginExecutionFilter>
-                    <groupId>org.jvnet.jaxb2.maven2</groupId>
-                    <artifactId>maven-jaxb22-plugin</artifactId>
                     <versionRange>[0.7,)</versionRange>
                     <goals>
                       <goal>generate</goal>
@@ -758,19 +692,6 @@
                   </pluginExecutionFilter>
                   <action>
                     <ignore />
-                  </action>
-                </pluginExecution>
-                <pluginExecution>
-                  <pluginExecutionFilter>
-                    <groupId>au.com.alderaan</groupId>
-                    <artifactId>eclipselink-staticweave-maven-plugin</artifactId>
-                    <versionRange>[1.0.0,)</versionRange>
-                    <goals>
-                      <goal>weave</goal>
-                    </goals>
-                  </pluginExecutionFilter>
-                  <action>
-                    <execute />
                   </action>
                 </pluginExecution>
                 <pluginExecution>
