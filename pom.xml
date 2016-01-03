@@ -596,7 +596,7 @@
         <plugin>
           <groupId>com.helger.maven</groupId>
           <artifactId>ph-dirindex-maven-plugin</artifactId>
-          <version>1.2.0</version>
+          <version>1.2.1</version>
         </plugin>
         <!-- This plugin requires a JDK 1.7 build time -->
         <plugin>
