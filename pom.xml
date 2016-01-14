@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!--
 
-    Copyright (C) 2014-2015 Philip Helger (www.helger.com)
+    Copyright (C) 2014-2016 Philip Helger (www.helger.com)
     philip[at]helger[dot]com
 
     Licensed under the Apache License, Version 2.0 (the "License");
@@ -303,6 +303,8 @@
               <jj>JAVADOC_STYLE</jj>
               <!-- JavaCC JJTree source files -->
               <jjt>JAVADOC_STYLE</jjt>
+              <!-- Proxy stuff (like JS) -->
+              <pac>SLASHSTAR_STYLE</pac> 
               <!-- Schematron files -->
               <sch>XML_STYLE</sch>
               <!-- SVG images -->
@@ -319,6 +321,8 @@
               <exclude>**/*.cer</exclude>
               <!-- CSV files -->
               <exclude>**/*.csv</exclude>
+              <!-- Generic DAT files -->
+              <exclude>**/*.dat</exclude>
               <!-- Certificate file -->
               <exclude>**/*.der</exclude>
               <!-- Dictionary file -->
