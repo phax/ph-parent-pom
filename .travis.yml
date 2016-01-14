@@ -12,12 +12,11 @@ eFwYG2W1wyFd/0AvGTVIqPAZANWFNPi5HRQ5pX1MbjKAYmDV25G0kfLbwzDEtO2w1VEl5QmjERXRvTDN
 RnAcYDII+j0+lrD4OcT7a7Nzi8g+aXcZMEtRlTMcJMxSjk8OhcIOtXC0Ls0XVa7X4i3T4tHJXG6GW98xxbeJ6UcJvwPgtc="
     
 jdk:
-  - openjdk6
+  - oraclejdk8
   
 cache:
   directories:
   - $HOME/.m2
 
 after_success:
-  - python mvn-settings-add-snapshot.py
-  - mvn clean deploy -DskipTests=true --settings ~/.m2/snapshot-settings.xml
+  - mvn deploy --settings travis-settings.xml -DskipTests=true -B -P travis-deploy
