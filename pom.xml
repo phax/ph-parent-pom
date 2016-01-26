@@ -353,6 +353,8 @@
               <exclude>**/*.eot</exclude>
               <!-- Eclipse preference files -->
               <exclude>**/*.epf</exclude>
+              <!-- JAXB episode files -->
+              <exclude>**/*.episode</exclude>
               <!-- Icon files -->
               <exclude>**/*.ico</exclude>
               <!-- IntelliJ Idea project files -->
@@ -412,6 +414,8 @@
               <exclude>**/NOTICE</exclude>
               <exclude>**/LICENSE</exclude>
               <exclude>**/LICENSE2</exclude>
+              <!-- Special files not to be formatted -->
+              <exclude>src/raw/**</exclude>
               <!-- Special index file which requires special formatting! -->
               <exclude>src/main/webapp/**/*.jsp</exclude>
             </excludes>
