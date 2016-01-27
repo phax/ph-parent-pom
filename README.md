@@ -18,4 +18,5 @@ To use it as your parent POM using the following snippet:
 
 ---
 
-On Twitter: <a href="https://twitter.com/philiphelger">Follow @philiphelger</a>
+My personal [Coding Styleguide](https://github.com/phax/meta/blob/master/CodeingStyleguide.md) |
+On Twitter: <a href="https://twitter.com/philiphelger">@philiphelger</a>
