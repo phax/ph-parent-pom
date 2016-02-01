@@ -53,7 +53,7 @@
     <junit.version>4.12</junit.version>
     <slf4j.version>1.7.13</slf4j.version>
     <javax.servlet-api.version>3.1.0</javax.servlet-api.version>
-    <jsp-api.version>2.1</jsp-api.version>
+    <jsp-api.version>2.2</jsp-api.version>
     <!-- Eclipse Maven integration settings -->
     <m2e.jaxrs.activation>false</m2e.jaxrs.activation>
     <m2e.jpa.activation>false</m2e.jpa.activation>
@@ -489,6 +489,7 @@
           <artifactId>maven-gpg-plugin</artifactId>
           <version>1.6</version>
         </plugin>
+        <!-- Plugin is retired -->
         <plugin>
           <groupId>org.apache.maven.plugins</groupId>
           <artifactId>maven-idea-plugin</artifactId>
@@ -593,10 +594,15 @@
           <artifactId>maven-war-plugin</artifactId>
           <version>2.6</version>
         </plugin>
+        <!--  Find incompatible differences to previous release -->
         <plugin>
           <groupId>org.codehaus.mojo</groupId>
           <artifactId>clirr-maven-plugin</artifactId>
           <version>2.7</version>
+          <configuration>
+            <failOnError>false</failOnError>
+            <xmlOutputFile>${project.build.directory}/clirr.xml</xmlOutputFile>
+          </configuration>
         </plugin>
         <plugin>
           <!-- Note: version 2.6 has problems when run in Jenkins:
@@ -855,16 +861,6 @@
           <goals>process-resources javadoc:jar deploy</goals>
         </configuration>
       </plugin>
-      <plugin>
-        <groupId>org.apache.maven.plugins</groupId>
-        <artifactId>maven-idea-plugin</artifactId>
-        <configuration>
-          <jdkLevel>1.8</jdkLevel>
-          <linkModules>true</linkModules>
-          <downloadSources>true</downloadSources>
-          <downloadJavadocs>true</downloadJavadocs>
-        </configuration>
-      </plugin>
       <!-- Create build information for all artefacts -->
       <plugin>
         <groupId>com.helger.maven</groupId>
@@ -895,15 +891,6 @@
         <artifactId>maven-site-plugin</artifactId>
         <configuration>
           <generateSitemap>true</generateSitemap>
-        </configuration>
-      </plugin>
-      <!--  Find incompatible differences to previous release -->
-      <plugin>
-        <groupId>org.codehaus.mojo</groupId>
-        <artifactId>clirr-maven-plugin</artifactId>
-        <configuration>
-          <failOnError>false</failOnError>
-          <xmlOutputFile>${project.build.directory}/clirr.xml</xmlOutputFile>
         </configuration>
       </plugin>
     </plugins>
