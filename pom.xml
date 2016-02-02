@@ -51,7 +51,7 @@
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     <junit.version>4.12</junit.version>
-    <slf4j.version>1.7.13</slf4j.version>
+    <slf4j.version>1.7.14</slf4j.version>
     <javax.servlet-api.version>3.1.0</javax.servlet-api.version>
     <jsp-api.version>2.2</jsp-api.version>
     <!-- Eclipse Maven integration settings -->
