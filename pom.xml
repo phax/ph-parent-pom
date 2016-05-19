@@ -54,6 +54,8 @@
     <slf4j.version>1.7.21</slf4j.version>
     <javax.servlet-api.version>3.1.0</javax.servlet-api.version>
     <jsp-api.version>2.2</jsp-api.version>
+    <maven.compiler.source>1.8</maven.compiler.source>
+    <maven.compiler.target>1.8</maven.compiler.target>
     <!-- Eclipse Maven integration settings -->
     <m2e.jaxrs.activation>false</m2e.jaxrs.activation>
     <m2e.jpa.activation>false</m2e.jpa.activation>
@@ -829,8 +831,10 @@
           <!-- fork needs to be false to compile JAXB resources. Otherwise 
             the problem with the forward slash in package-info.java on Windows occurs! -->
           <fork>false</fork>
+          <!-- Set via properties maven.compiler.source and maven.compiler.target 
           <source>1.8</source>
           <target>1.8</target>
+          -->
           <showWarnings>true</showWarnings>
           <maxmem>1g</maxmem>
           <compilerArguments>
