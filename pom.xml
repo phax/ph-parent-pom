@@ -822,7 +822,7 @@
         <plugin>
           <groupId>de.thetaphi</groupId>
           <artifactId>forbiddenapis</artifactId>
-          <version>2.0</version>
+          <version>2.1</version>
           <configuration>
             <!-- disallow undocumented classes like sun.misc.Unsafe: -->
             <internalRuntimeForbidden>true</internalRuntimeForbidden>
@@ -831,9 +831,10 @@
               <!-- Choose the right signatures based on 'maven.compiler.target': -->
               <bundledSignature>jdk-unsafe</bundledSignature>
               <bundledSignature>jdk-deprecated</bundledSignature>
-              <!-- starting from 2.1
+              <!-- starting from 2.1 -->
               <bundledSignature>jdk-reflection</bundledSignature>
-              -->
+              <bundledSignature>jdk-non-portable</bundledSignature>
+              <bundledSignature>jdk-internal</bundledSignature>
             </bundledSignatures>
           </configuration>
           <executions>
