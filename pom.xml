@@ -54,6 +54,7 @@
     <slf4j.version>1.7.21</slf4j.version>
     <javax.servlet-api.version>3.1.0</javax.servlet-api.version>
     <jsp-api.version>2.2</jsp-api.version>
+    <!-- Use properties for forbiddenapis integration -->
     <maven.compiler.source>1.8</maven.compiler.source>
     <maven.compiler.target>1.8</maven.compiler.target>
     <!-- Eclipse Maven integration settings -->
@@ -543,7 +544,7 @@
         <plugin>
           <groupId>org.apache.maven.plugins</groupId>
           <artifactId>maven-jar-plugin</artifactId>
-          <version>2.6</version>
+          <version>3.0.0</version>
         </plugin>
         <plugin>
           <groupId>org.apache.maven.plugins</groupId>
@@ -839,8 +840,20 @@
           </configuration>
           <executions>
             <execution>
+              <id>main</id>
               <goals>
                 <goal>check</goal>
+              </goals>
+              <configuration>
+                <bundledSignatures>
+                  <!-- System out prohibited in main classes -->
+                  <bundledSignature>jdk-system-out</bundledSignature>
+                </bundledSignatures>
+              </configuration>
+            </execution>
+            <execution>
+              <id>test</id>
+              <goals>
                 <goal>testCheck</goal>
               </goals>
             </execution>
