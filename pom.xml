@@ -829,7 +829,8 @@
           </configuration>
           <executions>
             <execution>
-              <id>main</id>
+              <!-- Fixed ID -->
+              <id>default-cli</id>
               <goals>
                 <goal>check</goal>
               </goals>
