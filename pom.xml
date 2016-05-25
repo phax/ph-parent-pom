@@ -826,44 +826,24 @@
           <version>2.1</version>
           <configuration>
             <failOnUnsupportedJava>false</failOnUnsupportedJava>
+            <bundledSignatures>
+              <!-- Choose the right signatures based on 'maven.compiler.target': -->
+              <bundledSignature>jdk-unsafe</bundledSignature>
+              <bundledSignature>jdk-deprecated</bundledSignature>
+              <!-- starting from 2.1 -->
+              <bundledSignature>jdk-reflection</bundledSignature>
+              <bundledSignature>jdk-non-portable</bundledSignature>
+              <bundledSignature>jdk-internal</bundledSignature>
+              <!-- System out prohibited in main classes -->
+              <bundledSignature>jdk-system-out</bundledSignature>
+            </bundledSignatures>
           </configuration>
           <executions>
             <execution>
-              <!-- Fixed ID -->
-              <id>default-cli</id>
               <goals>
                 <goal>check</goal>
-              </goals>
-              <configuration>
-                <bundledSignatures>
-                  <!-- Choose the right signatures based on 'maven.compiler.target': -->
-                  <bundledSignature>jdk-unsafe</bundledSignature>
-                  <bundledSignature>jdk-deprecated</bundledSignature>
-                  <!-- starting from 2.1 -->
-                  <bundledSignature>jdk-reflection</bundledSignature>
-                  <bundledSignature>jdk-non-portable</bundledSignature>
-                  <bundledSignature>jdk-internal</bundledSignature>
-                  <!-- System out prohibited in main classes -->
-                  <bundledSignature>jdk-system-out</bundledSignature>
-                </bundledSignatures>
-              </configuration>
-            </execution>
-            <execution>
-              <id>test</id>
-              <goals>
                 <goal>testCheck</goal>
               </goals>
-              <configuration>
-                <bundledSignatures>
-                  <!-- Choose the right signatures based on 'maven.compiler.target': -->
-                  <bundledSignature>jdk-unsafe</bundledSignature>
-                  <bundledSignature>jdk-deprecated</bundledSignature>
-                  <!-- starting from 2.1 -->
-                  <bundledSignature>jdk-reflection</bundledSignature>
-                  <bundledSignature>jdk-non-portable</bundledSignature>
-                  <bundledSignature>jdk-internal</bundledSignature>
-                </bundledSignatures>
-              </configuration>
             </execution>
           </executions>
         </plugin>
