@@ -544,7 +544,12 @@
         <plugin>
           <groupId>org.apache.maven.plugins</groupId>
           <artifactId>maven-jar-plugin</artifactId>
-          <version>3.0.0</version>
+          <!--2.6/3.0.0-->
+          <!--3.0.0 causes problems with m2e in Mars:
+          org.apache.maven.archiver.MavenArchiver.getManifest(org.apache.maven.project.MavenProject, org.apache.maven.archiver.MavenArchiveConfiguration)
+          line 1	Maven Configuration Problem
+          -->
+          <version>2.6</version>
         </plugin>
         <plugin>
           <groupId>org.apache.maven.plugins</groupId>
@@ -595,8 +600,8 @@
         <plugin>
           <groupId>org.apache.maven.plugins</groupId>
           <artifactId>maven-resources-plugin</artifactId>
-          <!--3.0.0-->
-          <version>2.7</version>
+          <!--2.7/3.0.0-->
+          <version>3.0.0</version>
           <configuration>
             <encoding>${project.build.sourceEncoding}</encoding>
           </configuration>
@@ -614,8 +619,8 @@
         <plugin>
           <groupId>org.apache.maven.plugins</groupId>
           <artifactId>maven-source-plugin</artifactId>
-          <!--3.0.0-->
-          <version>2.4</version>
+          <!--2.4/3.0.0-->
+          <version>3.0.0</version>
         </plugin>
         <plugin>
           <groupId>org.apache.maven.plugins</groupId>
@@ -700,6 +705,33 @@
             <quoteURLs>true</quoteURLs>
             <verbose>false</verbose>
           </configuration>
+        </plugin>
+        <plugin>
+          <groupId>de.thetaphi</groupId>
+          <artifactId>forbiddenapis</artifactId>
+          <version>2.1</version>
+          <configuration>
+            <failOnUnsupportedJava>false</failOnUnsupportedJava>
+            <bundledSignatures>
+              <!-- Choose the right signatures based on 'maven.compiler.target': -->
+              <bundledSignature>jdk-unsafe</bundledSignature>
+              <bundledSignature>jdk-deprecated</bundledSignature>
+              <!-- start 2.1 -->
+              <bundledSignature>jdk-internal</bundledSignature>
+              <bundledSignature>jdk-non-portable</bundledSignature>
+              <!-- end 2.1 -->
+              <bundledSignature>jdk-system-out</bundledSignature>
+              <bundledSignature>jdk-reflection</bundledSignature>
+            </bundledSignatures>
+          </configuration>
+          <executions>
+            <execution>
+              <goals>
+                <goal>check</goal>
+                <goal>testCheck</goal>
+              </goals>
+            </execution>
+          </executions>
         </plugin>
         <!--This plugin's configuration is used to store Eclipse m2e settings only. It has no influence on the Maven build itself.-->
         <plugin>
@@ -821,33 +853,6 @@
               </pluginExecutions>
             </lifecycleMappingMetadata>
           </configuration>
-        </plugin>
-        <plugin>
-          <groupId>de.thetaphi</groupId>
-          <artifactId>forbiddenapis</artifactId>
-          <version>2.1</version>
-          <configuration>
-            <failOnUnsupportedJava>false</failOnUnsupportedJava>
-            <bundledSignatures>
-              <!-- Choose the right signatures based on 'maven.compiler.target': -->
-              <bundledSignature>jdk-unsafe</bundledSignature>
-              <bundledSignature>jdk-deprecated</bundledSignature>
-              <!-- start 2.1 -->
-              <bundledSignature>jdk-internal</bundledSignature>
-              <bundledSignature>jdk-non-portable</bundledSignature>
-              <!-- end 2.1 -->
-              <bundledSignature>jdk-system-out</bundledSignature>
-              <bundledSignature>jdk-reflection</bundledSignature>
-            </bundledSignatures>
-          </configuration>
-          <executions>
-            <execution>
-              <goals>
-                <goal>check</goal>
-                <goal>testCheck</goal>
-              </goals>
-            </execution>
-          </executions>
         </plugin>
       </plugins>
     </pluginManagement>
