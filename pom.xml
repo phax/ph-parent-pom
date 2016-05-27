@@ -548,6 +548,9 @@
           <!--3.0.0 causes problems with m2e in Mars:
           org.apache.maven.archiver.MavenArchiver.getManifest(org.apache.maven.project.MavenProject, org.apache.maven.archiver.MavenArchiveConfiguration)
           line 1	Maven Configuration Problem
+          
+          Posted at:
+          https://bugs.eclipse.org/bugs/show_bug.cgi?id=494762
           -->
           <version>2.6</version>
         </plugin>
