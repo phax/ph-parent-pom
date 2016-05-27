@@ -595,7 +595,8 @@
         <plugin>
           <groupId>org.apache.maven.plugins</groupId>
           <artifactId>maven-resources-plugin</artifactId>
-          <version>3.0.0</version>
+          <!--3.0.0-->
+          <version>2.7</version>
           <configuration>
             <encoding>${project.build.sourceEncoding}</encoding>
           </configuration>
@@ -613,7 +614,8 @@
         <plugin>
           <groupId>org.apache.maven.plugins</groupId>
           <artifactId>maven-source-plugin</artifactId>
-          <version>3.0.0</version>
+          <!--3.0.0-->
+          <version>2.4</version>
         </plugin>
         <plugin>
           <groupId>org.apache.maven.plugins</groupId>
@@ -828,12 +830,12 @@
             <failOnUnsupportedJava>false</failOnUnsupportedJava>
             <bundledSignatures>
               <!-- Choose the right signatures based on 'maven.compiler.target': -->
-              <bundledSignature>jdk-unsafe-${maven.compiler.target}</bundledSignature>
-              <bundledSignature>jdk-deprecated-${maven.compiler.target}</bundledSignature>
-              <!-- starting from 2.1 -->
-              <bundledSignature>jdk-internal-${maven.compiler.target}</bundledSignature>
-              <!-- starting from 2.1 -->
+              <bundledSignature>jdk-unsafe</bundledSignature>
+              <bundledSignature>jdk-deprecated</bundledSignature>
+              <!-- start 2.1 -->
+              <bundledSignature>jdk-internal</bundledSignature>
               <bundledSignature>jdk-non-portable</bundledSignature>
+              <!-- end 2.1 -->
               <bundledSignature>jdk-system-out</bundledSignature>
               <bundledSignature>jdk-reflection</bundledSignature>
             </bundledSignatures>
@@ -859,8 +861,6 @@
           <!-- fork needs to be false to compile JAXB resources. Otherwise 
             the problem with the forward slash in package-info.java on Windows occurs! -->
           <fork>false</fork>
-          <source>${maven.compiler.source}</source>
-          <target>${maven.compiler.target}</target>
           <showWarnings>true</showWarnings>
           <maxmem>1g</maxmem>
           <compilerArguments>
