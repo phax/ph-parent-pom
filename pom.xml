@@ -828,14 +828,14 @@
             <failOnUnsupportedJava>false</failOnUnsupportedJava>
             <bundledSignatures>
               <!-- Choose the right signatures based on 'maven.compiler.target': -->
-              <bundledSignature>jdk-unsafe</bundledSignature>
-              <bundledSignature>jdk-deprecated</bundledSignature>
+              <bundledSignature>jdk-unsafe-${maven.compiler.target}</bundledSignature>
+              <bundledSignature>jdk-deprecated-${maven.compiler.target}</bundledSignature>
               <!-- starting from 2.1 -->
-              <bundledSignature>jdk-reflection</bundledSignature>
+              <bundledSignature>jdk-internal-${maven.compiler.target}</bundledSignature>
+              <!-- starting from 2.1 -->
               <bundledSignature>jdk-non-portable</bundledSignature>
-              <bundledSignature>jdk-internal</bundledSignature>
-              <!-- System out prohibited in main classes -->
               <bundledSignature>jdk-system-out</bundledSignature>
+              <bundledSignature>jdk-reflection</bundledSignature>
             </bundledSignatures>
           </configuration>
           <executions>
@@ -859,10 +859,8 @@
           <!-- fork needs to be false to compile JAXB resources. Otherwise 
             the problem with the forward slash in package-info.java on Windows occurs! -->
           <fork>false</fork>
-          <!-- Set via properties maven.compiler.source and maven.compiler.target 
-          <source>1.8</source>
-          <target>1.8</target>
-          -->
+          <source>${maven.compiler.source}</source>
+          <target>${maven.compiler.target}</target>
           <showWarnings>true</showWarnings>
           <maxmem>1g</maxmem>
           <compilerArguments>
@@ -1043,7 +1041,7 @@
           <linkXref>true</linkXref>
           <sourceEncoding>${project.build.sourceEncoding}</sourceEncoding>
           <minimumTokens>30</minimumTokens>
-          <targetJdk>1.8</targetJdk>
+          <targetJdk>${maven.compiler.source}</targetJdk>
         </configuration>
       </plugin>
       <!-- Generate a FindBugs report. May require the environment variable 
