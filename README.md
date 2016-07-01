@@ -3,7 +3,7 @@
 Generic Maven 3 parent POM with lots of default configuration.
 It is pre-configured to handle the "ph-" software stack in a suitable way.
 
-The latest released version is **1.9.0** and requires Maven 3.2.6 or higher and JDK 8!
+The latest released version is **1.9.0** and requires Maven 3.2.6 or higher and JDK 8 at build time (even though you may create Java 1.6 or 1.7 versions with it)!
 
 The latest release for building JDK 6 applications is *1.4.1* (requires a JDK 7 at compile time).
 
@@ -18,7 +18,22 @@ To use it as your parent POM using the following snippet:
 
 ## News and noteworthy
 
-  * 1.9.0: version updates; removed mandatory JUnit 4 dependency
+  * 1.9.1
+    * Version updates
+  * 1.9.0 - 2016-06-26
+    * Version updates
+    * Removed mandatory JUnit 4 dependency
+ * 1.8.4 - 2016-05-27
+ * 1.8.3 - 2016-05-25
+ * 1.8.2 - 2016-05-10
+ * 1.8.1 - 2016-05-03
+ * 1.8.0 - 2016-02-01
+   * First version for default JDK 8 builds
+ * 1.4.2 - 2015-12-02
+   * Changed default build version to Java 1.7
+ * 1.4.1 - 2015-08-31
+   * Last version that uses Java 1.6 as the default target  
+    
   
 ## Hints
 
