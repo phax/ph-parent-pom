@@ -3,7 +3,7 @@
 Generic Maven 3 parent POM with lots of default configuration.
 It is pre-configured to handle the "ph-" software stack in a suitable way.
 
-The latest released version is **1.9.0** and requires Maven 3.2.6 or higher and JDK 8 at build time (even though you may create Java 1.6 or 1.7 versions with it)!
+The latest released version is **1.9.1** and requires Maven 3.2.6 or higher and JDK 8 at build time (even though you may create Java 1.6 or 1.7 versions with it)!
 
 The latest release for building JDK 6 applications is *1.4.1* (requires a JDK 7 at compile time).
 
@@ -12,14 +12,15 @@ To use it as your parent POM using the following snippet:
   <parent>
     <groupId>com.helger</groupId>
     <artifactId>parent-pom</artifactId>
-    <version>1.9.0</version>
+    <version>1.9.1</version>
   </parent>
 ```
 
 ## News and noteworthy
 
-  * 1.9.1
+  * 1.9.1 - 2016-07-12
     * Version updates
+    * Added m2e mapping for maven-antrun-plugin
   * 1.9.0 - 2016-06-26
     * Version updates
     * Removed mandatory JUnit 4 dependency
