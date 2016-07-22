@@ -361,6 +361,10 @@
               <xslt>XML_STYLE</xslt>
             </mapping>
             <excludes>
+              <!-- Adobe font metric file -->
+              <exclude>**/*.afm</exclude>
+              <!-- (JAXB) catalog file -->
+              <exclude>**/*.cat</exclude>
               <!-- Certificate file -->
               <exclude>**/*.cer</exclude>
               <!-- CSV files -->
@@ -381,16 +385,18 @@
               <exclude>**/*.episode</exclude>
               <!-- Icon files -->
               <exclude>**/*.ico</exclude>
+              <!-- Image files -->
+              <exclude>**/*.gif</exclude>
               <!-- IntelliJ Idea project files -->
               <exclude>**/*.iml</exclude>
-              <!-- Image files -->
-              <exclude>**/*.JPG*</exclude>
               <!-- JavaCC input files -->
               <exclude>**/*.jj</exclude>
               <!-- JavaCC JJTree input files -->
               <exclude>**/*.jjt</exclude>
               <!-- Java KeyStore files -->
               <exclude>**/*.jks</exclude>
+              <!-- Image files -->
+              <exclude>**/*.jpg*</exclude>
               <!-- Log files -->
               <exclude>**/*.log</exclude>
               <!-- Automatically created mapping files -->
@@ -424,6 +430,8 @@
               <exclude>**/*.swf</exclude>
               <!-- Files marked as test -->
               <exclude>**/*.test</exclude>
+              <!-- Image files -->
+              <exclude>**/*.tif*</exclude>
               <!-- TrueType fonts -->
               <exclude>**/*.ttf</exclude>
               <!-- Generic text file -->
@@ -440,6 +448,8 @@
               <exclude>**/LICENSE2</exclude>
               <!-- Special robots.txt file -->
               <exclude>**/robots.txt</exclude>
+              <!-- Special PMD config file -->
+              <exclude>**/.pmd</exclude>
               <!-- Special files not to be formatted -->
               <exclude>src/raw/**</exclude>
               <!-- Special index file which requires special formatting! -->
