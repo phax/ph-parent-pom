@@ -349,6 +349,8 @@
               <jjt>JAVADOC_STYLE</jjt>
               <!-- Proxy stuff (like JS) -->
               <pac>SLASHSTAR_STYLE</pac> 
+              <!-- RelaxNG XML images -->
+              <rng>XML_STYLE</rng>
               <!-- Schematron files -->
               <sch>XML_STYLE</sch>
               <!-- SVG images -->
