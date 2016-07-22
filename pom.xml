@@ -353,6 +353,8 @@
               <sch>XML_STYLE</sch>
               <!-- SVG images -->
               <svg>XML_STYLE</svg>
+              <!-- SVRL images -->
+              <svrl>XML_STYLE</svrl>
               <!-- WebService WSDL -->
               <wsdl>XML_STYLE</wsdl>
               <!-- JAXB Binding Files -->
@@ -420,6 +422,8 @@
               <exclude>**/*.policy</exclude>
               <!-- Powerpoint files -->
               <exclude>**/*.ppt*</exclude>
+              <!-- RelaxNG compact files -->
+              <exclude>**/*.rnc</exclude>
               <!-- SHA1 hash files -->
               <exclude>**/*.sha1</exclude>
               <!-- SHA256 hash files -->
