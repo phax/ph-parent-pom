@@ -416,6 +416,8 @@
               <exclude>**/*.otf</exclude>
               <!-- Certificate file -->
               <exclude>**/*.p12</exclude>
+              <!-- Patch file -->
+              <exclude>**/*.patch</exclude>
               <!-- PDF file -->
               <exclude>**/*.pdf</exclude>
               <!-- PMD configuration file -->
