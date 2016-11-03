@@ -21,7 +21,7 @@
   <modelVersion>4.0.0</modelVersion>
   <groupId>com.helger</groupId>
   <artifactId>parent-pom</artifactId>
-  <version>1.9.2-SNAPSHOT</version>
+  <version>1.9.2</version>
   <packaging>pom</packaging>
   <name>ph-parent-pom</name>
   <description>Generic parent POM for Java 1.8+ applications</description>
