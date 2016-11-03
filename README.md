@@ -18,6 +18,9 @@ To use it as your parent POM using the following snippet:
 
 ## News and noteworthy
 
+  * 1.9.2 - 2016-11-xx
+    * Version updates
+    * Improved site generation
   * 1.9.1 - 2016-07-12
     * Version updates
     * Added m2e mapping for maven-antrun-plugin
