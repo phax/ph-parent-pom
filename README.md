@@ -18,6 +18,8 @@ To use it as your parent POM using the following snippet:
 
 ## News and noteworthy
 
+  * 1.9.3
+    * Version updates
   * 1.9.2 - 2016-11-03
     * Version updates
     * Improved site generation
