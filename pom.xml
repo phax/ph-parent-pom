@@ -724,6 +724,8 @@
           <artifactId>forbiddenapis</artifactId>
           <version>2.3</version>
           <configuration>
+            <!-- if the used Java version is too new,
+                don't fail, just do nothing:  -->
             <failOnUnsupportedJava>false</failOnUnsupportedJava>
             <bundledSignatures>
               <!-- Choose the right signatures based on 'maven.compiler.target': -->
