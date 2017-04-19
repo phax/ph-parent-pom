@@ -1,4 +1,4 @@
-#ph-parent-pom
+# ph-parent-pom
 
 Generic Maven 3 parent POM with lots of default configuration.
 It is pre-configured to handle the "ph-" software stack in a suitable way.
@@ -18,26 +18,28 @@ To use it as your parent POM using the following snippet:
 
 ## News and noteworthy
 
-  * 1.9.3 - 2017-04-12
+  * v1.9.4 - work in progress
     * Version updates
-  * 1.9.2 - 2016-11-03
+  * v1.9.3 - 2017-04-12
+    * Version updates
+  * v1.9.2 - 2016-11-03
     * Version updates
     * Improved site generation
-  * 1.9.1 - 2016-07-12
+  * v1.9.1 - 2016-07-12
     * Version updates
     * Added m2e mapping for maven-antrun-plugin
-  * 1.9.0 - 2016-06-26
+  * v1.9.0 - 2016-06-26
     * Version updates
     * Removed mandatory JUnit 4 dependency
- * 1.8.4 - 2016-05-27
- * 1.8.3 - 2016-05-25
- * 1.8.2 - 2016-05-10
- * 1.8.1 - 2016-05-03
- * 1.8.0 - 2016-02-01
+ * v1.8.4 - 2016-05-27
+ * v1.8.3 - 2016-05-25
+ * v1.8.2 - 2016-05-10
+ * v1.8.1 - 2016-05-03
+ * v1.8.0 - 2016-02-01
    * First version for default JDK 8 builds
- * 1.4.2 - 2015-12-02
+ * v1.4.2 - 2015-12-02
    * Changed default build version to Java 1.7
- * 1.4.1 - 2015-08-31
+ * v1.4.1 - 2015-08-31
    * Last version that uses Java 1.6 as the default target  
     
   
