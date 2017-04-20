@@ -454,6 +454,7 @@
               <exclude>**/NOTICE</exclude>
               <exclude>**/LICENSE</exclude>
               <exclude>**/LICENSE2</exclude>
+              <exclude>**/LICENSE.txt</exclude>
               <!-- Special robots.txt file -->
               <exclude>**/robots.txt</exclude>
               <!-- Special PMD config file -->
