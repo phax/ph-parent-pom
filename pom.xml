@@ -111,26 +111,6 @@
         <plugins>
           <plugin>
             <groupId>org.apache.maven.plugins</groupId>
-            <artifactId>maven-enforcer-plugin</artifactId>
-            <executions>
-              <execution>
-                <id>enforce-maven</id>
-                <goals>
-                  <goal>enforce</goal>
-                </goals>
-                <configuration>
-                  <rules>
-                    <requireMavenVersion>
-                      <version>(,2.1.0),(2.1.0,2.2.0),(2.2.0,)</version>
-                      <message>Maven 2.1.0 and 2.2.0 produce incorrect GPG signatures and checksums respectively.</message>
-                    </requireMavenVersion>
-                  </rules>
-                </configuration>
-              </execution>
-            </executions>
-          </plugin>
-          <plugin>
-            <groupId>org.apache.maven.plugins</groupId>
             <artifactId>maven-compiler-plugin</artifactId>
             <configuration>
               <debug>false</debug>
@@ -160,67 +140,6 @@
             <configuration>
               <!-- useAgent must be true for gpg2 -->
               <useAgent>true</useAgent>
-            </configuration>
-          </plugin>
-        </plugins>
-      </build>
-    </profile>
-    <profile>
-      <id>hudson</id>
-      <activation>
-        <!-- Hudson/Jenkins by default defines a property BUILD_NUMBER which is used to enable the profile. -->
-        <property>
-          <name>env.BUILD_NUMBER</name>
-        </property>
-      </activation>
-      <build>
-        <plugins>
-          <plugin>
-            <groupId>org.codehaus.mojo</groupId>
-            <artifactId>findbugs-maven-plugin</artifactId>
-            <configuration>
-              <findbugsXmlOutput>true</findbugsXmlOutput>
-              <findbugsXmlWithMessages>true</findbugsXmlWithMessages>
-              <xmlOutput>true</xmlOutput>
-              <excludeFilterFile>findbugs-exclude.xml</excludeFilterFile>
-            </configuration>
-            <dependencies>
-              <!-- To resolve "provided" elements -->
-              <dependency>
-                <groupId>org.slf4j</groupId>
-                <artifactId>slf4j-simple</artifactId>
-                <version>${slf4j.version}</version>
-              </dependency>
-              <dependency>
-                <groupId>javax.servlet</groupId>
-                <artifactId>javax.servlet-api</artifactId>
-                <version>${javax.servlet-api.version}</version>
-              </dependency>
-            </dependencies>
-          </plugin>
-          <plugin>
-            <groupId>org.codehaus.mojo</groupId>
-            <artifactId>cobertura-maven-plugin</artifactId>
-            <configuration>
-              <formats>
-                <format>xml</format>
-              </formats>
-            </configuration>
-            <executions>
-              <execution>
-                <phase>package</phase>
-                <goals>
-                  <goal>clean</goal>
-                  <goal>cobertura</goal>
-                </goals>
-              </execution>
-            </executions>
-          </plugin>
-          <plugin>
-            <groupId>org.apache.maven.plugins</groupId>
-            <artifactId>maven-dependency-plugin</artifactId>
-            <configuration>
-              <outputXML>true</outputXML>
             </configuration>
           </plugin>
         </plugins>
@@ -730,7 +649,7 @@
         <plugin>
           <groupId>de.thetaphi</groupId>
           <artifactId>forbiddenapis</artifactId>
-          <version>2.3</version>
+          <version>2.4.1</version>
           <configuration>
             <!-- if the used Java version is too new,
                 don't fail, just do nothing:  -->
