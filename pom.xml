@@ -50,14 +50,20 @@
 
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+    <java.version>1.8</java.version>
     <junit4.version>4.12</junit4.version>
+    <junit.jupiter.version>5.0.1</junit.jupiter.version>
+    <junit.vintage.version>${junit4.version}.1</junit.vintage.version>
+    <junit.platform.version>1.0.1</junit.platform.version>
     <slf4j.version>1.7.25</slf4j.version>
     <javax.servlet-api.version>3.1.0</javax.servlet-api.version>
+    <!-- Still unsupported by AppServers
     <javax.servlet-api.version>4.0.0</javax.servlet-api.version>
+     -->
     <jsp-api.version>2.3.1</jsp-api.version>
     <!-- Use properties for forbiddenapis integration -->
-    <maven.compiler.source>1.8</maven.compiler.source>
-    <maven.compiler.target>1.8</maven.compiler.target>
+    <maven.compiler.source>${java.version}</maven.compiler.source>
+    <maven.compiler.target>${java.version}</maven.compiler.target>
     <!-- Eclipse Maven integration settings -->
     <m2e.jaxrs.activation>false</m2e.jaxrs.activation>
     <m2e.jpa.activation>false</m2e.jpa.activation>
@@ -206,6 +212,35 @@
         <artifactId>junit</artifactId>
         <version>${junit4.version}</version>
       </dependency>
+      <dependency>
+        <groupId>org.junit.jupiter</groupId>
+        <artifactId>junit-jupiter-api</artifactId>
+        <version>${junit.jupiter.version}</version>
+      </dependency>
+      <!-- Only required to run tests in an IDE that bundles an older version -->
+      <dependency>
+        <groupId>org.junit.platform</groupId>
+        <artifactId>junit-platform-launcher</artifactId>
+        <version>${junit.platform.version}</version>
+      </dependency>
+      <!-- Only required to run tests in an IDE that bundles an older version -->
+      <dependency>
+        <groupId>org.junit.jupiter</groupId>
+        <artifactId>junit-jupiter-engine</artifactId>
+        <version>${junit.jupiter.version}</version>
+      </dependency>
+      <!-- Only required to run tests in an IDE that bundles an older version -->
+      <dependency>
+        <groupId>org.junit.vintage</groupId>
+        <artifactId>junit-vintage-engine</artifactId>
+        <version>${junit.vintage.version}</version>
+      </dependency>
+      <!-- To avoid compiler warnings about @API annotations in JUnit code -->
+      <dependency>
+        <groupId>org.apiguardian</groupId>
+        <artifactId>apiguardian-api</artifactId>
+        <version>1.0.0</version>
+      </dependency>      
       <dependency>
         <groupId>javax.servlet</groupId>
         <artifactId>javax.servlet-api</artifactId>
@@ -853,6 +888,8 @@
           <compilerArguments>
             <encoding>${project.build.sourceEncoding}</encoding>
           </compilerArguments>
+          <source>${java.version}</source>
+          <target>${java.version}</target>
         </configuration>
       </plugin>
       <!-- Build JAR file from source (lifecycle: package) -->
@@ -947,6 +984,21 @@
         <configuration>
           <generateSitemap>true</generateSitemap>
         </configuration>
+      </plugin>
+      <plugin>
+        <artifactId>maven-surefire-plugin</artifactId>
+        <dependencies>
+          <dependency>
+            <groupId>org.junit.platform</groupId>
+            <artifactId>junit-platform-surefire-provider</artifactId>
+            <version>${junit.platform.version}</version>
+          </dependency>
+          <dependency>
+            <groupId>org.junit.jupiter</groupId>
+            <artifactId>junit-jupiter-engine</artifactId>
+            <version>${junit.jupiter.version}</version>
+          </dependency>
+        </dependencies>
       </plugin>
     </plugins>
   </build>
