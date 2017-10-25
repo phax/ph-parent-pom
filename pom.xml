@@ -326,6 +326,8 @@
               <xslt>XML_STYLE</xslt>
             </mapping>
             <excludes>
+              <!-- All local git files -->
+              <exclude>**/.git*</exclude>
               <!-- Adobe font metric file -->
               <exclude>**/*.afm</exclude>
               <!-- (JAXB) catalog file -->
