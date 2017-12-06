@@ -52,9 +52,9 @@
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     <java.version>1.8</java.version>
     <junit4.version>4.12</junit4.version>
-    <junit.jupiter.version>5.0.1</junit.jupiter.version>
+    <junit.jupiter.version>5.0.2</junit.jupiter.version>
     <junit.vintage.version>${junit4.version}.1</junit.vintage.version>
-    <junit.platform.version>1.0.1</junit.platform.version>
+    <junit.platform.version>1.0.2</junit.platform.version>
     <slf4j.version>1.7.25</slf4j.version>
     <javax.servlet-api.version>3.1.0</javax.servlet-api.version>
     <!-- Still unsupported by most AppServers
