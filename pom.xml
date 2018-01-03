@@ -21,7 +21,7 @@
   <modelVersion>4.0.0</modelVersion>
   <groupId>com.helger</groupId>
   <artifactId>parent-pom</artifactId>
-  <version>1.9.4-SNAPSHOT</version>
+  <version>1.10.0-SNAPSHOT</version>
   <packaging>pom</packaging>
   <name>ph-parent-pom</name>
   <description>Generic parent POM for Java 1.8+ applications</description>
@@ -593,7 +593,7 @@
         <plugin>
           <groupId>org.apache.maven.plugins</groupId>
           <artifactId>maven-site-plugin</artifactId>
-          <version>3.6</version>
+          <version>3.7</version>
         </plugin>
         <plugin>
           <groupId>org.apache.maven.plugins</groupId>
