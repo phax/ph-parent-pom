@@ -20,7 +20,6 @@ To use it as your parent POM using the following snippet:
 
 * v1.10.0 - work in progress
   * Version updates
-  * Requires at least Maven 3.3.1
   * Started adding support for JUnit 5
 * v1.9.3 - 2017-04-12
   * Version updates

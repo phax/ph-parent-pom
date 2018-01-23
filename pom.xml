@@ -27,11 +27,6 @@
   <description>Generic parent POM for Java 1.8+ applications</description>
   <url>https://github.com/phax/ph-parent-pom</url>
   <inceptionYear>2014</inceptionYear>
-
-  <!-- Minimum Maven version -->
-  <prerequisites>
-    <maven>3.3.1</maven>
-  </prerequisites>
   
   <licenses>
     <license>
