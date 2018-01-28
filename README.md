@@ -12,15 +12,16 @@ To use it as your parent POM using the following snippet:
   <parent>
     <groupId>com.helger</groupId>
     <artifactId>parent-pom</artifactId>
-    <version>1.9.3</version>
+    <version>1.10.0</version>
   </parent>
 ```
 
 ## News and noteworthy
 
-* v1.10.0 - work in progress
+* v1.10.0 - 2018-01-28
   * Version updates
   * Started adding support for JUnit 5
+  * Removed `<prerequisite>` element from POM
 * v1.9.3 - 2017-04-12
   * Version updates
 * v1.9.2 - 2016-11-03
