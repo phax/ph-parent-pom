@@ -18,6 +18,8 @@ To use it as your parent POM using the following snippet:
 
 ## News and noteworthy
 
+* v1.10.1 - work in progress
+  * Plugin version updates
 * v1.10.0 - 2018-01-28
   * Version updates
   * Started adding support for JUnit 5
@@ -46,8 +48,8 @@ To use it as your parent POM using the following snippet:
     
 ## Hints
 
-  * v1.9.3 or higher: when having errors with `maven-assembly-plugin`: change goal from `attached` to `single`
-  * When building with Eclipse and you get an m2e error with "Manifest.write(...)" than have a look at https://github.com/tesla/m2eclipse-mavenarchiver/issues/9
+* v1.9.3 or higher: when having errors with `maven-assembly-plugin`: change goal from `attached` to `single`
+* When building with Eclipse and you get an m2e error with "Manifest.write(...)" than have a look at https://github.com/tesla/m2eclipse-mavenarchiver/issues/9
 
 ---
 
