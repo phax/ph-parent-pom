@@ -20,6 +20,7 @@ To use it as your parent POM using the following snippet:
 
 * v1.10.1 - work in progress
   * Plugin version updates
+  * Updated to JUnit 5.1
 * v1.10.0 - 2018-01-28
   * Version updates
   * Started adding support for JUnit 5
@@ -53,5 +54,5 @@ To use it as your parent POM using the following snippet:
 
 ---
 
-My personal [Coding Styleguide](https://github.com/phax/meta/blob/master/CodeingStyleguide.md) |
+My personal [Coding Styleguide](https://github.com/phax/meta/blob/master/CodingStyleguide.md) |
 On Twitter: <a href="https://twitter.com/philiphelger">@philiphelger</a>
