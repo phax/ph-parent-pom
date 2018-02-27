@@ -21,6 +21,7 @@ To use it as your parent POM using the following snippet:
 * v1.10.1 - work in progress
   * Plugin version updates
   * Updated to JUnit 5.1
+  * Improved JDK 9 support
 * v1.10.0 - 2018-01-28
   * Version updates
   * Started adding support for JUnit 5

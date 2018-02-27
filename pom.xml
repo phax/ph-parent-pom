@@ -107,6 +107,29 @@
 
   <profiles>
     <profile>
+      <id>jdk9</id>
+      <activation>
+        <jdk>9</jdk>
+      </activation>
+      <build>
+        <plugins>
+          <plugin>
+            <groupId>org.apache.maven.plugins</groupId>
+            <artifactId>maven-compiler-plugin</artifactId>
+            <configuration>
+              <!-- Default for fork -->
+              <!-- No maxmem for JDK 9! -->
+              <showWarnings>true</showWarnings>
+              <showDeprecation>true</showDeprecation>
+              <encoding>${project.build.sourceEncoding}</encoding>
+              <source>${java.version}</source>
+              <target>${java.version}</target>
+            </configuration>
+          </plugin>
+        </plugins>
+      </build>
+    </profile>
+    <profile>
       <id>release</id>
       <build>
         <plugins>
@@ -881,10 +904,9 @@
             the problem with the forward slash in package-info.java on Windows occurs! -->
           <fork>false</fork>
           <showWarnings>true</showWarnings>
+          <showDeprecation>true</showDeprecation>
           <maxmem>1g</maxmem>
-          <compilerArguments>
-            <encoding>${project.build.sourceEncoding}</encoding>
-          </compilerArguments>
+          <encoding>${project.build.sourceEncoding}</encoding>
           <source>${java.version}</source>
           <target>${java.version}</target>
         </configuration>
