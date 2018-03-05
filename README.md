@@ -18,6 +18,8 @@ To use it as your parent POM using the following snippet:
 
 ## News and noteworthy
 
+* v1.10.2 - work in progress
+  * Plugin version updates
 * v1.10.1 - 2018-02-27
   * Plugin version updates
   * Updated to JUnit 5.1
