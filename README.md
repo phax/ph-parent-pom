@@ -3,7 +3,7 @@
 Generic Maven 3 parent POM with lots of default configuration.
 It is pre-configured to handle the "ph-" software stack in a suitable way.
 
-The latest released version is **1.10.2** and requires JDK 8 at build time (even though you may create applications that need Java 1.6 or 1.7 at runtime)!
+The latest released version is **1.10.3** and requires JDK 8 at build time (even though you may create applications that need Java 1.6 or 1.7 at runtime)!
 
 The latest release for building with JDK 6 is *1.4.1* (requires a JDK 7 at compile time).
 
@@ -12,12 +12,15 @@ To use it as your parent POM using the following snippet:
   <parent>
     <groupId>com.helger</groupId>
     <artifactId>parent-pom</artifactId>
-    <version>1.10.2</version>
+    <version>1.10.3</version>
   </parent>
 ```
 
 ## News and noteworthy
 
+* v1.10.3 - 2018-03-23
+  * Plugin version updates
+  * Restored default JUnit 4 behaviour of surefire
 * v1.10.2 - 2018-03-07
   * Plugin version updates
   * Fixed an error of Java9 auto select (whysoever)
