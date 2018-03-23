@@ -994,6 +994,7 @@
           <generateSitemap>true</generateSitemap>
         </configuration>
       </plugin>
+      <!-- for JUnit5 only
       <plugin>
         <artifactId>maven-surefire-plugin</artifactId>
         <dependencies>
@@ -1009,6 +1010,7 @@
           </dependency>
         </dependencies>
       </plugin>
+       -->
     </plugins>
   </build>
   
