@@ -55,7 +55,7 @@
     <!-- Still unsupported by most AppServers
     <javax.servlet-api.version>4.0.0</javax.servlet-api.version>
      -->
-    <jsp-api.version>2.3.1</jsp-api.version>
+    <jsp-api.version>2.3.3</jsp-api.version>
     <!-- Use properties for forbiddenapis integration -->
     <maven.compiler.source>${java.version}</maven.compiler.source>
     <maven.compiler.target>${java.version}</maven.compiler.target>
@@ -484,7 +484,7 @@
         <plugin>
           <groupId>org.apache.maven.plugins</groupId>
           <artifactId>maven-compiler-plugin</artifactId>
-          <version>3.7.0</version>
+          <version>3.8.0</version>
         </plugin>
         <plugin>
           <groupId>org.apache.maven.plugins</groupId>
