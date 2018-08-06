@@ -665,17 +665,17 @@
         <plugin>
           <groupId>com.helger.maven</groupId>
           <artifactId>ph-buildinfo-maven-plugin</artifactId>
-          <version>2.1.0</version>
+          <version>3.0.0</version>
         </plugin>
         <plugin>
           <groupId>com.helger.maven</groupId>
           <artifactId>ph-dirindex-maven-plugin</artifactId>
-          <version>2.0.0</version>
+          <version>3.0.0</version>
         </plugin>
         <plugin>
           <groupId>com.helger.maven</groupId>
           <artifactId>ph-jscompress-maven-plugin</artifactId>
-          <version>2.2.0</version>
+          <version>2.2.1</version>
           <configuration>
             <forceCreation>false</forceCreation>
             <recursive>true</recursive>
@@ -876,6 +876,19 @@
                   </pluginExecutionFilter>
                   <action>
                     <ignore />
+                  </action>
+                </pluginExecution>
+                <pluginExecution>
+                  <pluginExecutionFilter>
+                    <groupId>org.codehaus.gmavenplus</groupId>
+                    <artifactId>gmavenplus-plugin</artifactId>
+                    <versionRange>[1.6,)</versionRange>
+                    <goals>
+                      <goal>compileTests</goal>
+                    </goals>
+                  </pluginExecutionFilter>
+                  <action>
+                    <execute runOnIncremental="false" />
                   </action>
                 </pluginExecution>
               </pluginExecutions>
