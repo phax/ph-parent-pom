@@ -18,6 +18,10 @@ To use it as your parent POM using the following snippet:
 
 ## News and noteworthy
 
+* v1.10.6 - work in progress
+  * Updated to JUnit5 5.3.0
+  * Updated to maven-bundle-plugin 4.0.0
+  * Plugin version updates
 * v1.10.5 - 2018-08-06
   * Plugin version updates
 * v1.10.4 - 2018-08-06
