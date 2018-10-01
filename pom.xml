@@ -394,6 +394,8 @@
               <exclude>**/*.pdf</exclude>
               <!-- PMD configuration file -->
               <exclude>**/*.pmd</exclude>
+              <!-- Image files -->
+              <exclude>**/*.png</exclude>
               <!-- Policy file -->
               <exclude>**/*.policy</exclude>
               <!-- Powerpoint files -->
