@@ -1043,10 +1043,21 @@
           <reportSet>
             <reports>
               <report>index</report>
+              <report>ci-management</report>
               <report>dependencies</report>
-              <report>project-team</report>
-              <report>license</report>
+              <report>dependency-convergence</report>
+              <report>dependency-info</report>
+              <report>dependency-management</report>
+              <report>distribution-management</report>
+              <report>issue-management</report>
+              <report>licenses</report>
+              <report>mailing-lists</report>
+              <report>modules</report>
+              <report>plugin-management</report>
+              <report>plugins</report>
               <report>scm</report>
+              <report>summary</report>
+              <report>team</report>
             </reports>
           </reportSet>
         </reportSets>
