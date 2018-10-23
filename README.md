@@ -3,22 +3,20 @@
 Generic Maven 3 parent POM with lots of default configuration.
 It is pre-configured to handle the "ph-" software stack in a suitable way.
 
-The latest released version is **1.10.6** and requires JDK 8 at build time (even though you may create applications that need Java 1.6 or 1.7 at runtime)!
-
-The latest release for building with JDK 6 is *1.4.1* (requires a JDK 7 at compile time).
+The latest released version is **1.10.7** and requires JDK 8 at build time (even though you may create applications that need Java 1.6 or 1.7 at runtime)!
 
 To use it as your parent POM using the following snippet:
 ```xml
   <parent>
     <groupId>com.helger</groupId>
     <artifactId>parent-pom</artifactId>
-    <version>1.10.6</version>
+    <version>1.10.7</version>
   </parent>
 ```
 
 ## News and noteworthy
 
-* v1.10.7 - work in progress
+* v1.10.7 - 2018-10-23
     * Plugin version updates´
     * Fixed `maven-project-info-reports-plugin` v3 configuration
     * Updated to maven-bundle-plugin 4.1.0
@@ -70,6 +68,7 @@ To use it as your parent POM using the following snippet:
 
 * v1.9.3 or higher: when having errors with `maven-assembly-plugin`: change goal from `attached` to `single`
 * When building with Eclipse and you get an m2e error with "Manifest.write(...)" than have a look at https://github.com/tesla/m2eclipse-mavenarchiver/issues/9
+* The latest release for building with JDK 6 is *1.4.1* (requires a JDK 7 at compile time).
 
 ---
 
