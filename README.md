@@ -16,8 +16,10 @@ To use it as your parent POM using the following snippet:
 
 ## News and noteworthy
 
+* v1.10.8 - work in progress
+    * Plugin version updates
 * v1.10.7 - 2018-10-23
-    * Plugin version updates´
+    * Plugin version updates
     * Fixed `maven-project-info-reports-plugin` v3 configuration
     * Updated to maven-bundle-plugin 4.1.0
 * v1.10.6 - 2018-10-01
