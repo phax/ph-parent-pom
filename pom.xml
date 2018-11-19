@@ -176,9 +176,6 @@
                 </goals>
               </execution>
             </executions>
-            <configuration>
-              <multiRelease>base</multiRelease>
-            </configuration>
           </plugin>
         </plugins>
       </build>
