@@ -313,12 +313,14 @@
               <gc>XML_STYLE</gc>
               <!-- Java files -->
               <jav>JAVADOC_STYLE</jav>
+              <!-- Java Domain Model stuff (JSON) -->
+              <jdm>SLASHSTAR_STYLE</jdm>
               <!-- JavaCC source files -->
               <jj>JAVADOC_STYLE</jj>
               <!-- JavaCC JJTree source files -->
               <jjt>JAVADOC_STYLE</jjt>
               <!-- Proxy stuff (like JS) -->
-              <pac>SLASHSTAR_STYLE</pac> 
+              <pac>SLASHSTAR_STYLE</pac>
               <!-- RelaxNG XML images -->
               <rng>XML_STYLE</rng>
               <!-- Schematron files -->
