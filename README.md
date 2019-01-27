@@ -18,6 +18,7 @@ To use it as your parent POM using the following snippet:
 
 * v1.10.8 - work in progress
     * Plugin version updates
+    * Updated to JaCoCo 0.8.3
 * v1.10.7 - 2018-10-23
     * Plugin version updates
     * Fixed `maven-project-info-reports-plugin` v3 configuration
