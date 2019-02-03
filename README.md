@@ -3,22 +3,30 @@
 Generic Maven 3 parent POM with lots of default configuration.
 It is pre-configured to handle the "ph-" software stack in a suitable way.
 
-The latest released version is **1.10.7** and requires JDK 8 at build time (even though you may create applications that need Java 1.6 or 1.7 at runtime)!
+The latest released version is **1.10.8** and requires JDK 8 at build time (even though you may create applications that need Java 1.6 or 1.7 at runtime)!
 
 To use it as your parent POM using the following snippet:
+
 ```xml
   <parent>
     <groupId>com.helger</groupId>
     <artifactId>parent-pom</artifactId>
-    <version>1.10.7</version>
+    <version>1.10.8</version>
   </parent>
 ```
 
 ## News and noteworthy
 
-* v1.10.8 - work in progress
-    * Plugin version updates
+* v1.10.8 - 2019-02-03
+    * Improved license formatting configuration
     * Updated to JaCoCo 0.8.3
+    * Updated to JUnit 5.3.2
+    * Updated to maven-assembly-plugin 3.1.1
+    * Updated to maven-jar-plugin 3.1.1
+    * Updated to maven-jarsigner-plugin 3.0.0
+    * Updated to maven-plugin-plugin 3.6.0
+    * Updated to maven-pmd-plugin 3.11.0
+    * Updated to maven-shade-plugin 3.2.1
 * v1.10.7 - 2018-10-23
     * Plugin version updates
     * Fixed `maven-project-info-reports-plugin` v3 configuration
