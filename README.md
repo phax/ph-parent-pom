@@ -17,6 +17,8 @@ To use it as your parent POM using the following snippet:
 
 ## News and noteworthy
 
+* v1.10.9 - work in progress
+    * Updated to JUnit 5.4.0
 * v1.10.8 - 2019-02-03
     * Improved license formatting configuration
     * Updated to JaCoCo 0.8.3
