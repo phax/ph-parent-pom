@@ -20,6 +20,7 @@ To use it as your parent POM using the following snippet:
 * v1.10.9 - work in progress
     * Updated to JUnit 5.4.0
     * Updated to ph-csscompress-maven-plugin 6.1.2
+    * Updated to SLF4J API 1.7.26
 * v1.10.8 - 2019-02-03
     * Improved license formatting configuration
     * Updated to JaCoCo 0.8.3
