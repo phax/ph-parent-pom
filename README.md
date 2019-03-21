@@ -18,7 +18,7 @@ To use it as your parent POM using the following snippet:
 ## News and noteworthy
 
 * v1.10.9 - work in progress
-    * Updated to JUnit 5.4.0
+    * Updated to JUnit 5.4.1
     * Updated to ph-csscompress-maven-plugin 6.1.2
     * Updated to SLF4J API 1.7.26
     * Updated to maven-javadoc-plugin 3.1.0
