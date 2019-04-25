@@ -23,6 +23,7 @@ To use it as your parent POM using the following snippet:
     * Updated to SLF4J API 1.7.26
     * Updated to maven-javadoc-plugin 3.1.0
     * Updated to maven-plugin-plugin 4.2.0
+    * Updated to maven-pmd-plugin 3.12.0 
 * v1.10.8 - 2019-02-03
     * Improved license formatting configuration
     * Updated to JaCoCo 0.8.3
