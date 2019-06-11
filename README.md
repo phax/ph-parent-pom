@@ -20,6 +20,7 @@ To use it as your parent POM using the following snippet:
 * v1.10.9 - work in progress
     * Updated to JUnit 5.4.2
     * Updated to SLF4J API 1.7.26
+    * Updated to APIGuardian API to 1.1.0
     * Updated to maven-checkstyle-plugin 3.1.0
     * Updated to maven-compiler-plugin 3.8.1
     * Updated to maven-javadoc-plugin 3.1.0
