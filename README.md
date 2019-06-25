@@ -25,6 +25,7 @@ To use it as your parent POM using the following snippet:
     * Updated to maven-compiler-plugin 3.8.1
     * Updated to maven-javadoc-plugin 3.1.0
     * Updated to maven-jar-plugin 3.1.2
+    * Updated to maven-jdeps-plugin 3.1.2
     * Updated to maven-plugin-plugin 4.2.0
     * Updated to maven-pmd-plugin 3.12.0 
     * Updated to maven-source-plugin 3.1.0
