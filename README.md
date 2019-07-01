@@ -32,7 +32,7 @@ To use it as your parent POM using the following snippet:
     * Updated to maven-surefire-plugin 2.22.2
     * Updated to maven-war-plugin 3.2.2
     * Updated to jacoco-maven-plugin 0.8.4
-    * Updated to ph-csscompress-maven-plugin 6.1.3
+    * Updated to ph-csscompress-maven-plugin 6.2.0
     * Updated to ph-dirindex-maven-plugin 3.0.1
 * v1.10.8 - 2019-02-03
     * Improved license formatting configuration
