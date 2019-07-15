@@ -23,7 +23,7 @@ To use it as your parent POM using the following snippet:
     * Updated to APIGuardian API to 1.1.0
     * Updated to maven-checkstyle-plugin 3.1.0
     * Updated to maven-compiler-plugin 3.8.1
-    * Updated to maven-javadoc-plugin 3.1.0
+    * Updated to maven-javadoc-plugin 3.1.1
     * Updated to maven-jar-plugin 3.1.2
     * Updated to maven-jdeps-plugin 3.1.2
     * Updated to maven-plugin-plugin 4.2.0
@@ -34,6 +34,9 @@ To use it as your parent POM using the following snippet:
     * Updated to jacoco-maven-plugin 0.8.4
     * Updated to ph-csscompress-maven-plugin 6.2.0
     * Updated to ph-dirindex-maven-plugin 3.0.1
+    * Updated to ph-jscompress-maven-plugin 2.2.2
+    * Removed the UML Doclet because it conflicts with certain outputs
+    * Added `org.owasp:dependency-check-maven` reporting plugin 
 * v1.10.8 - 2019-02-03
     * Improved license formatting configuration
     * Updated to JaCoCo 0.8.3
