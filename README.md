@@ -36,7 +36,7 @@ To use it as your parent POM using the following snippet:
     * Updated to ph-dirindex-maven-plugin 3.0.1
     * Updated to ph-jscompress-maven-plugin 2.2.2
     * Removed the UML Doclet because it conflicts with certain outputs
-    * Added `org.owasp:dependency-check-maven` reporting plugin 
+    * Added `org.owasp:dependency-check-maven` reporting plugin
 * v1.10.8 - 2019-02-03
     * Improved license formatting configuration
     * Updated to JaCoCo 0.8.3
