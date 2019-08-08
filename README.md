@@ -20,7 +20,6 @@ To use it as your parent POM using the following snippet:
 * v1.10.10 - work in progress
     * Updated to JUnit 5.5.1
     * Updated to maven-site-plugin 3.8.2
-    * Updated to maven-war-plugin 3.2.3
     * Updated to dependency-check-maven 5.2.1
 * v1.10.9 - 2019-07-17
     * Updated to JUnit 5.5.0
@@ -35,7 +34,7 @@ To use it as your parent POM using the following snippet:
     * Updated to maven-pmd-plugin 3.12.0 
     * Updated to maven-source-plugin 3.1.0
     * Updated to maven-surefire-plugin 2.22.2
-    * Updated to maven-war-plugin 3.2.2
+    * Updated to maven-war-plugin 3.2.3
     * Updated to jacoco-maven-plugin 0.8.4
     * Updated to ph-csscompress-maven-plugin 6.2.0
     * Updated to ph-dirindex-maven-plugin 3.0.1
