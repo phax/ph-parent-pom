@@ -19,7 +19,7 @@ To use it as your parent POM using the following snippet:
 
 * v1.10.10 - work in progress
     * Updated to JUnit 5.5.1
-    * Updated to SLF4J API 1.7.27
+    * Updated to SLF4J API 1.7.28
     * Updated to maven-site-plugin 3.8.2
     * Updated to dependency-check-maven 5.2.1
 * v1.10.9 - 2019-07-17
