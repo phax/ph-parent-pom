@@ -20,12 +20,14 @@ To use it as your parent POM using the following snippet:
 * v1.10.10 - work in progress
     * Updated to JUnit 5.5.1
     * Updated to SLF4J API 1.7.28
+    * Updated to maven-bundle-plugin 4.2.1
     * Updated to maven-site-plugin 3.8.2
     * Updated to dependency-check-maven 5.2.1
 * v1.10.9 - 2019-07-17
     * Updated to JUnit 5.5.0
     * Updated to SLF4J API 1.7.26
     * Updated to APIGuardian API to 1.1.0
+    * Updated to maven-bundle-plugin 4.2.0
     * Updated to maven-checkstyle-plugin 3.1.0
     * Updated to maven-compiler-plugin 3.8.1
     * Updated to maven-javadoc-plugin 3.1.1
