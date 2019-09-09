@@ -18,7 +18,7 @@ To use it as your parent POM using the following snippet:
 ## News and noteworthy
 
 * v1.10.10 - work in progress
-    * Updated to JUnit 5.5.1
+    * Updated to JUnit 5.5.2
     * Updated to SLF4J API 1.7.28
     * Updated to maven-bundle-plugin 4.2.1
     * Updated to maven-site-plugin 3.8.2
