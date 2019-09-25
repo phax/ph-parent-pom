@@ -22,7 +22,7 @@ To use it as your parent POM using the following snippet:
     * Updated to SLF4J API 1.7.28
     * Updated to maven-bundle-plugin 4.2.1
     * Updated to maven-site-plugin 3.8.2
-    * Updated to dependency-check-maven 5.2.1
+    * Updated to dependency-check-maven 5.2.2
 * v1.10.9 - 2019-07-17
     * Updated to JUnit 5.5.0
     * Updated to SLF4J API 1.7.26
