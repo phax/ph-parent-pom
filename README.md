@@ -23,6 +23,8 @@ To use it as your parent POM using the following snippet:
     * Updated to maven-bundle-plugin 4.2.1
     * Updated to maven-site-plugin 3.8.2
     * Updated to dependency-check-maven 5.2.2
+    * Added managed version for `jakarta.servlet:jakarta.servlet-api`
+    * Added managed version for `jakarta.servlet.jsp:jakarta.servlet.jsp-api`
 * v1.10.9 - 2019-07-17
     * Updated to JUnit 5.5.0
     * Updated to SLF4J API 1.7.26

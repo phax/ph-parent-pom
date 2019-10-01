@@ -52,10 +52,9 @@
     <junit.vintage.version>5.5.2</junit.vintage.version>
     <slf4j.version>1.7.28</slf4j.version>
     <javax.servlet-api.version>3.1.0</javax.servlet-api.version>
-    <!-- Still unsupported by most AppServers
-    <javax.servlet-api.version>4.0.0</javax.servlet-api.version>
-     -->
-    <jsp-api.version>2.3.3</jsp-api.version>
+    <javax.jsp-api.version>2.3.3</javax.jsp-api.version>
+    <jakarta.servlet-api.version>4.0.3</jakarta.servlet-api.version>
+    <jakarta.jsp-api.version>2.3.6</jakarta.jsp-api.version>
     <!-- Use properties for forbiddenapis integration -->
     <maven.compiler.source>${java.version}</maven.compiler.source>
     <maven.compiler.target>${java.version}</maven.compiler.target>
@@ -258,7 +257,17 @@
       <dependency>
         <groupId>javax.servlet.jsp</groupId>
         <artifactId>javax.servlet.jsp-api</artifactId>
-        <version>${jsp-api.version}</version>
+        <version>${javax.jsp-api.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>jakarta.servlet</groupId>
+        <artifactId>jakarta.servlet-api</artifactId>
+        <version>${jakarta.servlet-api.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>jakarta.servlet.jsp</groupId>
+        <artifactId>jakarta.servlet.jsp-api</artifactId>
+        <version>${jakarta.jsp-api.version}</version>
       </dependency>
       <dependency>
         <groupId>org.slf4j</groupId>
