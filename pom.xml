@@ -215,11 +215,14 @@
 
   <dependencyManagement>
     <dependencies>
-       <dependency>
+      <!-- JUnit 4 -->
+      <dependency>
         <groupId>junit</groupId>
         <artifactId>junit</artifactId>
         <version>${junit4.version}</version>
       </dependency>
+      
+      <!-- JUnit 5 -->
       <dependency>
         <groupId>org.junit.jupiter</groupId>
         <artifactId>junit-jupiter-api</artifactId>
@@ -249,6 +252,8 @@
         <artifactId>apiguardian-api</artifactId>
         <version>1.1.0</version>
       </dependency>
+      
+      <!-- Oracle Java EE -->
       <dependency>
         <groupId>javax.servlet</groupId>
         <artifactId>javax.servlet-api</artifactId>
@@ -259,6 +264,8 @@
         <artifactId>javax.servlet.jsp-api</artifactId>
         <version>${javax.jsp-api.version}</version>
       </dependency>
+      
+      <!-- Jakarta EE -->
       <dependency>
         <groupId>jakarta.servlet</groupId>
         <artifactId>jakarta.servlet-api</artifactId>
@@ -269,6 +276,8 @@
         <artifactId>jakarta.servlet.jsp-api</artifactId>
         <version>${jakarta.jsp-api.version}</version>
       </dependency>
+      
+      <!-- SLF4J -->
       <dependency>
         <groupId>org.slf4j</groupId>
         <artifactId>slf4j-api</artifactId>
