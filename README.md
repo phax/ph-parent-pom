@@ -19,12 +19,15 @@ To use it as your parent POM using the following snippet:
 
 * v1.10.10 - work in progress
     * Updated to JUnit 5.5.2
-    * Updated to SLF4J API 1.7.28
+    * Updated to SLF4J API 1.7.29
     * Updated to dependency-check-maven 5.2.2
     * Updated to forbiddenapis 2.7
     * Updated to jacoco-maven-plugin 0.8.5
+    * Updated to maven-assembly-plugin 3.2.0
     * Updated to maven-bundle-plugin 4.2.1
+    * Updated to maven-jar-plugin 3.2.0
     * Updated to maven-site-plugin 3.8.2
+    * Updated to maven-source-plugin 3.2.0
     * Added managed version for `jakarta.servlet:jakarta.servlet-api`
     * Added managed version for `jakarta.servlet.jsp:jakarta.servlet.jsp-api`
 * v1.10.9 - 2019-07-17

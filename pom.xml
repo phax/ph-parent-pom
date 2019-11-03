@@ -50,7 +50,7 @@
     <junit.platform.version>1.5.2</junit.platform.version>
     <junit.jupiter.version>5.5.2</junit.jupiter.version>
     <junit.vintage.version>5.5.2</junit.vintage.version>
-    <slf4j.version>1.7.28</slf4j.version>
+    <slf4j.version>1.7.29</slf4j.version>
     <javax.servlet-api.version>3.1.0</javax.servlet-api.version>
     <javax.jsp-api.version>2.3.3</javax.jsp-api.version>
     <jakarta.servlet-api.version>4.0.3</jakarta.servlet-api.version>
@@ -491,7 +491,7 @@
         <plugin>
           <groupId>org.apache.maven.plugins</groupId>
           <artifactId>maven-assembly-plugin</artifactId>
-          <version>3.1.1</version>
+          <version>3.2.0</version>
         </plugin>
         <plugin>
           <groupId>org.apache.maven.plugins</groupId>
@@ -565,7 +565,7 @@
           Posted at:
           https://bugs.eclipse.org/bugs/show_bug.cgi?id=494762
           -->
-          <version>3.1.2</version>
+          <version>3.2.0</version>
         </plugin>
         <plugin>
           <groupId>org.apache.maven.plugins</groupId>
@@ -634,7 +634,7 @@
         <plugin>
           <groupId>org.apache.maven.plugins</groupId>
           <artifactId>maven-source-plugin</artifactId>
-          <version>3.1.0</version>
+          <version>3.2.0</version>
         </plugin>
         <plugin>
           <groupId>org.apache.maven.plugins</groupId>
