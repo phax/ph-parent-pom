@@ -19,7 +19,9 @@ To use it as your parent POM using the following snippet:
 
 * v1.11.1 - work in progress
     * Updated to dependency-check-maven 5.2.4
+    * Updated to JUnit 4.13
     * Updated to maven-ear-plugin 3.0.2
+    * Updated to maven-source-plugin 4.2.1
     * Updated to spotbugs-maven-plugin 3.1.12.2
     * Updated to SLF4J API 1.7.30
 * v1.11.0 - 2019-11-07
