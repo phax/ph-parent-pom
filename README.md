@@ -23,6 +23,7 @@ To use it as your parent POM using the following snippet:
     * Updated to JUnit 5.6.0
     * Updated to maven-ear-plugin 3.0.2
     * Updated to maven-pmd-plugin 3.13.0
+    * Updated to maven-shade-plugin 3.2.2
     * Updated to maven-source-plugin 4.2.1
     * Updated to spotbugs-maven-plugin 3.1.12.2
     * Updated to SLF4J API 1.7.30
