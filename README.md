@@ -21,6 +21,7 @@ To use it as your parent POM using the following snippet:
     * Updated to dependency-check-maven 5.3.0
     * Updated to JUnit 4.13
     * Updated to JUnit 5.6.0
+    * Updated to maven-checkstyle-plugin 3.1.1
     * Updated to maven-ear-plugin 3.0.2
     * Updated to maven-pmd-plugin 3.13.0
     * Updated to maven-shade-plugin 3.2.2
