@@ -3,7 +3,7 @@
 Generic Maven 3 parent POM with lots of default configuration.
 It is pre-configured to handle the "ph-" software stack in a suitable way.
 
-The latest released version is **1.11.0** and requires JDK 8 at build time (even though you may create applications that need Java 1.6 or 1.7 at runtime)!
+The latest released version is **1.11.1** and requires JDK 8 at build time (even though you may create applications that need Java 1.6 or 1.7 at runtime)!
 
 To use it as your parent POM using the following snippet:
 
@@ -11,13 +11,13 @@ To use it as your parent POM using the following snippet:
   <parent>
     <groupId>com.helger</groupId>
     <artifactId>parent-pom</artifactId>
-    <version>1.11.0</version>
+    <version>1.11.1</version>
   </parent>
 ```
 
 ## News and noteworthy
 
-* v1.11.1 - work in progress
+* v1.11.1 - 2020-03-11
     * Updated to dependency-check-maven 5.3.1
     * Updated to JUnit 4.13
     * Updated to JUnit 5.6.0
@@ -27,7 +27,10 @@ To use it as your parent POM using the following snippet:
     * Updated to maven-shade-plugin 3.2.2
     * Updated to maven-site-plugin 3.9.0
     * Updated to maven-source-plugin 4.2.1
+    * Updated to ph-buildinfo-maven-plugin 3.0.1
     * Updated to ph-csscompress-maven-plugin 6.2.1
+    * Updated to ph-dirindex-maven-plugin 3.0.2
+    * Updated to ph-jscompress-maven-plugin 2.2.3
     * Updated to spotbugs-maven-plugin 3.1.12.2
     * Updated to SLF4J API 1.7.30
 * v1.11.0 - 2019-11-07
