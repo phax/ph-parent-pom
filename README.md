@@ -18,13 +18,14 @@ To use it as your parent POM using the following snippet:
 ## News and noteworthy
 
 * v1.11.1 - work in progress
-    * Updated to dependency-check-maven 5.3.0
+    * Updated to dependency-check-maven 5.3.1
     * Updated to JUnit 4.13
     * Updated to JUnit 5.6.0
     * Updated to maven-checkstyle-plugin 3.1.1
     * Updated to maven-ear-plugin 3.0.2
     * Updated to maven-pmd-plugin 3.13.0
     * Updated to maven-shade-plugin 3.2.2
+    * Updated to maven-site-plugin 3.9.0
     * Updated to maven-source-plugin 4.2.1
     * Updated to ph-csscompress-maven-plugin 6.2.1
     * Updated to spotbugs-maven-plugin 3.1.12.2
