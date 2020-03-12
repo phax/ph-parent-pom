@@ -17,6 +17,8 @@ To use it as your parent POM using the following snippet:
 
 ## News and noteworthy
 
+* v1.11.2 - work in progress
+    * Updated to maven-dependency-plugin 3.1.2
 * v1.11.1 - 2020-03-11
     * Updated to dependency-check-maven 5.3.1
     * Updated to JUnit 4.13
