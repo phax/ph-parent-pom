@@ -18,6 +18,7 @@ To use it as your parent POM using the following snippet:
 ## News and noteworthy
 
 * v1.11.2 - work in progress
+    * Updated to dependency-check-maven 5.3.2
     * Updated to JUnit 5.6.1
     * Updated to maven-dependency-plugin 3.1.2
     * Updated to maven-javadoc-plugin 3.2.0
