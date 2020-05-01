@@ -431,6 +431,8 @@
               <exclude>**/*.sha1</exclude>
               <!-- SHA256 hash files -->
               <exclude>**/*.sha256</exclude>
+              <!-- SHA384 hash files -->
+              <exclude>**/*.sha384</exclude>
               <!-- SHA512 hash files -->
               <exclude>**/*.sha512</exclude>
               <!-- Binary Flash files -->
