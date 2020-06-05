@@ -19,13 +19,14 @@ To use it as your parent POM using the following snippet:
 
 * v1.11.2 - work in progress
     * Updated to dependency-check-maven 5.3.2
-    * Updated to forbiddenapis 3.0
+    * Updated to forbiddenapis 3.0.1
     * Updated to JUnit 5.6.2
     * Updated to maven-antrun-plugin 3.0.0
     * Updated to maven-assembly-plugin 3.3.0
     * Updated to maven-dependency-plugin 3.1.2
+    * Updated to maven-project-info-reports-plugin 3.1.0
     * Updated to maven-javadoc-plugin 3.2.0
-    * Updated to maven-shade-plugin 3.2.3
+    * Updated to maven-shade-plugin 3.2.4
     * Updated to ph-csscompress-maven-plugin 6.2.3
     * Updated to spotbugs-maven-plugin 4.0.0
 * v1.11.1 - 2020-03-11
