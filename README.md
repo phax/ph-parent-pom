@@ -24,6 +24,7 @@ To use it as your parent POM using the following snippet:
     * Updated to maven-antrun-plugin 3.0.0
     * Updated to maven-assembly-plugin 3.3.0
     * Updated to maven-dependency-plugin 3.1.2
+    * Updated to maven-ejb-plugin 3.1.0
     * Updated to maven-project-info-reports-plugin 3.1.0
     * Updated to maven-javadoc-plugin 3.2.0
     * Updated to maven-shade-plugin 3.2.4
