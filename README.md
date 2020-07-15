@@ -24,13 +24,14 @@ To use it as your parent POM using the following snippet:
     * Updated to JUnit 5.6.2
     * Updated to maven-antrun-plugin 3.0.0
     * Updated to maven-assembly-plugin 3.3.0
+    * Updated to maven-bundle-plugin 5.1.1
     * Updated to maven-dependency-plugin 3.1.2
     * Updated to maven-ejb-plugin 3.1.0
     * Updated to maven-project-info-reports-plugin 3.1.0
     * Updated to maven-javadoc-plugin 3.2.0
     * Updated to maven-shade-plugin 3.2.4
     * Updated to maven-site-plugin 3.9.1
-    * Updated to maven-war-plugin 3.3.0
+    * Updated to maven-war-plugin 3.3.1
     * Updated to ph-csscompress-maven-plugin 6.2.3
     * Updated to spotbugs-maven-plugin 4.0.4
 * v1.11.1 - 2020-03-11
