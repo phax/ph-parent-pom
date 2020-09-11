@@ -18,6 +18,8 @@ To use it as your parent POM using the following snippet:
 ## News and noteworthy
 
 * v1.11.3 - work in progress
+    * Updated to dependency-check-maven 6.0.0
+    * Updated to maven-project-info-reports-plugin 3.1.1
     * Updated to maven-resources-plugin 3.2.0
 * v1.11.2 - 2020-07-15
     * Updated to dependency-check-maven 5.3.2
