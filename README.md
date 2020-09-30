@@ -19,9 +19,10 @@ To use it as your parent POM using the following snippet:
 
 * v1.11.3 - work in progress
     * Updated to JUnit 5.7.0
-    * Updated to dependency-check-maven 6.0.1
+    * Updated to dependency-check-maven 6.0.2
     * Updated to forbiddenapis 3.1
     * Updated to jacoco-maven-plugin 0.8.6
+    * Updated to maven-ear-plugin 3.1.0
     * Updated to maven-project-info-reports-plugin 3.1.1
     * Updated to maven-resources-plugin 3.2.0
 * v1.11.2 - 2020-07-15
