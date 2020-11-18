@@ -28,6 +28,8 @@ To use it as your parent POM using the following snippet:
     * Updated to maven-project-info-reports-plugin 3.1.1
     * Updated to maven-resources-plugin 3.2.0
     * Updated to spotbugs-maven-plugin 4.1.4
+    * Removed the predefined version for `javax.servlet:javax.servlet-api`
+    * Removed the predefined version for `javax.servlet.jsp:javax.servlet.jsp-api`
 * v1.11.2 - 2020-07-15
     * Updated to dependency-check-maven 5.3.2
     * Updated to forbiddenapis 3.0.1

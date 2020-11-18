@@ -51,8 +51,6 @@
     <junit.jupiter.version>5.7.0</junit.jupiter.version>
     <junit.vintage.version>5.7.0</junit.vintage.version>
     <slf4j.version>1.7.30</slf4j.version>
-    <javax.servlet-api.version>3.1.0</javax.servlet-api.version>
-    <javax.jsp-api.version>2.3.3</javax.jsp-api.version>
     <jakarta.servlet-api.version>5.0.0</jakarta.servlet-api.version>
     <jakarta.jsp-api.version>2.3.6</jakarta.jsp-api.version>
     <!-- Use properties for forbiddenapis integration -->
@@ -251,18 +249,6 @@
         <groupId>org.apiguardian</groupId>
         <artifactId>apiguardian-api</artifactId>
         <version>1.1.0</version>
-      </dependency>
-      
-      <!-- Oracle Java EE -->
-      <dependency>
-        <groupId>javax.servlet</groupId>
-        <artifactId>javax.servlet-api</artifactId>
-        <version>${javax.servlet-api.version}</version>
-      </dependency>
-      <dependency>
-        <groupId>javax.servlet.jsp</groupId>
-        <artifactId>javax.servlet.jsp-api</artifactId>
-        <version>${javax.jsp-api.version}</version>
       </dependency>
       
       <!-- Jakarta EE -->
