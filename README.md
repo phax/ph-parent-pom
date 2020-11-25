@@ -25,6 +25,7 @@ To use it as your parent POM using the following snippet:
     * Updated to JUnit 4.13.1
     * Updated to JUnit 5.7.0
     * Updated to maven-ear-plugin 3.1.0
+    * Updated to maven-pmd-plugin 3.14.0
     * Updated to maven-project-info-reports-plugin 3.1.1
     * Updated to maven-resources-plugin 3.2.0
     * Updated to spotbugs-maven-plugin 4.1.4
