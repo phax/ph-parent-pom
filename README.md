@@ -18,6 +18,7 @@ To use it as your parent POM using the following snippet:
 ## News and noteworthy
 
 * v1.11.3 - work in progress
+    * Updated to apiguardian-api 1.1.1
     * Updated to dependency-check-maven 6.0.3
     * Updated to forbiddenapis 3.1
     * Updated to jacoco-maven-plugin 0.8.6
