@@ -3,7 +3,7 @@
 Generic Maven 3 parent POM with lots of default configuration.
 It is pre-configured to handle the "ph-" software stack in a suitable way.
 
-The latest released version is **1.11.2** and requires JDK 8 at build time (even though you may create applications that need Java 1.6 or 1.7 at runtime)!
+The latest released version is **1.11.3** and requires JDK 8 at build time (even though you may create applications that need Java 1.6 or 1.7 at runtime)!
 
 To use it as your parent POM using the following snippet:
 
@@ -11,25 +11,25 @@ To use it as your parent POM using the following snippet:
   <parent>
     <groupId>com.helger</groupId>
     <artifactId>parent-pom</artifactId>
-    <version>1.11.2</version>
+    <version>1.11.3</version>
   </parent>
 ```
 
 ## News and noteworthy
 
-* v1.11.3 - work in progress
+* v1.11.3 - 2021-01-04
     * Updated to apiguardian-api 1.1.1
-    * Updated to dependency-check-maven 6.0.3
+    * Updated to dependency-check-maven 6.0.4
     * Updated to forbiddenapis 3.1
     * Updated to jacoco-maven-plugin 0.8.6
     * Updated to jakarta.servlet-api 5.0.0
     * Updated to JUnit 4.13.1
     * Updated to JUnit 5.7.0
-    * Updated to maven-ear-plugin 3.1.0
+    * Updated to maven-ear-plugin 3.2.0
     * Updated to maven-pmd-plugin 3.14.0
     * Updated to maven-project-info-reports-plugin 3.1.1
     * Updated to maven-resources-plugin 3.2.0
-    * Updated to spotbugs-maven-plugin 4.1.4
+    * Updated to spotbugs-maven-plugin 4.2.0
     * Removed the predefined version for `javax.servlet:javax.servlet-api`
     * Removed the predefined version for `javax.servlet.jsp:javax.servlet.jsp-api`
 * v1.11.2 - 2020-07-15
