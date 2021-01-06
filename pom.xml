@@ -139,7 +139,6 @@
             </configuration>
           </plugin>
           <plugin>
-            <!-- See https://stackoverflow.com/a/14245913/15254 for configuration proposal -->
             <groupId>org.apache.maven.plugins</groupId>
             <artifactId>maven-gpg-plugin</artifactId>
             <executions>
@@ -153,6 +152,8 @@
             </executions>
             <configuration>
               <!-- useAgent must be true for gpg2 -->
+              <!-- This implies, that the password MUST be entered manually once per session -->
+              <!-- Stuff like https://stackoverflow.com/a/14245913/15254 only works, when useAgent is false -->
               <useAgent>true</useAgent>
             </configuration>
           </plugin>
