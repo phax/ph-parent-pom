@@ -80,10 +80,12 @@
 
   <distributionManagement>
     <snapshotRepository>
+      <!-- Username/password must be in settings.xml -->
       <id>ossrh</id>
-      <url>https://oss.sonatype.org/content/repositories/snapshots</url>
+      <url>https://oss.sonatype.org/content/repositories/snapshots/</url>
     </snapshotRepository>
     <repository>
+      <!-- Username/password must be in settings.xml -->
       <id>ossrh</id>
       <url>https://oss.sonatype.org/service/local/staging/deploy/maven2/</url>
     </repository>
@@ -101,7 +103,6 @@
       </releases>
     </repository>
   </repositories>
-
 
   <pluginRepositories>
     <pluginRepository>
@@ -138,6 +139,7 @@
             </configuration>
           </plugin>
           <plugin>
+            <!-- See https://stackoverflow.com/a/14245913/15254 for configuration proposal -->
             <groupId>org.apache.maven.plugins</groupId>
             <artifactId>maven-gpg-plugin</artifactId>
             <executions>
