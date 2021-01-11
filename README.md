@@ -17,6 +17,8 @@ To use it as your parent POM using the following snippet:
 
 ## News and noteworthy
 
+* v1.11.4 - work in progress
+    * Updated to dependency-check-maven 6.0.5
 * v1.11.3 - 2021-01-04
     * Updated to apiguardian-api 1.1.1
     * Updated to dependency-check-maven 6.0.4
