@@ -667,7 +667,7 @@
         <plugin>
           <groupId>com.github.spotbugs</groupId>
           <artifactId>spotbugs-maven-plugin</artifactId>
-          <version>4.2.0</version>
+          <version>4.2.2</version>
         </plugin>
         <plugin>
           <groupId>org.codehaus.mojo</groupId>
@@ -682,17 +682,17 @@
         <plugin>
           <groupId>org.owasp</groupId>
           <artifactId>dependency-check-maven</artifactId>
-          <version>6.1.1</version>
+          <version>6.1.2</version>
         </plugin>      
         <plugin>
           <groupId>com.helger.maven</groupId>
           <artifactId>ph-buildinfo-maven-plugin</artifactId>
-          <version>3.0.1</version>
+          <version>3.0.2</version>
         </plugin>
         <plugin>
           <groupId>com.helger.maven</groupId>
           <artifactId>ph-dirindex-maven-plugin</artifactId>
-          <version>3.0.2</version>
+          <version>3.0.3</version>
         </plugin>
         <plugin>
           <groupId>com.helger.maven</groupId>
@@ -706,7 +706,7 @@
         <plugin>
           <groupId>com.helger.maven</groupId>
           <artifactId>ph-csscompress-maven-plugin</artifactId>
-          <version>6.2.4</version>
+          <version>6.3.0</version>
           <configuration>
             <forceCompress>false</forceCompress>
             <removeUnnecessaryCode>true</removeUnnecessaryCode>

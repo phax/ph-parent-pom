@@ -18,11 +18,14 @@ To use it as your parent POM using the following snippet:
 ## News and noteworthy
 
 * v1.11.4 - work in progress
-    * Updated to dependency-check-maven 6.1.1
+    * Updated to dependency-check-maven 6.1.2
     * Updated to JUnit 4.13.2
     * Updated to JUnit 5.7.1
     * Updated to maven-checkstyle-plugin 3.1.2
-    * Updated to ph-csscompress-maven-plugin 6.2.4
+    * Updated to ph-buildinfo-maven-plugin 3.0.2
+    * Updated to ph-csscompress-maven-plugin 6.3.0
+    * Updated to ph-dirindex-maven-plugin 3.0.3
+    * Updated to spotbugs-maven-plugin 4.2.2
 * v1.11.3 - 2021-01-04
     * Updated to apiguardian-api 1.1.1
     * Updated to dependency-check-maven 6.0.4
