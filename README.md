@@ -24,8 +24,8 @@ To use it as your parent POM using the following snippet:
     * Updated to maven-checkstyle-plugin 3.1.2
     * Updated to ph-buildinfo-maven-plugin 3.0.2
     * Updated to ph-csscompress-maven-plugin 6.3.0
-    * Updated to ph-dirindex-maven-plugin 3.0.3
     * Updated to spotbugs-maven-plugin 4.2.2
+    * Removed ph-dirindex-maven-plugin
 * v1.11.3 - 2021-01-04
     * Updated to apiguardian-api 1.1.1
     * Updated to dependency-check-maven 6.0.4
