@@ -11,6 +11,7 @@
             http://www.apache.org/licenses/LICENSE-2.0
 
     Unless required by applicable law or agreed to in writing, software
+    distributed under the License is distributed on an "AS IS" BASIS,
     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
     See the License for the specific language governing permissions and
     limitations under the License.
@@ -344,6 +345,8 @@
               <wsdl>XML_STYLE</wsdl>
               <!-- JAXB Binding Files -->
               <xjb>XML_STYLE</xjb>
+              <!-- XQuery Files -->
+              <xq>XML_STYLE</xq>
               <!-- XSLT files -->
               <xslt>XML_STYLE</xslt>
             </mapping>
@@ -452,6 +455,8 @@
               <exclude>src/raw/**</exclude>
               <!-- Special index file which requires special formatting! -->
               <exclude>src/main/webapp/**/*.jsp</exclude>
+              <!-- Special temp files -->
+              <exclude>**/zz</exclude>
             </excludes>
           </configuration>
         </plugin>

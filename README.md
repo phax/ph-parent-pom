@@ -25,7 +25,8 @@ To use it as your parent POM using the following snippet:
     * Updated to ph-buildinfo-maven-plugin 3.0.2
     * Updated to ph-csscompress-maven-plugin 6.3.0
     * Updated to spotbugs-maven-plugin 4.2.2
-    * Removed ph-dirindex-maven-plugin
+    * Removed ph-dirindex-maven-plugin 
+    * Improved the list of file extensions for license formatting
 * v1.11.3 - 2021-01-04
     * Updated to apiguardian-api 1.1.1
     * Updated to dependency-check-maven 6.0.4
