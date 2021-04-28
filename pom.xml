@@ -311,7 +311,7 @@
         <plugin>
           <groupId>com.mycila</groupId>
           <artifactId>license-maven-plugin</artifactId>
-          <version>3.0</version>
+          <version>4.1</version>
           <configuration>
             <header>src/etc/license-template.txt</header>
             <strictCheck>true</strictCheck>
@@ -463,7 +463,7 @@
         <plugin>
           <groupId>org.apache.felix</groupId>
           <artifactId>maven-bundle-plugin</artifactId>
-          <version>5.1.1</version>
+          <version>5.1.2</version>
           <extensions>true</extensions>
           <configuration>
             <supportedProjectTypes>
@@ -581,12 +581,12 @@
         <plugin>
           <groupId>org.apache.maven.plugins</groupId>
           <artifactId>maven-jxr-plugin</artifactId>
-          <version>3.0.0</version>
+          <version>3.1.1</version>
         </plugin>
         <plugin>
           <groupId>org.apache.maven.plugins</groupId>
           <artifactId>maven-plugin-plugin</artifactId>
-          <version>3.6.0</version>
+          <version>3.6.1</version>
         </plugin>
         <plugin>
           <groupId>org.apache.maven.plugins</groupId>
@@ -671,7 +671,7 @@
         <plugin>
           <groupId>com.github.spotbugs</groupId>
           <artifactId>spotbugs-maven-plugin</artifactId>
-          <version>4.2.2</version>
+          <version>4.2.3</version>
         </plugin>
         <plugin>
           <groupId>org.codehaus.mojo</groupId>
@@ -686,7 +686,7 @@
         <plugin>
           <groupId>org.owasp</groupId>
           <artifactId>dependency-check-maven</artifactId>
-          <version>6.1.2</version>
+          <version>6.1.5</version>
         </plugin>      
         <plugin>
           <groupId>com.helger.maven</groupId>

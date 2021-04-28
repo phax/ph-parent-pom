@@ -18,13 +18,17 @@ To use it as your parent POM using the following snippet:
 ## News and noteworthy
 
 * v1.11.4 - work in progress
-    * Updated to dependency-check-maven 6.1.2
+    * Updated to dependency-check-maven 6.1.5
     * Updated to JUnit 4.13.2
     * Updated to JUnit 5.7.1
+    * Updated to license-maven-plugin 4.1
+    * Updated to maven-bundle-plugin 5.1.2
     * Updated to maven-checkstyle-plugin 3.1.2
+    * Updated to maven-jxr-plugin 3.1.1
+    * Updated to maven-plugin-plugin 3.6.1
     * Updated to ph-buildinfo-maven-plugin 3.0.2
     * Updated to ph-csscompress-maven-plugin 6.3.0
-    * Updated to spotbugs-maven-plugin 4.2.2
+    * Updated to spotbugs-maven-plugin 4.2.3
     * Removed ph-dirindex-maven-plugin 
     * Improved the list of file extensions for license formatting
 * v1.11.3 - 2021-01-04
@@ -99,7 +103,6 @@ To use it as your parent POM using the following snippet:
     * Updated to maven-javadoc-plugin 3.1.1
     * Updated to maven-jar-plugin 3.1.2
     * Updated to maven-jdeps-plugin 3.1.2
-    * Updated to maven-plugin-plugin 4.2.0
     * Updated to maven-pmd-plugin 3.12.0 
     * Updated to maven-source-plugin 3.1.0
     * Updated to maven-surefire-plugin 2.22.2
