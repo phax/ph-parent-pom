@@ -705,7 +705,7 @@
         <plugin>
           <groupId>com.helger.maven</groupId>
           <artifactId>ph-csscompress-maven-plugin</artifactId>
-          <version>6.3.0</version>
+          <version>6.3.1</version>
           <configuration>
             <forceCompress>false</forceCompress>
             <removeUnnecessaryCode>true</removeUnnecessaryCode>
