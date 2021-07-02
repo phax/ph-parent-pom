@@ -18,20 +18,22 @@ To use it as your parent POM using the following snippet:
 ## News and noteworthy
 
 * v1.11.4 - work in progress
-    * Updated to dependency-check-maven 6.1.6
+    * Updated to dependency-check-maven 6.2.2
     * Updated to jacoco-maven-plugin 0.8.7
     * Updated to JUnit 4.13.2
     * Updated to JUnit 5.7.2
     * Updated to license-maven-plugin 4.1
     * Updated to maven-bundle-plugin 5.1.2
     * Updated to maven-checkstyle-plugin 3.1.2
+    * Updated to maven-dependency-plugin 3.2.0
     * Updated to maven-gpg-plugin 3.0.1
     * Updated to maven-javadoc-plugin 3.3.0
     * Updated to maven-jxr-plugin 3.1.1
     * Updated to maven-plugin-plugin 3.6.1
     * Updated to maven-project-info-reports-plugin 3.1.2
     * Updated to ph-buildinfo-maven-plugin 3.0.2
-    * Updated to ph-csscompress-maven-plugin 6.3.3
+    * Updated to ph-csscompress-maven-plugin 6.3.4
+    * Updated to SLF4J API 1.7.31
     * Updated to spotbugs-maven-plugin 4.2.3
     * Removed ph-dirindex-maven-plugin 
     * Improved the list of file extensions for license formatting
