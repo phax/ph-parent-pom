@@ -50,7 +50,7 @@
     <junit.platform.version>1.7.2</junit.platform.version>
     <junit.jupiter.version>5.7.2</junit.jupiter.version>
     <junit.vintage.version>5.7.2</junit.vintage.version>
-    <slf4j.version>1.7.31</slf4j.version>
+    <slf4j.version>1.7.32</slf4j.version>
     <jakarta.servlet-api.version>5.0.0</jakarta.servlet-api.version>
     <jakarta.jsp-api.version>2.3.6</jakarta.jsp-api.version>
     <!-- Use properties for forbiddenapis integration -->
@@ -531,7 +531,7 @@
         <plugin>
           <groupId>org.apache.maven.plugins</groupId>
           <artifactId>maven-enforcer-plugin</artifactId>
-          <version>1.4.1</version>
+          <version>3.0.0</version>
         </plugin>
         <plugin>
           <groupId>org.apache.maven.plugins</groupId>
@@ -671,7 +671,7 @@
         <plugin>
           <groupId>com.github.spotbugs</groupId>
           <artifactId>spotbugs-maven-plugin</artifactId>
-          <version>4.2.3</version>
+          <version>4.3.0</version>
         </plugin>
         <plugin>
           <groupId>org.codehaus.mojo</groupId>
