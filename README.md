@@ -29,7 +29,7 @@ To use it as your parent POM using the following snippet:
     * Updated to maven-dependency-plugin 3.2.0
     * Updated to maven-enforcer-plugin 3.0.0
     * Updated to maven-gpg-plugin 3.0.1
-    * Updated to maven-javadoc-plugin 3.3.0
+    * Updated to maven-javadoc-plugin 3.3.1
     * Updated to maven-jxr-plugin 3.1.1
     * Updated to maven-plugin-plugin 3.6.1
     * Updated to maven-project-info-reports-plugin 3.1.2
