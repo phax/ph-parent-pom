@@ -22,7 +22,7 @@ To use it as your parent POM using the following snippet:
     * Updated to dependency-check-maven 6.3.1
     * Updated to jacoco-maven-plugin 0.8.7
     * Updated to JUnit 4.13.2
-    * Updated to JUnit 5.7.2
+    * Updated to JUnit 5.8.0
     * Updated to license-maven-plugin 4.1
     * Updated to maven-bundle-plugin 5.1.2
     * Updated to maven-checkstyle-plugin 3.1.2
@@ -32,7 +32,9 @@ To use it as your parent POM using the following snippet:
     * Updated to maven-javadoc-plugin 3.3.1
     * Updated to maven-jxr-plugin 3.1.1
     * Updated to maven-plugin-plugin 3.6.1
+    * Updated to maven-pmd-plugin 3.15.0
     * Updated to maven-project-info-reports-plugin 3.1.2
+    * Updated to maven-war-plugin 3.3.2
     * Updated to ph-buildinfo-maven-plugin 3.0.2
     * Updated to ph-csscompress-maven-plugin 6.3.4
     * Updated to SLF4J API 1.7.32
