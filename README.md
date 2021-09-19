@@ -20,6 +20,7 @@ To use it as your parent POM using the following snippet:
 * v1.11.4 - work in progress
     * Updated to apiguardian-api 1.1.2
     * Updated to dependency-check-maven 6.3.1
+    * Updated to forbiddenapis 3.2
     * Updated to jacoco-maven-plugin 0.8.7
     * Updated to JUnit 4.13.2
     * Updated to JUnit 5.8.0
