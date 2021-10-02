@@ -19,6 +19,7 @@ To use it as your parent POM using the following snippet:
 
 * v1.11.5 - work in progress
     * Updated to JUnit 5.8.1
+    * Updated to dependency-check-maven 6.3.2
     * Updated to spotbugs-maven-plugin 4.4.1
 * v1.11.4 - 2021-09-19
     * Updated to apiguardian-api 1.1.2
