@@ -324,13 +324,13 @@
               <!-- OASIS GeneriCode -->
               <gc>XML_STYLE</gc>
               <!-- Java files -->
-              <jav>JAVADOC_STYLE</jav>
+              <jav>SLASHSTAR_STYLE</jav>
               <!-- Java Domain Model stuff (JSON) -->
               <jdm>SLASHSTAR_STYLE</jdm>
               <!-- JavaCC source files -->
-              <jj>JAVADOC_STYLE</jj>
+              <jj>SLASHSTAR_STYLE</jj>
               <!-- JavaCC JJTree source files -->
-              <jjt>JAVADOC_STYLE</jjt>
+              <jjt>SLASHSTAR_STYLE</jjt>
               <!-- Proxy stuff (like JS) -->
               <pac>SLASHSTAR_STYLE</pac>
               <!-- RelaxNG XML images -->
