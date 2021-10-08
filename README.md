@@ -22,6 +22,7 @@ To use it as your parent POM using the following snippet:
     * Updated to dependency-check-maven 6.3.2
     * Updated to spotbugs-maven-plugin 4.4.1
     * Using `SLASHSTAR_STYLE` instead of `JAVADOC_STYLE` for `.jav`, `.jj` and `.jjt` based on https://github.com/hazendaz/license-maven-plugin/commit/c387c1865176e0d66e425ad9dddaa346e6a72a04
+    * Removed the default license mapping for `.xq` files because it is invalid
 * v1.11.4 - 2021-09-19
     * Updated to apiguardian-api 1.1.2
     * Updated to dependency-check-maven 6.3.1

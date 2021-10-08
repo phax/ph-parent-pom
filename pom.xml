@@ -346,7 +346,9 @@
               <!-- JAXB Binding Files -->
               <xjb>XML_STYLE</xjb>
               <!-- XQuery Files -->
+              <!-- 
               <xq>XML_STYLE</xq>
+               -->
               <!-- XSLT files -->
               <xslt>XML_STYLE</xslt>
             </mapping>
