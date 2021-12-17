@@ -20,6 +20,7 @@ To use it as your parent POM using the following snippet:
 * v1.11.5 - work in progress
     * Updated to JUnit 5.8.2
     * Updated to dependency-check-maven 6.5.0
+    * Updated to maven-bundle-plugin 5.1.3
     * Updated to maven-plugin-plugin 3.6.2
     * Updated to ph-csscompress-maven-plugin 6.4.0
     * Updated to spotbugs-maven-plugin 4.5.0.0
