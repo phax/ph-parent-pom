@@ -19,7 +19,7 @@ To use it as your parent POM using the following snippet:
 
 * v1.11.5 - work in progress
     * Updated to JUnit 5.8.2
-    * Updated to dependency-check-maven 6.5.1
+    * Updated to dependency-check-maven 6.5.2
     * Updated to maven-bundle-plugin 5.1.3
     * Updated to maven-plugin-plugin 3.6.2
     * Updated to maven-site-plugin 3.10.0
