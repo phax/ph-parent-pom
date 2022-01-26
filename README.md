@@ -26,7 +26,7 @@ To use it as your parent POM using the following snippet:
     * Updated to maven-plugin-plugin 3.6.4
     * Updated to maven-site-plugin 3.10.0
     * Updated to ph-csscompress-maven-plugin 6.4.4
-    * Updated to SLF4J API 1.7.33
+    * Updated to SLF4J API 1.7.35
     * Updated to spotbugs-maven-plugin 4.5.3.0
     * Using `SLASHSTAR_STYLE` instead of `JAVADOC_STYLE` for `.jav`, `.jj` and `.jjt` based on https://github.com/hazendaz/license-maven-plugin/commit/c387c1865176e0d66e425ad9dddaa346e6a72a04
     * Removed the default license mapping for `.xq` files because it is invalid
