@@ -25,8 +25,9 @@ To use it as your parent POM using the following snippet:
     * Updated to maven-jar-plugin 3.2.2
     * Updated to maven-javadoc-plugin 3.3.2
     * Updated to maven-plugin-plugin 3.6.4
+    * Updated to maven-pmd-plugin 3.16.0
     * Updated to maven-project-info-reports-plugin 3.2.1
-    * Updated to maven-site-plugin 3.10.0
+    * Updated to maven-site-plugin 3.11.0
     * Updated to ph-csscompress-maven-plugin 6.5.0
     * Updated to SLF4J API 1.7.36
     * Updated to spotbugs-maven-plugin 4.5.3.0
