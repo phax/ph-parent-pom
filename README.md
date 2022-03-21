@@ -21,7 +21,8 @@ To use it as your parent POM using the following snippet:
     * Updated to JUnit 5.8.2
     * Updated to dependency-check-maven 7.0.0
     * Updated to maven-bundle-plugin 5.1.4
-    * Updated to maven-compiler-plugin 3.10.0
+    * Updated to maven-compiler-plugin 3.10.1
+    * Updated to maven-dependency-plugin 3.3.0
     * Updated to maven-jar-plugin 3.2.2
     * Updated to maven-javadoc-plugin 3.3.2
     * Updated to maven-plugin-plugin 3.6.4
