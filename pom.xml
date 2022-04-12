@@ -187,7 +187,7 @@
           <plugin>
             <groupId>org.jacoco</groupId>
             <artifactId>jacoco-maven-plugin</artifactId>
-            <version>0.8.7</version>
+            <version>0.8.8</version>
             <configuration>
               <excludes>
                 <!-- JavaCC generated token manager may contain too large method -->
@@ -503,7 +503,7 @@
         <plugin>
           <groupId>org.apache.maven.plugins</groupId>
           <artifactId>maven-clean-plugin</artifactId>
-          <version>3.1.0</version>
+          <version>3.2.0</version>
         </plugin>
         <plugin>
           <groupId>org.apache.maven.plugins</groupId>
@@ -621,7 +621,7 @@
         <plugin>
           <groupId>org.apache.maven.plugins</groupId>
           <artifactId>maven-shade-plugin</artifactId>
-          <version>3.2.4</version>
+          <version>3.3.0</version>
         </plugin>
         <plugin>
           <groupId>org.apache.maven.plugins</groupId>
@@ -688,7 +688,7 @@
         <plugin>
           <groupId>org.owasp</groupId>
           <artifactId>dependency-check-maven</artifactId>
-          <version>7.0.1</version>
+          <version>7.0.4</version>
         </plugin>      
         <plugin>
           <groupId>com.helger.maven</groupId>
@@ -718,7 +718,7 @@
         <plugin>
           <groupId>de.thetaphi</groupId>
           <artifactId>forbiddenapis</artifactId>
-          <version>3.2</version>
+          <version>3.3</version>
           <configuration>
             <!-- if the used Java version is too new,
                 don't fail, just do nothing:  -->

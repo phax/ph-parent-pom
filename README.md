@@ -18,9 +18,12 @@ To use it as your parent POM using the following snippet:
 ## News and noteworthy
 
 * v1.11.5 - work in progress
+    * Updated to dependency-check-maven 7.0.4
+    * Updated to forbiddenapis 3.3
+    * Updated to jacoco-maven-plugin 0.8.8
     * Updated to JUnit 5.8.2
-    * Updated to dependency-check-maven 7.0.1
     * Updated to maven-bundle-plugin 5.1.4
+    * Updated to maven-clean-plugin 3.2.0
     * Updated to maven-compiler-plugin 3.10.1
     * Updated to maven-dependency-plugin 3.3.0
     * Updated to maven-jar-plugin 3.2.2
@@ -29,6 +32,7 @@ To use it as your parent POM using the following snippet:
     * Updated to maven-plugin-plugin 3.6.4
     * Updated to maven-pmd-plugin 3.16.0
     * Updated to maven-project-info-reports-plugin 3.2.2
+    * Updated to maven-shade-plugin 3.3.0
     * Updated to maven-site-plugin 3.11.0
     * Updated to ph-csscompress-maven-plugin 6.5.0
     * Updated to SLF4J API 1.7.36
