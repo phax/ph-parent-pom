@@ -18,22 +18,24 @@ To use it as your parent POM using the following snippet:
 ## News and noteworthy
 
 * v1.11.5 - work in progress
-    * Updated to dependency-check-maven 7.0.4
+    * Updated to dependency-check-maven 7.1.0
     * Updated to forbiddenapis 3.3
     * Updated to jacoco-maven-plugin 0.8.8
     * Updated to JUnit 5.8.2
+    * Updated to maven-antrun-plugin 3.1.0
     * Updated to maven-bundle-plugin 5.1.4
     * Updated to maven-clean-plugin 3.2.0
     * Updated to maven-compiler-plugin 3.10.1
     * Updated to maven-dependency-plugin 3.3.0
+    * Updated to maven-ejb-plugin 3.2.1
     * Updated to maven-jar-plugin 3.2.2
-    * Updated to maven-javadoc-plugin 3.3.2
+    * Updated to maven-javadoc-plugin 3.4.0
     * Updated to maven-jxr-plugin 3.2.0
     * Updated to maven-plugin-plugin 3.6.4
     * Updated to maven-pmd-plugin 3.16.0
     * Updated to maven-project-info-reports-plugin 3.2.2
     * Updated to maven-shade-plugin 3.3.0
-    * Updated to maven-site-plugin 3.11.0
+    * Updated to maven-site-plugin 3.12.0
     * Updated to ph-csscompress-maven-plugin 6.5.0
     * Updated to SLF4J API 1.7.36
     * Updated to spotbugs-maven-plugin 4.6.0.0
