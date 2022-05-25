@@ -23,7 +23,7 @@ To use it as your parent POM using the following snippet:
     * Updated to jacoco-maven-plugin 0.8.8
     * Updated to JUnit 5.8.2
     * Updated to maven-antrun-plugin 3.1.0
-    * Updated to maven-bundle-plugin 5.1.5
+    * Updated to maven-bundle-plugin 5.1.6
     * Updated to maven-clean-plugin 3.2.0
     * Updated to maven-compiler-plugin 3.10.1
     * Updated to maven-dependency-plugin 3.3.0
@@ -38,7 +38,7 @@ To use it as your parent POM using the following snippet:
     * Updated to maven-site-plugin 3.12.0
     * Updated to ph-csscompress-maven-plugin 6.5.0
     * Updated to SLF4J API 1.7.36
-    * Updated to spotbugs-maven-plugin 4.6.0.0
+    * Updated to spotbugs-maven-plugin 4.7.0.0
     * Updated to taglist-maven-plugin 3.0.0
     * Using `SLASHSTAR_STYLE` instead of `JAVADOC_STYLE` for `.jav`, `.jj` and `.jjt` based on https://github.com/hazendaz/license-maven-plugin/commit/c387c1865176e0d66e425ad9dddaa346e6a72a04
     * Removed the default license mapping for `.xq` files because it is invalid
