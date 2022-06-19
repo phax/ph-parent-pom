@@ -533,7 +533,7 @@
         <plugin>
           <groupId>org.apache.maven.plugins</groupId>
           <artifactId>maven-enforcer-plugin</artifactId>
-          <version>3.0.0</version>
+          <version>3.1.0</version>
         </plugin>
         <plugin>
           <groupId>org.apache.maven.plugins</groupId>
@@ -593,7 +593,7 @@
         <plugin>
           <groupId>org.apache.maven.plugins</groupId>
           <artifactId>maven-pmd-plugin</artifactId>
-          <version>3.16.0</version>
+          <version>3.17.0</version>
         </plugin>  
         <plugin>
           <groupId>org.apache.maven.plugins</groupId>
@@ -688,7 +688,7 @@
         <plugin>
           <groupId>org.owasp</groupId>
           <artifactId>dependency-check-maven</artifactId>
-          <version>7.1.0</version>
+          <version>7.1.1</version>
         </plugin>      
         <plugin>
           <groupId>com.helger.maven</groupId>
