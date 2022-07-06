@@ -18,6 +18,7 @@ To use it as your parent POM using the following snippet:
 ## News and noteworthy
 
 * v1.11.6 - work in progress
+    * Updated to maven-assembly-plugin 3.4.0
 * v1.11.5 - 2022-06-20
     * Updated to dependency-check-maven 7.1.1
     * Updated to forbiddenapis 3.3
