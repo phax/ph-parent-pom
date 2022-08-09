@@ -17,8 +17,17 @@ To use it as your parent POM using the following snippet:
 
 ## News and noteworthy
 
-* v1.11.6 - work in progress
-    * Updated to maven-assembly-plugin 3.4.0
+* v1.12.0 - work in progress
+    * Updated to JUnit 5.9.0
+    * Updated to maven-assembly-plugin 3.4.2
+    * Updated to maven-bundle-plugin 5.1.8
+    * Updated to maven-deploy-plugin 3.0.0
+    * Updated to maven-install-plugin 3.0.1
+    * Updated to maven-project-info-reports-plugin 3.4.0
+    * Updated to maven-rar-plugin 3.0.0
+    * Updated to maven-resources-plugin 3.3.0
+    * Updated to maven-site-plugin 3.12.1
+    * Updated to spotbugs-maven-plugin 4.7.1.1
 * v1.11.5 - 2022-06-20
     * Updated to dependency-check-maven 7.1.1
     * Updated to forbiddenapis 3.3
