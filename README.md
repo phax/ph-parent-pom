@@ -23,7 +23,8 @@ To use it as your parent POM using the following snippet:
     * Updated to maven-bundle-plugin 5.1.8
     * Updated to maven-deploy-plugin 3.0.0
     * Updated to maven-install-plugin 3.0.1
-    * Updated to maven-project-info-reports-plugin 3.4.0
+    * Updated to maven-javadoc-plugin 3.4.1
+    * Updated to maven-project-info-reports-plugin 3.4.1
     * Updated to maven-rar-plugin 3.0.0
     * Updated to maven-resources-plugin 3.3.0
     * Updated to maven-site-plugin 3.12.1
