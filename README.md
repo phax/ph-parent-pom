@@ -19,12 +19,19 @@ To use it as your parent POM using the following snippet:
 
 * v2.0.0 - work in progress
     * First version for default JDK 11 builds
+    * Updated to jakarta.servlet-api 6.0.0
+    * Updated to jakarta.servlet.jsp-api 3.1.0
     * Updated to JUnit 5.9.0
+    * Updated to SLF4J 2.0.0
+    * Updated to dependency-check-maven 7.1.2
     * Updated to maven-assembly-plugin 3.4.2
     * Updated to maven-bundle-plugin 5.1.8
+    * Updated to maven-checkstyle-plugin 3.2.0
     * Updated to maven-deploy-plugin 3.0.0
     * Updated to maven-install-plugin 3.0.1
     * Updated to maven-javadoc-plugin 3.4.1
+    * Updated to maven-jxr-plugin 3.3.0
+    * Updated to maven-pmd-plugin 3.18.0
     * Updated to maven-project-info-reports-plugin 3.4.1
     * Updated to maven-rar-plugin 3.0.0
     * Updated to maven-resources-plugin 3.3.0

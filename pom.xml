@@ -50,9 +50,9 @@
     <junit.platform.version>1.9.0</junit.platform.version>
     <junit.jupiter.version>5.9.0</junit.jupiter.version>
     <junit.vintage.version>5.9.0</junit.vintage.version>
-    <slf4j.version>1.7.36</slf4j.version>
-    <jakarta.servlet-api.version>5.0.0</jakarta.servlet-api.version>
-    <jakarta.jsp-api.version>2.3.6</jakarta.jsp-api.version>
+    <slf4j.version>2.0.0</slf4j.version>
+    <jakarta.servlet-api.version>6.0.0</jakarta.servlet-api.version>
+    <jakarta.jsp-api.version>3.1.0</jakarta.jsp-api.version>
     <!-- Use properties for forbiddenapis integration -->
     <maven.compiler.source>${java.version}</maven.compiler.source>
     <maven.compiler.target>${java.version}</maven.compiler.target>
@@ -498,7 +498,7 @@
         <plugin>
           <groupId>org.apache.maven.plugins</groupId>
           <artifactId>maven-checkstyle-plugin</artifactId>
-          <version>3.1.2</version>
+          <version>3.2.0</version>
         </plugin>
         <plugin>
           <groupId>org.apache.maven.plugins</groupId>
@@ -583,7 +583,7 @@
         <plugin>
           <groupId>org.apache.maven.plugins</groupId>
           <artifactId>maven-jxr-plugin</artifactId>
-          <version>3.2.0</version>
+          <version>3.3.0</version>
         </plugin>
         <plugin>
           <groupId>org.apache.maven.plugins</groupId>
@@ -593,7 +593,7 @@
         <plugin>
           <groupId>org.apache.maven.plugins</groupId>
           <artifactId>maven-pmd-plugin</artifactId>
-          <version>3.17.0</version>
+          <version>3.18.0</version>
         </plugin>  
         <plugin>
           <groupId>org.apache.maven.plugins</groupId>
@@ -688,7 +688,7 @@
         <plugin>
           <groupId>org.owasp</groupId>
           <artifactId>dependency-check-maven</artifactId>
-          <version>7.1.1</version>
+          <version>7.1.2</version>
         </plugin>      
         <plugin>
           <groupId>com.helger.maven</groupId>
