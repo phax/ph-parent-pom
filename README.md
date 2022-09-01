@@ -17,7 +17,8 @@ To use it as your parent POM using the following snippet:
 
 ## News and noteworthy
 
-* v1.12.0 - work in progress
+* v2.0.0 - work in progress
+    * First version for default JDK 11 builds
     * Updated to JUnit 5.9.0
     * Updated to maven-assembly-plugin 3.4.2
     * Updated to maven-bundle-plugin 5.1.8
