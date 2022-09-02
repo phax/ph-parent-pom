@@ -958,10 +958,15 @@
         </reportSets>
       </plugin>
       <!-- JavaDOC report -->
-        <!--
       <plugin>
         <groupId>org.apache.maven.plugins</groupId>
         <artifactId>maven-javadoc-plugin</artifactId>
+        <!--
+        Leave out the aggregated report:
+        
+[ERROR] Creating an aggregated report for both named and unnamed modules is not possible.
+[ERROR] Ensure that every module has a module descriptor or is a jar with a MANIFEST.MF containing an Automatic-Module-Name.
+        -->
         <reportSets>
           <reportSet>
             <reports>
@@ -971,7 +976,6 @@
           </reportSet>
         </reportSets>
       </plugin>
-        -->
       <!-- JXR source cross reference report -->
       <plugin>
         <groupId>org.apache.maven.plugins</groupId>
