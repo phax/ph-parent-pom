@@ -1054,6 +1054,32 @@
           <verbose>false</verbose>
         </configuration>
       </plugin>
+      
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-enforcer-plugin</artifactId>
+        <executions>
+          <execution>
+            <id>enforce-maven</id>
+            <goals>
+              <goal>enforce</goal>
+            </goals>
+            <configuration>
+              <rules>
+                <!-- 
+                  This is required, because Maven 3.8.2 updated JAnsi to version 2.x.
+                    Maven 3.8.1 was runnung JAnsi 1.x
+                  Otherwise "mvn site:site" fails with an Exception (because maven-pmd-plugin 3.18.0
+                    references maven-shared-util 3.3.4 which references jansi 2.2.0) 
+                -->
+                <requireMavenVersion>
+                  <version>3.8.2</version>
+                </requireMavenVersion>
+              </rules>    
+            </configuration>
+          </execution>
+        </executions>
+      </plugin>      
     </plugins>
   </build>
   
@@ -1093,12 +1119,20 @@
         </reportSets>
       </plugin>
       <!-- JavaDOC report -->
+        <!--
       <plugin>
         <groupId>org.apache.maven.plugins</groupId>
         <artifactId>maven-javadoc-plugin</artifactId>
-        <configuration>
-        </configuration>
+        <reportSets>
+          <reportSet>
+            <reports>
+              <report>javadoc</report>
+              <report>test-javadoc</report>
+            </reports>
+          </reportSet>
+        </reportSets>
       </plugin>
+        -->
       <!-- JXR source cross reference report -->
       <plugin>
         <groupId>org.apache.maven.plugins</groupId>
