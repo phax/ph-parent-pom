@@ -19,6 +19,7 @@ To use it as your parent POM using the following snippet:
 
 * v2.0.0 - work in progress
     * First version for default JDK 11 builds
+    * Moved the configuration of the `maven-javadoc-plugin` from `reporting` to `build` to work
     * Updated to jakarta.servlet-api 6.0.0
     * Updated to jakarta.servlet.jsp-api 3.1.0
     * Updated to JUnit 5.9.0
