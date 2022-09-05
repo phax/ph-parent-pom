@@ -23,7 +23,7 @@ To use it as your parent POM using the following snippet:
     * Note: this POM version requires at least Maven 3.8.2 to build sites, because that versions updates JAnsi to 2.x which is a prerequisite for some plugins to work - see https://blogs.apache.org/maven/entry/apache-maven-3-8-2
     * First version for default JDK 11 builds
     * Moved the configuration of the `maven-javadoc-plugin` from `reporting` to `build` to work
-    * Removed the `org.eclipse.m2e`:lifecycle-mapping` configuration
+    * Removed the `org.eclipse.m2e:lifecycle-mapping` configuration
     * Updated to jakarta.servlet-api 6.0.0
     * Updated to jakarta.servlet.jsp-api 3.1.0
     * Updated to JUnit 5.9.0
