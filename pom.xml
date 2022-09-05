@@ -893,32 +893,6 @@
           <verbose>false</verbose>
         </configuration>
       </plugin>
-      
-      <plugin>
-        <groupId>org.apache.maven.plugins</groupId>
-        <artifactId>maven-enforcer-plugin</artifactId>
-        <executions>
-          <execution>
-            <id>enforce-maven</id>
-            <goals>
-              <goal>enforce</goal>
-            </goals>
-            <configuration>
-              <rules>
-                <!-- 
-                  This is required, because Maven 3.8.2 updated JAnsi to version 2.x.
-                    Maven 3.8.1 was runnung JAnsi 1.x
-                  Otherwise "mvn site:site" fails with an Exception (because maven-pmd-plugin 3.18.0
-                    references maven-shared-util 3.3.4 which references jansi 2.2.0) 
-                -->
-                <requireMavenVersion>
-                  <version>3.8.2</version>
-                </requireMavenVersion>
-              </rules>    
-            </configuration>
-          </execution>
-        </executions>
-      </plugin>      
     </plugins>
   </build>
   
@@ -989,7 +963,6 @@
         <groupId>org.apache.maven.plugins</groupId>
         <artifactId>maven-surefire-report-plugin</artifactId>
         <configuration>
-          <childDelegation>true</childDelegation>
           <aggregate>true</aggregate>
         </configuration>
       </plugin>
@@ -998,13 +971,24 @@
         <groupId>org.codehaus.mojo</groupId>
         <artifactId>taglist-maven-plugin</artifactId>
         <configuration>
-          <tags>
-            <tag>TODO</tag>
-            <tag>FIXME</tag>
-            <tag>XXX</tag>
-            <tag>@todo</tag>
-            <tag>@deprecated</tag>
-          </tags>
+          <tagListOptions>
+            <tag>
+              <matchString>TODO</matchString>
+              <matchType>exact</matchType>
+            </tag>
+            <tag>
+              <matchString>FIXME</matchString>
+              <matchType>exact</matchType>
+            </tag>
+            <tag>
+              <matchString>@todo</matchString>
+              <matchType>ignoreCase</matchType>
+            </tag>
+            <tag>
+              <matchString>@deprecated</matchString>
+              <matchType>ignoreCase</matchType>
+            </tag>
+          </tagListOptions>
         </configuration>
       </plugin>
       <plugin>
@@ -1012,7 +996,6 @@
         <artifactId>maven-pmd-plugin</artifactId>
         <configuration>
           <linkXref>true</linkXref>
-          <sourceEncoding>${project.build.sourceEncoding}</sourceEncoding>
           <minimumTokens>30</minimumTokens>
           <targetJdk>${maven.compiler.source}</targetJdk>
         </configuration>
