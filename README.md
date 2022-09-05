@@ -3,7 +3,9 @@
 Generic Maven 3 parent POM with lots of default configuration.
 It is pre-configured to handle the "ph-" software stack in a suitable way.
 
-The latest released version is **1.11.5** and requires JDK 8 at build time (even though you may create applications that need Java 1.6 or 1.7 at runtime)!
+The latest released version is **2.0.0** and requires JDK 11 or higher at build time.
+
+The latest version that uses JDK 8 as the baseline is *1.11.5**.
 
 To use it as your parent POM using the following snippet:
 
@@ -17,9 +19,9 @@ To use it as your parent POM using the following snippet:
 
 ## News and noteworthy
 
-* v2.0.0 - work in progress
+* v2.0.0 - 2022-09-05
+    * Note: this POM version requires at least Maven 3.8.2 to build sites, because that versions updates JAnsi to 2.x which is a prerequisite for some plugins to work - see https://blogs.apache.org/maven/entry/apache-maven-3-8-2
     * First version for default JDK 11 builds
-    * This POM version requires at least Maven 3.8.2 to work, because that versions updates JAnsi to 2.x which is a prerequisite for some plugins to work - see https://blogs.apache.org/maven/entry/apache-maven-3-8-2
     * Moved the configuration of the `maven-javadoc-plugin` from `reporting` to `build` to work
     * Removed the `org.eclipse.m2e`:lifecycle-mapping` configuration
     * Updated to jakarta.servlet-api 6.0.0
