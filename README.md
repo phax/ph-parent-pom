@@ -19,6 +19,10 @@ To use it as your parent POM using the following snippet:
 
 ## News and noteworthy
 
+* v2.0.1 - work in progress
+    * Removed the SLF4J log4j12 artefact
+    * Updated to maven-pmd-plugin 3.19.0
+    * Updated to spotbugs-maven-plugin 4.7.2.0
 * v2.0.0 - 2022-09-05
     * Note: this POM version requires at least Maven 3.8.2 to build sites, because that versions updates JAnsi to 2.x which is a prerequisite for some plugins to work - see https://blogs.apache.org/maven/entry/apache-maven-3-8-2
     * First version for default JDK 11 builds

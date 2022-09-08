@@ -279,11 +279,6 @@
       </dependency>
       <dependency>
         <groupId>org.slf4j</groupId>
-        <artifactId>slf4j-log4j12</artifactId>
-        <version>${slf4j.version}</version>
-      </dependency>
-      <dependency>
-        <groupId>org.slf4j</groupId>
         <artifactId>jul-to-slf4j</artifactId>
         <version>${slf4j.version}</version>
       </dependency>
@@ -593,7 +588,7 @@
         <plugin>
           <groupId>org.apache.maven.plugins</groupId>
           <artifactId>maven-pmd-plugin</artifactId>
-          <version>3.18.0</version>
+          <version>3.19.0</version>
         </plugin>  
         <plugin>
           <groupId>org.apache.maven.plugins</groupId>
@@ -673,7 +668,7 @@
         <plugin>
           <groupId>com.github.spotbugs</groupId>
           <artifactId>spotbugs-maven-plugin</artifactId>
-          <version>4.7.1.1</version>
+          <version>4.7.2.0</version>
         </plugin>
         <plugin>
           <groupId>org.codehaus.mojo</groupId>
