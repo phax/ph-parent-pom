@@ -22,12 +22,12 @@ To use it as your parent POM using the following snippet:
 * v2.0.1 - work in progress
     * Removed the SLF4J log4j12 artefact
     * Updated to SLF4J 2.0.3
-    * Updated to dependency-check-maven 7.2.1
+    * Updated to dependency-check-maven 7.3.0
     * Updated to forbiddenapis 3.4
     * Updated to maven-jar-plugin 3.3.0
     * Updated to maven-pmd-plugin 3.19.0
     * Updated to maven-shade-plugin 3.4.0
-    * Updated to spotbugs-maven-plugin 4.7.2.0
+    * Updated to spotbugs-maven-plugin 4.7.2.1
 * v2.0.0 - 2022-09-05
     * Note: this POM version requires at least Maven 3.8.2 to build sites, because that versions updates JAnsi to 2.x which is a prerequisite for some plugins to work - see https://blogs.apache.org/maven/entry/apache-maven-3-8-2
     * First version for default JDK 11 builds
