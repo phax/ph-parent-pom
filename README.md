@@ -31,6 +31,7 @@ To use it as your parent POM using the following snippet:
     * Updated to maven-plugin-plugin 3.7.0
     * Updated to maven-pmd-plugin 3.19.0
     * Updated to maven-shade-plugin 3.4.1
+    * Updated to ph-buildinfo-maven-plugin 4.0.0
     * Updated to spotbugs-maven-plugin 4.7.3.0
 * v2.0.0 - 2022-09-05
     * Note: this POM version requires at least Maven 3.8.2 to build sites, because that versions updates JAnsi to 2.x which is a prerequisite for some plugins to work - see https://blogs.apache.org/maven/entry/apache-maven-3-8-2

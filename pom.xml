@@ -680,7 +680,7 @@
         <plugin>
           <groupId>com.helger.maven</groupId>
           <artifactId>ph-buildinfo-maven-plugin</artifactId>
-          <version>3.0.2</version>
+          <version>4.0.0</version>
         </plugin>
         <plugin>
           <groupId>com.helger.maven</groupId>
