@@ -22,7 +22,7 @@ To use it as your parent POM using the following snippet:
 * v2.0.1 - work in progress
     * Removed the SLF4J log4j12 artefact
     * Updated to SLF4J 2.0.6
-    * Updated to dependency-check-maven 7.4.1
+    * Updated to dependency-check-maven 7.4.4
     * Updated to forbiddenapis 3.4
     * Updated to maven-dependency-plugin 3.4.0
     * Updated to maven-ear-plugin 3.3.0
