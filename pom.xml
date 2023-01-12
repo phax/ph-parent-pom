@@ -651,13 +651,6 @@
           </configuration>
         </plugin>
         <plugin>
-          <!-- Note: version 2.6 has problems when run in Jenkins:
-            net.sourceforge.cobertura.coveragedata.CoverageDataFileHandler saveCoverageData -->
-          <groupId>org.codehaus.mojo</groupId>
-          <artifactId>cobertura-maven-plugin</artifactId>
-          <version>2.7</version>
-        </plugin>
-        <plugin>
           <groupId>com.github.spotbugs</groupId>
           <artifactId>spotbugs-maven-plugin</artifactId>
           <version>4.7.3.0</version>

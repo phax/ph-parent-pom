@@ -21,6 +21,7 @@ To use it as your parent POM using the following snippet:
 
 * v2.0.1 - work in progress
     * Removed the SLF4J log4j12 artefact
+    * Removed the maven-cobertura-plugin - use jacoco instead
     * Updated to JUnit 5.9.2
     * Updated to SLF4J 2.0.6
     * Updated to dependency-check-maven 7.4.4
