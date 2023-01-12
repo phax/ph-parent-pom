@@ -47,9 +47,9 @@
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     <java.version>11</java.version>
     <junit4.version>4.13.2</junit4.version>
-    <junit.platform.version>1.9.1</junit.platform.version>
-    <junit.jupiter.version>5.9.1</junit.jupiter.version>
-    <junit.vintage.version>5.9.1</junit.vintage.version>
+    <junit.platform.version>1.9.2</junit.platform.version>
+    <junit.jupiter.version>5.9.2</junit.jupiter.version>
+    <junit.vintage.version>5.9.2</junit.vintage.version>
     <slf4j.version>2.0.6</slf4j.version>
     <jakarta.servlet-api.version>6.0.0</jakarta.servlet-api.version>
     <jakarta.jsp-api.version>3.1.0</jakarta.jsp-api.version>
@@ -485,7 +485,7 @@
         <plugin>
           <groupId>org.apache.maven.plugins</groupId>
           <artifactId>maven-checkstyle-plugin</artifactId>
-          <version>3.2.0</version>
+          <version>3.2.1</version>
         </plugin>
         <plugin>
           <groupId>org.apache.maven.plugins</groupId>
@@ -500,7 +500,7 @@
         <plugin>
           <groupId>org.apache.maven.plugins</groupId>
           <artifactId>maven-dependency-plugin</artifactId>
-          <version>3.4.0</version>
+          <version>3.5.0</version>
         </plugin>
         <plugin>
           <groupId>org.apache.maven.plugins</groupId>
@@ -580,12 +580,12 @@
         <plugin>
           <groupId>org.apache.maven.plugins</groupId>
           <artifactId>maven-pmd-plugin</artifactId>
-          <version>3.19.0</version>
+          <version>3.20.0</version>
         </plugin>  
         <plugin>
           <groupId>org.apache.maven.plugins</groupId>
           <artifactId>maven-project-info-reports-plugin</artifactId>
-          <version>3.4.1</version>
+          <version>3.4.2</version>
         </plugin>
         <plugin>
           <groupId>org.apache.maven.plugins</groupId>
@@ -685,7 +685,7 @@
         <plugin>
           <groupId>com.helger.maven</groupId>
           <artifactId>ph-jscompress-maven-plugin</artifactId>
-          <version>2.2.3</version>
+          <version>3.0.0</version>
           <configuration>
             <forceCreation>false</forceCreation>
             <recursive>true</recursive>
@@ -982,7 +982,7 @@
         <groupId>org.apache.maven.plugins</groupId>
         <artifactId>maven-pmd-plugin</artifactId>
         <configuration>
-          <linkXref>true</linkXref>
+          <linkXRef>true</linkXRef>
           <minimumTokens>30</minimumTokens>
           <targetJdk>${maven.compiler.source}</targetJdk>
         </configuration>
