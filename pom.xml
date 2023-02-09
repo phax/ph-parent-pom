@@ -52,7 +52,7 @@
     <junit.vintage.version>5.9.2</junit.vintage.version>
     <slf4j.version>2.0.6</slf4j.version>
     <jakarta.servlet-api.version>6.0.0</jakarta.servlet-api.version>
-    <jakarta.jsp-api.version>3.1.0</jakarta.jsp-api.version>
+    <jakarta.jsp-api.version>3.1.1</jakarta.jsp-api.version>
     <!-- Use properties for forbiddenapis integration -->
     <maven.compiler.source>${java.version}</maven.compiler.source>
     <maven.compiler.target>${java.version}</maven.compiler.target>
@@ -505,7 +505,7 @@
         <plugin>
           <groupId>org.apache.maven.plugins</groupId>
           <artifactId>maven-deploy-plugin</artifactId>
-          <version>3.0.0</version>
+          <version>3.1.0</version>
         </plugin>
         <plugin>
           <groupId>org.apache.maven.plugins</groupId>
@@ -520,7 +520,7 @@
         <plugin>
           <groupId>org.apache.maven.plugins</groupId>
           <artifactId>maven-enforcer-plugin</artifactId>
-          <version>3.1.0</version>
+          <version>3.2.1</version>
         </plugin>
         <plugin>
           <groupId>org.apache.maven.plugins</groupId>
@@ -668,7 +668,7 @@
         <plugin>
           <groupId>org.owasp</groupId>
           <artifactId>dependency-check-maven</artifactId>
-          <version>8.0.1</version>
+          <version>8.0.2</version>
         </plugin>      
         <plugin>
           <groupId>com.helger.maven</groupId>
@@ -687,7 +687,7 @@
         <plugin>
           <groupId>com.helger.maven</groupId>
           <artifactId>ph-csscompress-maven-plugin</artifactId>
-          <version>6.5.0</version>
+          <version>7.0.0</version>
           <configuration>
             <forceCompress>false</forceCompress>
             <removeUnnecessaryCode>true</removeUnnecessaryCode>

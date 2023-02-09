@@ -24,17 +24,20 @@ To use it as your parent POM using the following snippet:
     * Removed the maven-cobertura-plugin - use jacoco instead
     * Updated to JUnit 5.9.2
     * Updated to SLF4J 2.0.6
-    * Updated to dependency-check-maven 8.0.1
+    * Updated to dependency-check-maven 8.0.2
     * Updated to forbiddenapis 3.4
     * Updated to maven-checkstyle-plugin 3.2.1
     * Updated to maven-dependency-plugin 3.5.0
+    * Updated to maven-deploy-plugin 3.1.0
     * Updated to maven-ear-plugin 3.3.0
+    * Updated to maven-enforcer-plugin 3.2.1
     * Updated to maven-install-plugin 3.1.0
     * Updated to maven-jar-plugin 3.3.0
     * Updated to maven-plugin-plugin 3.7.1
     * Updated to maven-pmd-plugin 3.20.0
     * Updated to maven-shade-plugin 3.4.1
     * Updated to ph-buildinfo-maven-plugin 4.0.0
+    * Updated to ph-csscompress-maven-plugin 7.0.0
     * Updated to ph-dirindex-maven-plugin 4.0.0
     * Updated to ph-jscompress-maven-plugin 3.0.0
     * Updated to maven-project-info-reports-plugin 3.4.2
