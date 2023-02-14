@@ -24,7 +24,7 @@ To use it as your parent POM using the following snippet:
     * Removed the maven-cobertura-plugin - use jacoco instead
     * Updated to JUnit 5.9.2
     * Updated to SLF4J 2.0.6
-    * Updated to dependency-check-maven 8.0.2
+    * Updated to dependency-check-maven 8.1.0
     * Updated to forbiddenapis 3.4
     * Updated to maven-checkstyle-plugin 3.2.1
     * Updated to maven-dependency-plugin 3.5.0
