@@ -33,6 +33,7 @@ To use it as your parent POM using the following snippet:
     * Updated to maven-enforcer-plugin 3.2.1
     * Updated to maven-install-plugin 3.1.0
     * Updated to maven-jar-plugin 3.3.0
+    * Updated to maven-javadoc-plugin 3.5.0
     * Updated to maven-plugin-plugin 3.7.1
     * Updated to maven-pmd-plugin 3.20.0
     * Updated to maven-shade-plugin 3.4.1
