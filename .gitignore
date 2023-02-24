@@ -3,5 +3,6 @@ pom.xml.tag
 pom.xml.releaseBackup
 pom.xml.next
 release.properties
-/**/.pmd
-**/*.iml
+.pmd
+*.iml
+zz
