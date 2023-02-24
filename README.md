@@ -26,6 +26,7 @@ To use it as your parent POM using the following snippet:
     * Updated to SLF4J 2.0.6
     * Updated to dependency-check-maven 8.1.0
     * Updated to forbiddenapis 3.4
+    * Updated to maven-assembly-plugin 3.5.0
     * Updated to maven-checkstyle-plugin 3.2.1
     * Updated to maven-dependency-plugin 3.5.0
     * Updated to maven-deploy-plugin 3.1.0
@@ -42,7 +43,7 @@ To use it as your parent POM using the following snippet:
     * Updated to ph-dirindex-maven-plugin 4.0.0
     * Updated to ph-jscompress-maven-plugin 3.0.0
     * Updated to maven-project-info-reports-plugin 3.4.2
-    * Updated to spotbugs-maven-plugin 4.7.3.0
+    * Updated to spotbugs-maven-plugin 4.7.3.1
 * v2.0.0 - 2022-09-05
     * Note: this POM version requires at least Maven 3.8.2 to build sites, because that versions updates JAnsi to 2.x which is a prerequisite for some plugins to work - see https://blogs.apache.org/maven/entry/apache-maven-3-8-2
     * First version for default JDK 11 builds
