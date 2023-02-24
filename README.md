@@ -13,15 +13,17 @@ To use it as your parent POM using the following snippet:
   <parent>
     <groupId>com.helger</groupId>
     <artifactId>parent-pom</artifactId>
-    <version>1.11.5</version>
+    <version>2.0.1</version>
   </parent>
 ```
 
 ## News and noteworthy
 
-* v2.0.1 - work in progress
+* v2.0.1 - 2023-02-24
     * Removed the SLF4J log4j12 artefact
     * Removed the maven-cobertura-plugin - use jacoco instead
+    * Reverted to jakarta.servlet-api 5.0.0
+    * Updated to jakarta.servlet.jsp-api 3.1.1
     * Updated to JUnit 5.9.2
     * Updated to SLF4J 2.0.6
     * Updated to dependency-check-maven 8.1.0

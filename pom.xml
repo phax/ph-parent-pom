@@ -51,8 +51,8 @@
     <junit.jupiter.version>5.9.2</junit.jupiter.version>
     <junit.vintage.version>5.9.2</junit.vintage.version>
     <slf4j.version>2.0.6</slf4j.version>
-    <jakarta.servlet-api.version>6.0.0</jakarta.servlet-api.version>
-    <jakarta.jsp-api.version>3.1.1</jakarta.jsp-api.version>
+    <jakarta.servlet-api.version>5.0.0</jakarta.servlet-api.version>
+    <jakarta.servlet.jsp-api.version>3.1.1</jakarta.servlet.jsp-api.version>
     <!-- Use properties for forbiddenapis integration -->
     <maven.compiler.source>${java.version}</maven.compiler.source>
     <maven.compiler.target>${java.version}</maven.compiler.target>
@@ -255,7 +255,7 @@
       <dependency>
         <groupId>jakarta.servlet.jsp</groupId>
         <artifactId>jakarta.servlet.jsp-api</artifactId>
-        <version>${jakarta.jsp-api.version}</version>
+        <version>${jakarta.servlet.jsp-api.version}</version>
       </dependency>
       
       <!-- SLF4J -->
