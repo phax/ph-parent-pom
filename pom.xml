@@ -298,7 +298,7 @@
         <plugin>
           <groupId>com.mycila</groupId>
           <artifactId>license-maven-plugin</artifactId>
-          <version>4.1</version>
+          <version>4.2</version>
           <configuration>
             <strictCheck>true</strictCheck>
             <encoding>${project.build.sourceEncoding}</encoding>
@@ -682,7 +682,7 @@
         <plugin>
           <groupId>com.helger.maven</groupId>
           <artifactId>ph-jscompress-maven-plugin</artifactId>
-          <version>3.0.0</version>
+          <version>3.0.1</version>
           <configuration>
             <forceCreation>false</forceCreation>
             <recursive>true</recursive>

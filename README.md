@@ -19,6 +19,10 @@ To use it as your parent POM using the following snippet:
 
 ## News and noteworthy
 
+* v2.0.2 - work in progress
+    * Updated the configuration of the license-maven-plugin
+    * Updated to ph-jscompress-maven-plugin 3.0.1
+    * Updated to license-maven-plugin 4.2
 * v2.0.1 - 2023-02-24
     * Removed the SLF4J log4j12 artefact
     * Removed the maven-cobertura-plugin - use jacoco instead
