@@ -300,7 +300,6 @@
           <artifactId>license-maven-plugin</artifactId>
           <version>4.1</version>
           <configuration>
-            <header>src/etc/license-template.txt</header>
             <strictCheck>true</strictCheck>
             <encoding>${project.build.sourceEncoding}</encoding>
             <mapping>
@@ -339,114 +338,119 @@
               <!-- XSLT files -->
               <xslt>XML_STYLE</xslt>
             </mapping>
-            <excludes>
-              <!-- All local git files -->
-              <exclude>**/.git*</exclude>
-              <!-- Adobe font metric file -->
-              <exclude>**/*.afm</exclude>
-              <!-- (JAXB) catalog file -->
-              <exclude>**/*.cat</exclude>
-              <!-- Certificate file -->
-              <exclude>**/*.cer</exclude>
-              <!-- CSV files -->
-              <exclude>**/*.csv</exclude>
-              <!-- Generic DAT files -->
-              <exclude>**/*.dat</exclude>
-              <!-- Certificate file -->
-              <exclude>**/*.der</exclude>
-              <!-- Dictionary file -->
-              <exclude>**/*.dict</exclude>
-              <!-- Binary word documents -->
-              <exclude>**/*.doc*</exclude>
-              <!-- Font files -->
-              <exclude>**/*.eot</exclude>
-              <!-- Eclipse preference files -->
-              <exclude>**/*.epf</exclude>
-              <!-- JAXB episode files -->
-              <exclude>**/*.episode</exclude>
-              <!-- Icon files -->
-              <exclude>**/*.ico</exclude>
-              <!-- Image files -->
-              <exclude>**/*.gif</exclude>
-              <!-- IntelliJ Idea project files -->
-              <exclude>**/*.iml</exclude>
-              <!-- JavaCC input files -->
-              <exclude>**/*.jj</exclude>
-              <!-- JavaCC JJTree input files -->
-              <exclude>**/*.jjt</exclude>
-              <!-- Java KeyStore files -->
-              <exclude>**/*.jks</exclude>
-              <!-- Image files -->
-              <exclude>**/*.jpg*</exclude>
-              <!-- Log files -->
-              <exclude>**/*.log</exclude>
-              <!-- Automatically created mapping files -->
-              <exclude>**/*.map</exclude>
-              <!-- MD5 hash files -->
-              <exclude>**/*.md5</exclude>
-              <!-- Minified CSS/JS files - usually generated -->
-              <exclude>**/*.min.css</exclude>
-              <exclude>**/*.min.js</exclude>
-              <!-- Open Document file -->
-              <exclude>**/*.ods</exclude>
-              <!-- OpenType fonts -->
-              <exclude>**/*.otf</exclude>
-              <!-- Certificate file -->
-              <exclude>**/*.p12</exclude>
-              <!-- Patch file -->
-              <exclude>**/*.patch</exclude>
-              <!-- PDF file -->
-              <exclude>**/*.pdf</exclude>
-              <!-- PMD configuration file -->
-              <exclude>**/*.pmd</exclude>
-              <!-- Image files -->
-              <exclude>**/*.png</exclude>
-              <!-- Policy file -->
-              <exclude>**/*.policy</exclude>
-              <!-- Powerpoint files -->
-              <exclude>**/*.ppt*</exclude>
-              <!-- RelaxNG compact files -->
-              <exclude>**/*.rnc</exclude>
-              <!-- SHA1 hash files -->
-              <exclude>**/*.sha1</exclude>
-              <!-- SHA256 hash files -->
-              <exclude>**/*.sha256</exclude>
-              <!-- SHA384 hash files -->
-              <exclude>**/*.sha384</exclude>
-              <!-- SHA512 hash files -->
-              <exclude>**/*.sha512</exclude>
-              <!-- Binary Flash files -->
-              <exclude>**/*.swf</exclude>
-              <!-- Files marked as test -->
-              <exclude>**/*.test</exclude>
-              <!-- Image files -->
-              <exclude>**/*.tif*</exclude>
-              <!-- TrueType fonts -->
-              <exclude>**/*.ttf</exclude>
-              <!-- Generic text file -->
-              <exclude>**/*.txt</exclude>
-              <!-- Wiki source files -->
-              <exclude>**/*.wiki</exclude>
-              <!-- Font files -->
-              <exclude>**/*.woff*</exclude>
-              <!-- Excel files -->
-              <exclude>**/*.xls*</exclude>
-              <!-- Special license files without extension -->
-              <exclude>**/NOTICE</exclude>
-              <exclude>**/LICENSE</exclude>
-              <exclude>**/LICENSE2</exclude>
-              <exclude>**/LICENSE.txt</exclude>
-              <!-- Special robots.txt file -->
-              <exclude>**/robots.txt</exclude>
-              <!-- Special PMD config file -->
-              <exclude>**/.pmd</exclude>
-              <!-- Special files not to be formatted -->
-              <exclude>src/raw/**</exclude>
-              <!-- Special index file which requires special formatting! -->
-              <exclude>src/main/webapp/**/*.jsp</exclude>
-              <!-- Special temp files -->
-              <exclude>**/zz</exclude>
-            </excludes>
+            <licenseSets>
+              <licenseSet>
+                <header>src/etc/license-template.txt</header>
+                <excludes>
+                  <!-- All local git files -->
+                  <exclude>**/.git*</exclude>
+                  <!-- Adobe font metric file -->
+                  <exclude>**/*.afm</exclude>
+                  <!-- (JAXB) catalog file -->
+                  <exclude>**/*.cat</exclude>
+                  <!-- Certificate file -->
+                  <exclude>**/*.cer</exclude>
+                  <!-- CSV files -->
+                  <exclude>**/*.csv</exclude>
+                  <!-- Generic DAT files -->
+                  <exclude>**/*.dat</exclude>
+                  <!-- Certificate file -->
+                  <exclude>**/*.der</exclude>
+                  <!-- Dictionary file -->
+                  <exclude>**/*.dict</exclude>
+                  <!-- Binary word documents -->
+                  <exclude>**/*.doc*</exclude>
+                  <!-- Font files -->
+                  <exclude>**/*.eot</exclude>
+                  <!-- Eclipse preference files -->
+                  <exclude>**/*.epf</exclude>
+                  <!-- JAXB episode files -->
+                  <exclude>**/*.episode</exclude>
+                  <!-- Icon files -->
+                  <exclude>**/*.ico</exclude>
+                  <!-- Image files -->
+                  <exclude>**/*.gif</exclude>
+                  <!-- IntelliJ Idea project files -->
+                  <exclude>**/*.iml</exclude>
+                  <!-- JavaCC input files -->
+                  <exclude>**/*.jj</exclude>
+                  <!-- JavaCC JJTree input files -->
+                  <exclude>**/*.jjt</exclude>
+                  <!-- Java KeyStore files -->
+                  <exclude>**/*.jks</exclude>
+                  <!-- Image files -->
+                  <exclude>**/*.jpg*</exclude>
+                  <!-- Log files -->
+                  <exclude>**/*.log</exclude>
+                  <!-- Automatically created mapping files -->
+                  <exclude>**/*.map</exclude>
+                  <!-- MD5 hash files -->
+                  <exclude>**/*.md5</exclude>
+                  <!-- Minified CSS/JS files - usually generated -->
+                  <exclude>**/*.min.css</exclude>
+                  <exclude>**/*.min.js</exclude>
+                  <!-- Open Document file -->
+                  <exclude>**/*.ods</exclude>
+                  <!-- OpenType fonts -->
+                  <exclude>**/*.otf</exclude>
+                  <!-- Certificate file -->
+                  <exclude>**/*.p12</exclude>
+                  <!-- Patch file -->
+                  <exclude>**/*.patch</exclude>
+                  <!-- PDF file -->
+                  <exclude>**/*.pdf</exclude>
+                  <!-- PMD configuration file -->
+                  <exclude>**/*.pmd</exclude>
+                  <!-- Image files -->
+                  <exclude>**/*.png</exclude>
+                  <!-- Policy file -->
+                  <exclude>**/*.policy</exclude>
+                  <!-- Powerpoint files -->
+                  <exclude>**/*.ppt*</exclude>
+                  <!-- RelaxNG compact files -->
+                  <exclude>**/*.rnc</exclude>
+                  <!-- SHA1 hash files -->
+                  <exclude>**/*.sha1</exclude>
+                  <!-- SHA256 hash files -->
+                  <exclude>**/*.sha256</exclude>
+                  <!-- SHA384 hash files -->
+                  <exclude>**/*.sha384</exclude>
+                  <!-- SHA512 hash files -->
+                  <exclude>**/*.sha512</exclude>
+                  <!-- Binary Flash files -->
+                  <exclude>**/*.swf</exclude>
+                  <!-- Files marked as test -->
+                  <exclude>**/*.test</exclude>
+                  <!-- Image files -->
+                  <exclude>**/*.tif*</exclude>
+                  <!-- TrueType fonts -->
+                  <exclude>**/*.ttf</exclude>
+                  <!-- Generic text file -->
+                  <exclude>**/*.txt</exclude>
+                  <!-- Wiki source files -->
+                  <exclude>**/*.wiki</exclude>
+                  <!-- Font files -->
+                  <exclude>**/*.woff*</exclude>
+                  <!-- Excel files -->
+                  <exclude>**/*.xls*</exclude>
+                  <!-- Special license files without extension -->
+                  <exclude>**/NOTICE</exclude>
+                  <exclude>**/LICENSE</exclude>
+                  <exclude>**/LICENSE2</exclude>
+                  <exclude>**/LICENSE.txt</exclude>
+                  <!-- Special robots.txt file -->
+                  <exclude>**/robots.txt</exclude>
+                  <!-- Special PMD config file -->
+                  <exclude>**/.pmd</exclude>
+                  <!-- Special files not to be formatted -->
+                  <exclude>src/raw/**</exclude>
+                  <!-- Special index file which requires special formatting! -->
+                  <exclude>src/main/webapp/**/*.jsp</exclude>
+                  <!-- Special temp files -->
+                  <exclude>**/zz</exclude>
+                </excludes>
+              </licenseSet>
+            </licenseSets>
           </configuration>
         </plugin>
         <plugin>
