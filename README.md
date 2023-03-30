@@ -19,7 +19,7 @@ To use it as your parent POM using the following snippet:
 
 ## News and noteworthy
 
-* v2.0.2 - work in progress
+* v2.0.2 - 2023-03-30
     * Updated the configuration of the license-maven-plugin
     * Updated to SLF4J 2.0.7
     * Updated to dependency-check-maven 8.2.1
