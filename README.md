@@ -21,8 +21,21 @@ To use it as your parent POM using the following snippet:
 
 * v2.0.2 - work in progress
     * Updated the configuration of the license-maven-plugin
-    * Updated to ph-jscompress-maven-plugin 3.0.1
+    * Updated to SLF4J 2.0.7
+    * Updated to dependency-check-maven 8.2.1
+    * Updated to forbiddenapis 3.5
     * Updated to license-maven-plugin 4.2
+    * Updated to maven-compiler-plugin 3.11.0
+    * Updated to maven-deploy-plugin 3.1.1
+    * Updated to maven-failsafe-plugin 3.0.0
+    * Updated to maven-install-plugin 3.1.1
+    * Updated to maven-plugin-plugin 3.8.1
+    * Updated to maven-release-plugin 3.0.0
+    * Updated to maven-resources-plugin 3.3.1
+    * Updated to maven-surefire-plugin 3.0.0
+    * Updated to maven-surefire-report-plugin 3.0.0
+    * Updated to ph-jscompress-maven-plugin 3.0.1
+    * Updated to spotbugs-maven-plugin 4.7.3.3
 * v2.0.1 - 2023-02-24
     * Removed the SLF4J log4j12 artefact
     * Removed the maven-cobertura-plugin - use jacoco instead
