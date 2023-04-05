@@ -342,8 +342,6 @@
               <licenseSet>
                 <header>src/etc/license-template.txt</header>
                 <excludes>
-                  <!-- All local git files -->
-                  <exclude>**/.git*</exclude>
                   <!-- Adobe font metric file -->
                   <exclude>**/*.afm</exclude>
                   <!-- (JAXB) catalog file -->
@@ -399,6 +397,8 @@
                   <exclude>**/*.patch</exclude>
                   <!-- PDF file -->
                   <exclude>**/*.pdf</exclude>
+                  <!-- PEM certificate file -->
+                  <exclude>**/*.pem</exclude>
                   <!-- PMD configuration file -->
                   <exclude>**/*.pmd</exclude>
                   <!-- Image files -->
@@ -433,21 +433,33 @@
                   <exclude>**/*.woff*</exclude>
                   <!-- Excel files -->
                   <exclude>**/*.xls*</exclude>
+                  
+                  <!-- All local git files -->
+                  <exclude>**/.git*</exclude>
+                  <!-- Special PMD config file -->
+                  <exclude>**/.pmd</exclude>
                   <!-- Special license files without extension -->
                   <exclude>**/NOTICE</exclude>
                   <exclude>**/LICENSE</exclude>
                   <exclude>**/LICENSE2</exclude>
-                  <exclude>**/LICENSE.txt</exclude>
-                  <!-- Special robots.txt file -->
-                  <exclude>**/robots.txt</exclude>
-                  <!-- Special PMD config file -->
-                  <exclude>**/.pmd</exclude>
+                  <!-- Google page index files -->
+                  <exclude>**/google*.html</exclude>
+                  <!-- Special temp files -->
+                  <exclude>**/zz</exclude>
+                  
                   <!-- Special files not to be formatted -->
                   <exclude>src/raw/**</exclude>
                   <!-- Special index file which requires special formatting! -->
                   <exclude>src/main/webapp/**/*.jsp</exclude>
-                  <!-- Special temp files -->
-                  <exclude>**/zz</exclude>
+                  <!-- WSDL files are usually exclusive -->
+                  <exclude>src/main/resources/WEB-INF/wsdl/**</exclude>
+                  <!-- External resources -->
+                  <exclude>src/main/resources/external/**</exclude>
+                  <!-- External test resources -->
+                  <exclude>src/test/resources/external/**</exclude>
+                  <!-- SPI files -->
+                  <exclude>src/main/resources/META-INF/services/**</exclude>
+                  <exclude>src/test/resources/META-INF/services/**</exclude>
                 </excludes>
               </licenseSet>
             </licenseSets>

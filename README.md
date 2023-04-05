@@ -20,6 +20,7 @@ To use it as your parent POM using the following snippet:
 ## News and noteworthy
 
 * v2.0.3 - work in progress
+    * Improved license header configuration file
     * Updated to forbiddenapis 3.5.1
     * Updated to jacoco-maven-plugin 0.8.9
 * v2.0.2 - 2023-03-30
