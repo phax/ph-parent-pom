@@ -344,6 +344,8 @@
                 <excludes>
                   <!-- Adobe font metric file -->
                   <exclude>**/*.afm</exclude>
+                  <!-- Base64 encoded file -->
+                  <exclude>**/*.b64</exclude>
                   <!-- (JAXB) catalog file -->
                   <exclude>**/*.cat</exclude>
                   <!-- Certificate file -->
@@ -384,6 +386,8 @@
                   <exclude>**/*.map</exclude>
                   <!-- MD5 hash files -->
                   <exclude>**/*.md5</exclude>
+                  <!-- MIME encoded file -->
+                  <exclude>**/*.mime</exclude>
                   <!-- Minified CSS/JS files - usually generated -->
                   <exclude>**/*.min.css</exclude>
                   <exclude>**/*.min.js</exclude>
@@ -454,12 +458,16 @@
                   <!-- WSDL files are usually exclusive -->
                   <exclude>src/main/resources/WEB-INF/wsdl/**</exclude>
                   <!-- External resources -->
-                  <exclude>src/main/resources/external/**</exclude>
+                  <exclude>src/main/resources/**/external/**</exclude>
                   <!-- External test resources -->
-                  <exclude>src/test/resources/external/**</exclude>
+                  <exclude>src/test/resources/**/external/**</exclude>
                   <!-- SPI files -->
                   <exclude>src/main/resources/META-INF/services/**</exclude>
                   <exclude>src/test/resources/META-INF/services/**</exclude>
+                  <!-- Documentation files -->
+                  <exclude>docs/**</exclude>
+                  <!-- Generated files -->
+                  <exclude>generated/**</exclude>
                 </excludes>
               </licenseSet>
             </licenseSets>
