@@ -23,7 +23,10 @@ To use it as your parent POM using the following snippet:
     * Improved license header configuration file
     * Updated to forbiddenapis 3.5.1
     * Updated to jacoco-maven-plugin 0.8.9
+    * Updated to maven-checkstyle-plugin 3.2.2
     * Updated to maven-enforcer-plugin 3.3.0
+    * Updated to maven-plugin-plugin 3.8.2
+    * Updated to maven-project-info-reports-plugin 3.4.3
     * Updated to spotbugs-maven-plugin 4.7.3.4
 * v2.0.2 - 2023-03-30
     * Updated the configuration of the license-maven-plugin
