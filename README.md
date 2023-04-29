@@ -13,12 +13,15 @@ To use it as your parent POM using the following snippet:
   <parent>
     <groupId>com.helger</groupId>
     <artifactId>parent-pom</artifactId>
-    <version>2.0.1</version>
+    <version>2.0.3</version>
   </parent>
 ```
 
 ## News and noteworthy
 
+* v2.0.4 - work in progress
+    * Updated to jacoco-maven-plugin 0.8.10
+    * Updated to JUnit 5.9.3
 * v2.0.3 - 2023-04-13
     * Improved license header configuration file
     * Updated to forbiddenapis 3.5.1
