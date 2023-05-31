@@ -20,6 +20,7 @@ To use it as your parent POM using the following snippet:
 ## News and noteworthy
 
 * v2.0.4 - work in progress
+    * Enforcing JSP API 3.0.0 to be compliant with JakartaEE 9
     * Updated to jacoco-maven-plugin 0.8.10
     * Updated to JUnit 5.9.3
     * Updated to maven-failsafe-plugin 3.1.0
