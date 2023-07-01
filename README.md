@@ -27,6 +27,7 @@ To use it as your parent POM using the following snippet:
     * Updated to maven-gpg-plugin 3.1.0
     * Updated to maven-surefire-plugin 3.1.0
     * Updated to maven-surefire-report-plugin 3.1.0
+    * Updated to ph-buildinfo-maven-plugin 4.0.1
 * v2.0.3 - 2023-04-13
     * Improved license header configuration file
     * Updated to forbiddenapis 3.5.1
