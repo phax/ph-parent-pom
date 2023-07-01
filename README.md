@@ -21,13 +21,27 @@ To use it as your parent POM using the following snippet:
 
 * v2.0.4 - work in progress
     * Enforcing JSP API 3.0.0 to be compliant with JakartaEE 9
+    * Updated to dependency-check-maven 8.3.1
     * Updated to jacoco-maven-plugin 0.8.10
     * Updated to JUnit 5.9.3
-    * Updated to maven-failsafe-plugin 3.1.0
+    * Updated to maven-assembly-plugin 3.6.0
+    * Updated to maven-bundle-plugin 5.1.9
+    * Updated to maven-checkstyle-plugin 3.3.0
+    * Updated to maven-clean-plugin 3.3.1
+    * Updated to maven-dependency-plugin 3.6.0
+    * Updated to maven-failsafe-plugin 3.1.2
     * Updated to maven-gpg-plugin 3.1.0
-    * Updated to maven-surefire-plugin 3.1.0
-    * Updated to maven-surefire-report-plugin 3.1.0
+    * Updated to maven-plugin-plugin 3.9.0
+    * Updated to maven-pmd-plugin 3.21.0
+    * Updated to maven-project-info-reports-plugin 3.4.5
+    * Updated to maven-release-plugin 3.0.1
+    * Updated to maven-shade-plugin 3.5.0
+    * Updated to maven-source-plugin 3.3.0
+    * Updated to maven-surefire-plugin 3.1.2
+    * Updated to maven-surefire-report-plugin 3.1.2
+    * Updated to maven-war-plugin 3.4.0
     * Updated to ph-buildinfo-maven-plugin 4.0.1
+    * Updated to spotbugs-maven-plugin 4.7.3.5
 * v2.0.3 - 2023-04-13
     * Improved license header configuration file
     * Updated to forbiddenapis 3.5.1
