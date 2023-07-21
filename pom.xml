@@ -492,6 +492,7 @@
               <supportedProjectType>bundle</supportedProjectType>
               <supportedProjectType>war</supportedProjectType>
             </supportedProjectTypes>          
+            <supportIncrementalBuild>true</supportIncrementalBuild>
           </configuration>
         </plugin>
         <plugin>
