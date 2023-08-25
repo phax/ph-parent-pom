@@ -20,7 +20,9 @@ To use it as your parent POM using the following snippet:
 ## News and noteworthy
 
 * v2.0.5 - work in progress
+    * Updated to dependency-check-maven 8.4.0
     * Updated to JUnit 5.10.0
+    * Updated to maven-enforcer-plugin 3.4.0
     * Updated to ph-csscompress-maven-plugin 7.0.1
 * v2.0.4 - 2023-07-01
     * Enforcing JSP API 3.0.0 to be compliant with JakartaEE 9
