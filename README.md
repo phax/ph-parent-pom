@@ -23,8 +23,11 @@ To use it as your parent POM using the following snippet:
     * Updated to dependency-check-maven 8.4.0
     * Updated to JUnit 5.10.0
     * Updated to maven-enforcer-plugin 3.4.1
+    * Updated to maven-javadoc-plugin 3.6.0
+    * Updated to maven-shade-plugin 3.5.1
     * Updated to ph-csscompress-maven-plugin 7.0.1
     * Updated to SLF4J 2.0.9
+    * Updated to spotbugs-maven-plugin 4.7.3.6
 * v2.0.4 - 2023-07-01
     * Enforcing JSP API 3.0.0 to be compliant with JakartaEE 9
     * Updated to dependency-check-maven 8.3.1
