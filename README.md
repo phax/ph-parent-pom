@@ -19,8 +19,8 @@ To use it as your parent POM using the following snippet:
 
 ## News and noteworthy
 
-* v2.0.5 - work in progress
-    * Updated to dependency-check-maven 8.4.2
+* v2.0.5 - 2023-11-15
+    * Updated to dependency-check-maven 8.4.3
     * Updated to jacoco-maven-plugin 0.8.11
     * Updated to forbiddenapis 3.6
     * Updated to JUnit 5.10.1
@@ -29,17 +29,17 @@ To use it as your parent POM using the following snippet:
     * Updated to maven-clean-plugin 3.3.2
     * Updated to maven-dependency-plugin 3.6.1
     * Updated to maven-enforcer-plugin 3.4.1
-    * Updated to maven-failsafe-plugin 3.2.1
-    * Updated to maven-javadoc-plugin 3.6.0
+    * Updated to maven-failsafe-plugin 3.2.2
+    * Updated to maven-javadoc-plugin 3.6.2
     * Updated to maven-jxr-plugin 3.3.1
-    * Updated to maven-plugin-plugin 3.10.1
+    * Updated to maven-plugin-plugin 3.10.2
     * Updated to maven-pmd-plugin 3.21.2
     * Updated to maven-shade-plugin 3.5.1
-    * Updated to maven-surefire-plugin 3.2.1
-    * Updated to maven-surefire-report-plugin 3.2.1
+    * Updated to maven-surefire-plugin 3.2.2
+    * Updated to maven-surefire-report-plugin 3.2.2
     * Updated to ph-csscompress-maven-plugin 7.0.1
     * Updated to SLF4J 2.0.9
-    * Updated to spotbugs-maven-plugin 4.7.3.6
+    * Updated to spotbugs-maven-plugin 4.8.1.0
 * v2.0.4 - 2023-07-01
     * Enforcing JSP API 3.0.0 to be compliant with JakartaEE 9
     * Updated to dependency-check-maven 8.3.1
