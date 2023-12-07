@@ -39,7 +39,7 @@
   <scm>
     <connection>scm:git:https://github.com/phax/ph-parent-pom.git</connection>
     <developerConnection>scm:git:https://github.com/phax/ph-parent-pom.git</developerConnection>
-    <url>http://github.com/phax/ph-parent-pom</url>
+    <url>https://github.com/phax/ph-parent-pom</url>
     <tag>HEAD</tag>
   </scm>
 
