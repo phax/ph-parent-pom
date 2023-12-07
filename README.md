@@ -19,6 +19,11 @@ To use it as your parent POM using the following snippet:
 
 ## News and noteworthy
 
+* v2.0.6 - work in progress
+    * Updated to dependency-check-maven 8.4.3
+    * Updated to maven-javadoc-plugin 3.6.3
+    * Updated to maven-project-info-reports-plugin 3.5.0
+    * Updated to spotbugs-maven-plugin 4.8.2.0
 * v2.0.5 - 2023-11-15
     * Updated to dependency-check-maven 8.4.3
     * Updated to jacoco-maven-plugin 0.8.11
