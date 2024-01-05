@@ -20,9 +20,15 @@ To use it as your parent POM using the following snippet:
 ## News and noteworthy
 
 * v2.0.6 - work in progress
-    * Updated to dependency-check-maven 9.0.4
+    * Updated to dependency-check-maven 9.0.7
+    * Updated to maven-compiler-plugin 3.12.1
+    * Updated to maven-failsafe-plugin 3.2.3
     * Updated to maven-javadoc-plugin 3.6.3
+    * Updated to maven-jxr-plugin 3.3.2
     * Updated to maven-project-info-reports-plugin 3.5.0
+    * Updated to maven-surefire-plugin 3.2.3
+    * Updated to maven-surefire-report-plugin 3.2.3
+    * Updated to SLF4J 2.0.10
     * Updated to spotbugs-maven-plugin 4.8.2.0
 * v2.0.5 - 2023-11-15
     * Updated to dependency-check-maven 8.4.3
