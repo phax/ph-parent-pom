@@ -20,7 +20,7 @@ To use it as your parent POM using the following snippet:
 ## News and noteworthy
 
 * v2.0.6 - work in progress
-    * Updated to dependency-check-maven 9.0.7
+    * Updated to dependency-check-maven 9.0.8
     * Updated to maven-compiler-plugin 3.12.1
     * Updated to maven-failsafe-plugin 3.2.3
     * Updated to maven-javadoc-plugin 3.6.3
