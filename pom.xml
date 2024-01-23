@@ -594,7 +594,7 @@
           <version>3.6.3</version>
         </plugin>
         <!-- at least JDK8 -->
-        <plugin>
+        <plugin>f
           <groupId>org.apache.maven.plugins</groupId>
           <artifactId>maven-jdeps-plugin</artifactId>
           <version>3.1.2</version>
@@ -607,7 +607,7 @@
         <plugin>
           <groupId>org.apache.maven.plugins</groupId>
           <artifactId>maven-plugin-plugin</artifactId>
-          <version>3.10.2</version>
+          <version>3.11.0</version>
         </plugin>
         <plugin>
           <groupId>org.apache.maven.plugins</groupId>
@@ -685,7 +685,7 @@
         <plugin>
           <groupId>com.github.spotbugs</groupId>
           <artifactId>spotbugs-maven-plugin</artifactId>
-          <version>4.8.2.0</version>
+          <version>4.8.3.0</version>
         </plugin>
         <plugin>
           <groupId>org.codehaus.mojo</groupId>
@@ -700,7 +700,7 @@
         <plugin>
           <groupId>org.owasp</groupId>
           <artifactId>dependency-check-maven</artifactId>
-          <version>9.0.8</version>
+          <version>9.0.9</version>
         </plugin>      
         <plugin>
           <groupId>com.helger.maven</groupId>
