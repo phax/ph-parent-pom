@@ -28,6 +28,7 @@ To use it as your parent POM using the following snippet:
     * Updated to maven-jxr-plugin 3.3.2
     * Updated to maven-plugin-plugin 3.11.0
     * Updated to maven-project-info-reports-plugin 3.5.0
+    * Updated to maven-shade-plugin 3.5.2
     * Updated to maven-surefire-plugin 3.2.5
     * Updated to maven-surefire-report-plugin 3.2.5
     * Updated to SLF4J 2.0.12
