@@ -31,6 +31,7 @@ To use it as your parent POM using the following snippet:
     * Updated to maven-shade-plugin 3.5.2
     * Updated to maven-surefire-plugin 3.2.5
     * Updated to maven-surefire-report-plugin 3.2.5
+    * Updated to ph-csscompress-maven-plugin 7.0.2
     * Updated to SLF4J 2.0.12
     * Updated to spotbugs-maven-plugin 4.8.3.1
 * v2.0.5 - 2023-11-15
