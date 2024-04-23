@@ -563,7 +563,7 @@
         <plugin>
           <groupId>org.apache.maven.plugins</groupId>
           <artifactId>maven-gpg-plugin</artifactId>
-          <version>3.2.3</version>
+          <version>3.2.4</version>
         </plugin>
         <plugin>
           <groupId>org.apache.maven.plugins</groupId>
@@ -573,15 +573,7 @@
         <plugin>
           <groupId>org.apache.maven.plugins</groupId>
           <artifactId>maven-jar-plugin</artifactId>
-          <!--2.6/3.0.0-->
-          <!--3.0.0 causes problems with m2e in Eclipse Mars:
-          org.apache.maven.archiver.MavenArchiver.getManifest(org.apache.maven.project.MavenProject, org.apache.maven.archiver.MavenArchiveConfiguration)
-          line 1	Maven Configuration Problem
-          
-          Posted at:
-          https://bugs.eclipse.org/bugs/show_bug.cgi?id=494762
-          -->
-          <version>3.4.0</version>
+          <version>3.4.1</version>
         </plugin>
         <plugin>
           <groupId>org.apache.maven.plugins</groupId>

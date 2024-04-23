@@ -27,8 +27,8 @@ To use it as your parent POM using the following snippet:
     * Updated to maven-assembly-plugin 3.7.1
     * Updated to maven-compiler-plugin 3.13.0
     * Updated to maven-failsafe-plugin 3.2.5
-    * Updated to maven-gpg-plugin 3.2.3
-    * Updated to maven-jar-plugin 3.4.0
+    * Updated to maven-gpg-plugin 3.2.4
+    * Updated to maven-jar-plugin 3.4.1
     * Updated to maven-javadoc-plugin 3.6.3
     * Updated to maven-jxr-plugin 3.3.2
     * Updated to maven-plugin-plugin 3.12.0
