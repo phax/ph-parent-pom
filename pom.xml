@@ -693,6 +693,9 @@
           <groupId>org.owasp</groupId>
           <artifactId>dependency-check-maven</artifactId>
           <version>10.0.2</version>
+          <configuration>
+            <nvdApiKey>${env.NVDAPIKEY}</nvdApiKey>
+          </configuration>
         </plugin>      
         <plugin>
           <groupId>com.helger.maven</groupId>
@@ -976,22 +979,34 @@
         <artifactId>taglist-maven-plugin</artifactId>
         <configuration>
           <tagListOptions>
-            <tag>
-              <matchString>TODO</matchString>
-              <matchType>exact</matchType>
-            </tag>
-            <tag>
-              <matchString>FIXME</matchString>
-              <matchType>exact</matchType>
-            </tag>
-            <tag>
-              <matchString>@todo</matchString>
-              <matchType>ignoreCase</matchType>
-            </tag>
-            <tag>
-              <matchString>@deprecated</matchString>
-              <matchType>ignoreCase</matchType>
-            </tag>
+            <tagClasses>
+              <tagClass>
+                <displayName>Todo Work</displayName>
+                <tags>
+                  <tag>
+                    <matchString>TODO</matchString>
+                    <matchType>exact</matchType>
+                  </tag>
+                  <tag>
+                    <matchString>FIXME</matchString>
+                    <matchType>exact</matchType>
+                  </tag>
+                  <tag>
+                    <matchString>@todo</matchString>
+                    <matchType>ignoreCase</matchType>
+                  </tag>
+                </tags>
+              </tagClass>  
+              <tagClass>
+                <displayName>Deprecation</displayName>
+                <tags>
+                  <tag>
+                    <matchString>@deprecated</matchString>
+                    <matchType>ignoreCase</matchType>
+                  </tag>
+                </tags>
+              </tagClass>
+            </tagClasses>
           </tagListOptions>
         </configuration>
       </plugin>
