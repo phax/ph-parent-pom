@@ -39,9 +39,9 @@ To use it as your parent POM using the following snippet:
     * Updated to maven-javadoc-plugin 3.7.0
     * Updated to maven-jxr-plugin 3.4.0
     * Updated to maven-plugin-plugin 3.13.1
-    * Updated to maven-pmd-plugin 3.23.0
-    * Updated to maven-project-info-reports-plugin 3.6.1
-    * Updated to maven-release-plugin 3.1.0
+    * Updated to maven-pmd-plugin 3.24.0
+    * Updated to maven-project-info-reports-plugin 3.6.2
+    * Updated to maven-release-plugin 3.1.1
     * Updated to maven-shade-plugin 3.6.0
     * Updated to maven-source-plugin 3.3.1
     * Updated to maven-surefire-plugin 3.3.1
