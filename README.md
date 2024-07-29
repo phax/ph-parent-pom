@@ -20,7 +20,7 @@ To use it as your parent POM using the following snippet:
 ## News and noteworthy
 
 * v2.0.6 - work in progress
-    * Updated to dependency-check-maven 10.0.2
+    * Updated to dependency-check-maven 10.0.3
     * Updated to forbiddenapis 3.7
     * Updated to jacoco-maven-plugin 0.8.12
     * Updated to JUnit 5.10.3
@@ -36,7 +36,7 @@ To use it as your parent POM using the following snippet:
     * Updated to maven-gpg-plugin 3.2.4
     * Updated to maven-install-plugin 3.1.2
     * Updated to maven-jar-plugin 3.4.2
-    * Updated to maven-javadoc-plugin 3.7.0
+    * Updated to maven-javadoc-plugin 3.8.0
     * Updated to maven-jxr-plugin 3.4.0
     * Updated to maven-plugin-plugin 3.13.1
     * Updated to maven-pmd-plugin 3.24.0
