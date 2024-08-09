@@ -19,7 +19,7 @@ To use it as your parent POM using the following snippet:
 
 ## News and noteworthy
 
-* v2.0.6 - work in progress
+* v2.0.6 - 2024-08-09
     * Updated to dependency-check-maven 10.0.3
     * Updated to forbiddenapis 3.7
     * Updated to jacoco-maven-plugin 0.8.12
