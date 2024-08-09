@@ -47,7 +47,7 @@ To use it as your parent POM using the following snippet:
     * Updated to maven-surefire-plugin 3.3.1
     * Updated to maven-surefire-report-plugin 3.3.1
     * Updated to ph-csscompress-maven-plugin 7.0.2
-    * Updated to SLF4J 2.0.13
+    * Updated to SLF4J 2.0.15
     * Updated to spotbugs-maven-plugin 4.8.6.2
     * Updated to taglist-maven-plugin 3.1.0
 * v2.0.5 - 2023-11-15
