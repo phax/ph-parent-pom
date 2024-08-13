@@ -19,6 +19,9 @@ To use it as your parent POM using the following snippet:
 
 ## News and noteworthy
 
+* v2.0.7 - work in progress
+    * Updated to maven-gpg-plugin 3.2.5
+    * Updated to SLF4J 2.0.16
 * v2.0.6 - 2024-08-09
     * Updated to dependency-check-maven 10.0.3
     * Updated to forbiddenapis 3.7
