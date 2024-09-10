@@ -20,7 +20,24 @@ To use it as your parent POM using the following snippet:
 ## News and noteworthy
 
 * v2.0.7 - work in progress
+    * Updated to dependency-check-maven 10.0.4
+    * Updated to JUnit 5.11.0
+    * Updated to maven-checkstyle-plugin 3.5.0
+    * Updated to maven-dependency-plugin 3.8.0
+    * Updated to maven-deploy-plugin 3.1.3
+    * Updated to maven-failsafe-plugin 3.5.0
     * Updated to maven-gpg-plugin 3.2.5
+    * Updated to maven-install-plugin 3.1.3
+    * Updated to maven-jarsigner-plugin 3.1.0
+    * Updated to maven-javadoc-plugin 3.10.0
+    * Updated to maven-jxr-plugin 3.5.0
+    * Updated to maven-plugin-plugin 3.15.0
+    * Updated to maven-pmd-plugin 3.25.0
+    * Updated to maven-project-info-reports-plugin 3.7.0
+    * Updated to maven-site-plugin 3.20.0
+    * Updated to spotbugs-maven-plugin 4.8.6.3
+    * Updated to maven-surefire-plugin 3.5.0
+    * Updated to maven-surefire-report-plugin 3.5.0
     * Updated to SLF4J 2.0.16
 * v2.0.6 - 2024-08-09
     * Updated to dependency-check-maven 10.0.3
