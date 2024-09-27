@@ -21,7 +21,9 @@ To use it as your parent POM using the following snippet:
 
 * v2.0.7 - work in progress
     * Updated to dependency-check-maven 10.0.4
-    * Updated to JUnit 5.11.0
+    * Updated to jdepend-maven-plugin 2.1
+    * Updated to JUnit 5.11.1
+    * Updated to license-maven-plugin 4.6
     * Updated to maven-checkstyle-plugin 3.5.0
     * Updated to maven-dependency-plugin 3.8.0
     * Updated to maven-deploy-plugin 3.1.3
@@ -35,10 +37,11 @@ To use it as your parent POM using the following snippet:
     * Updated to maven-pmd-plugin 3.25.0
     * Updated to maven-project-info-reports-plugin 3.7.0
     * Updated to maven-site-plugin 3.20.0
-    * Updated to spotbugs-maven-plugin 4.8.6.3
     * Updated to maven-surefire-plugin 3.5.0
     * Updated to maven-surefire-report-plugin 3.5.0
+    * Updated to ph-csscompress-maven-plugin 7.0.3
     * Updated to SLF4J 2.0.16
+    * Updated to spotbugs-maven-plugin 4.8.6.4
 * v2.0.6 - 2024-08-09
     * Updated to dependency-check-maven 10.0.3
     * Updated to forbiddenapis 3.7
