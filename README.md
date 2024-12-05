@@ -20,11 +20,12 @@ To use it as your parent POM using the following snippet:
 ## News and noteworthy
 
 * v2.0.7 - work in progress
-    * Updated to dependency-check-maven 11.1.0
+    * Updated to dependency-check-maven 11.1.1
     * Updated to jdepend-maven-plugin 2.1
     * Updated to forbiddenapis 3.8
     * Updated to JUnit 5.11.3
     * Updated to license-maven-plugin 4.6
+    * Updated to maven-bundle-plugin 6.0.0
     * Updated to maven-checkstyle-plugin 3.6.0
     * Updated to maven-dependency-plugin 3.8.1
     * Updated to maven-deploy-plugin 3.1.3
@@ -43,7 +44,7 @@ To use it as your parent POM using the following snippet:
     * Updated to taglist-maven-plugin 3.2.1
     * Updated to ph-csscompress-maven-plugin 7.0.3
     * Updated to SLF4J 2.0.16
-    * Updated to spotbugs-maven-plugin 4.8.6.5
+    * Updated to spotbugs-maven-plugin 4.8.6.6
 * v2.0.6 - 2024-08-09
     * Updated to dependency-check-maven 10.0.3
     * Updated to forbiddenapis 3.7
