@@ -23,7 +23,7 @@ To use it as your parent POM using the following snippet:
     * Updated to dependency-check-maven 11.1.1
     * Updated to jdepend-maven-plugin 2.1
     * Updated to forbiddenapis 3.8
-    * Updated to JUnit 5.11.3
+    * Updated to JUnit 5.11.4
     * Updated to license-maven-plugin 4.6
     * Updated to maven-bundle-plugin 6.0.0
     * Updated to maven-checkstyle-plugin 3.6.0
@@ -33,7 +33,7 @@ To use it as your parent POM using the following snippet:
     * Updated to maven-gpg-plugin 3.2.7
     * Updated to maven-install-plugin 3.1.3
     * Updated to maven-jarsigner-plugin 3.1.0
-    * Updated to maven-javadoc-plugin 3.11.1
+    * Updated to maven-javadoc-plugin 3.11.2
     * Updated to maven-jxr-plugin 3.6.0
     * Updated to maven-plugin-plugin 3.15.1
     * Updated to maven-pmd-plugin 3.26.0
