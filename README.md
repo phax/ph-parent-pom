@@ -20,7 +20,7 @@ To use it as your parent POM using the following snippet:
 ## News and noteworthy
 
 * v2.0.7 - work in progress
-    * Updated to dependency-check-maven 11.1.1
+    * Updated to dependency-check-maven 12.0.1
     * Updated to jdepend-maven-plugin 2.1
     * Updated to forbiddenapis 3.8
     * Updated to JUnit 5.11.4
