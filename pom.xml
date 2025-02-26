@@ -47,10 +47,10 @@
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     <java.version>11</java.version>
     <junit4.version>4.13.2</junit4.version>
-    <junit.platform.version>1.11.4</junit.platform.version>
-    <junit.jupiter.version>5.11.4</junit.jupiter.version>
+    <junit.platform.version>1.12.0</junit.platform.version>
+    <junit.jupiter.version>5.12.0</junit.jupiter.version>
     <junit.vintage.version>${junit.jupiter.version}</junit.vintage.version>
-    <slf4j.version>2.0.16</slf4j.version>
+    <slf4j.version>2.0.17</slf4j.version>
     <!--
     JakartaEE 9: 5.0.0
     JakartaEE 10: 6.0.0 
@@ -528,12 +528,12 @@
         <plugin>
           <groupId>org.apache.maven.plugins</groupId>
           <artifactId>maven-clean-plugin</artifactId>
-          <version>3.4.0</version>
+          <version>3.4.1</version>
         </plugin>
         <plugin>
           <groupId>org.apache.maven.plugins</groupId>
           <artifactId>maven-compiler-plugin</artifactId>
-          <version>3.13.0</version>
+          <version>3.14.0</version>
         </plugin>
         <plugin>
           <groupId>org.apache.maven.plugins</groupId>
@@ -676,7 +676,7 @@
         <plugin>
           <groupId>com.github.spotbugs</groupId>
           <artifactId>spotbugs-maven-plugin</artifactId>
-          <version>4.8.6.6</version>
+          <version>4.9.1.0</version>
         </plugin>
         <plugin>
           <groupId>org.codehaus.mojo</groupId>
@@ -691,7 +691,7 @@
         <plugin>
           <groupId>org.owasp</groupId>
           <artifactId>dependency-check-maven</artifactId>
-          <version>12.0.1</version>
+          <version>12.1.0</version>
           <configuration>
             <nvdApiKey>${env.NVDAPIKEY}</nvdApiKey>
           </configuration>
@@ -713,7 +713,7 @@
         <plugin>
           <groupId>com.helger.maven</groupId>
           <artifactId>ph-csscompress-maven-plugin</artifactId>
-          <version>7.0.3</version>
+          <version>7.0.4</version>
           <configuration>
             <forceCompress>false</forceCompress>
             <removeUnnecessaryCode>true</removeUnnecessaryCode>
