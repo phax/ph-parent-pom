@@ -24,7 +24,7 @@ on:
   push:
     branches:
       - master
-#  pull_requeßst:
+#  pull_request:
 #    branches:
 #      - master
 
