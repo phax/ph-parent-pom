@@ -19,7 +19,7 @@ To use it as your parent POM using the following snippet:
 
 ## News and noteworthy
 
-* v2.0.8 - 2025-04-03
+* v2.0.8 - 2025-03-03
     * Reverted to maven-bundle-plugin 5.1.9 (v6 requires at least Java 17)
 * v2.0.7 - 2025-03-02
     * Updated to dependency-check-maven 12.1.0
