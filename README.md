@@ -20,7 +20,15 @@ To use it as your parent POM using the following snippet:
 ## News and noteworthy
 
 * v2.0.9 - work in progress
+    * Updated to dependency-check-maven 12.1.1
+    * Updated to forbiddenapis 3.9
+    * Updated to jacoco-maven-plugin 0.8.13
+    * Updated to JUnit 5.12.2
+    * Updated to maven-failsafe-plugin 3.5.3
+    * Updated to maven-surefire-plugin 3.5.3
+    * Updated to maven-surefire-report-plugin 3.5.3
     * Updated to ph-jscompress-maven-plugin 3.0.2
+    * Updated to spotbugs-maven-plugin 4.9.3.0
 * v2.0.8 - 2025-03-03
     * Reverted to maven-bundle-plugin 5.1.9 (v6 requires at least Java 17)
 * v2.0.7 - 2025-03-02
