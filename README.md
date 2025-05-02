@@ -3,7 +3,7 @@
 Generic Maven 3 parent POM with lots of default configuration.
 It is pre-configured to handle the "ph-" software stack in a suitable way.
 
-The latest released version is **2.0.8** and requires JDK 11 or higher at build time.
+The latest released version is **2.1.1** and requires JDK 11 or higher at build time.
 
 The latest version that uses JDK 8 as the baseline is *1.11.5**.
 
@@ -13,13 +13,15 @@ To use it as your parent POM using the following snippet:
   <parent>
     <groupId>com.helger</groupId>
     <artifactId>parent-pom</artifactId>
-    <version>2.0.8</version>
+    <version>2.1.1</version>
   </parent>
 ```
 
 ## News and noteworthy
 
-* v2.1.0 - work in progress
+* v2.1.1 - 2025-05-02
+    * Enabled `autoPublish` for the maven-cenntral-publishing-plugin
+* v2.1.0 - 2025-05-02
     * Updated to create releaes via the Sonatype maven-cenntral-publishing-plugin
     * Updated to dependency-check-maven 12.1.1
     * Updated to forbiddenapis 3.9
