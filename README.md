@@ -19,11 +19,13 @@ To use it as your parent POM using the following snippet:
 
 ## News and noteworthy
 
-* v2.0.9 - work in progress
+* v2.1.0 - work in progress
+    * Updated to create releaes via the Sonatype maven-cenntral-publishing-plugin
     * Updated to dependency-check-maven 12.1.1
     * Updated to forbiddenapis 3.9
     * Updated to jacoco-maven-plugin 0.8.13
     * Updated to JUnit 5.12.2
+    * Updated to license-maven-plugin 5.0
     * Updated to maven-failsafe-plugin 3.5.3
     * Updated to maven-surefire-plugin 3.5.3
     * Updated to maven-surefire-report-plugin 3.5.3
