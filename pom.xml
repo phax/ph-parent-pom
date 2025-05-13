@@ -154,6 +154,17 @@
       </build>
     </profile>
     <profile>
+      <id>release-snapshot</id>
+      <build>
+        <plugins>
+          <plugin>
+            <groupId>org.sonatype.central</groupId>
+            <artifactId>central-publishing-maven-plugin</artifactId>
+          </plugin>
+        </plugins>
+      </build>
+    </profile>
+    <profile>
       <id>jdeps</id>
       <build>
         <plugins>

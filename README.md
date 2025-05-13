@@ -19,6 +19,8 @@ To use it as your parent POM using the following snippet:
 
 ## News and noteworthy
 
+* v2.1.4 - 2025-05-13
+    * Added new predefined profile `release-snapshot` to be used for deploying SNAPSHOTs to Maven Central
 * v2.1.3 - 2025-05-13
     * Moved plugin `central-publishing-maven-plugin` from build `plugins` into the `pluginManagement`
 * v2.1.2 - 2025-05-02
