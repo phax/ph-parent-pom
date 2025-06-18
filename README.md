@@ -21,6 +21,7 @@ To use it as your parent POM using the following snippet:
 
 * v2.1.5 - work in progress
     * Updated to central-publishing-maven-plugin 0.8.0
+    * Updated to dependency-check-maven 12.1.3
     * Updated to JUnit 5.13.1
 * v2.1.4 - 2025-05-13
     * Added new predefined profile `release-snapshot` to be used for deploying SNAPSHOTs to Maven Central
