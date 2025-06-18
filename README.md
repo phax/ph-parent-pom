@@ -23,6 +23,7 @@ To use it as your parent POM using the following snippet:
     * Updated to central-publishing-maven-plugin 0.8.0
     * Updated to dependency-check-maven 12.1.3
     * Updated to JUnit 5.13.1
+    * Updated to maven-clean-plugin 3.5.0
 * v2.1.4 - 2025-05-13
     * Added new predefined profile `release-snapshot` to be used for deploying SNAPSHOTs to Maven Central
 * v2.1.3 - 2025-05-13
