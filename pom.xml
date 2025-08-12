@@ -47,8 +47,8 @@
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     <java.version>11</java.version>
     <junit4.version>4.13.2</junit4.version>
-    <junit.platform.version>1.13.1</junit.platform.version>
-    <junit.jupiter.version>5.13.1</junit.jupiter.version>
+    <junit.platform.version>1.13.4</junit.platform.version>
+    <junit.jupiter.version>5.13.4</junit.jupiter.version>
     <junit.vintage.version>${junit.jupiter.version}</junit.vintage.version>
     <slf4j.version>2.0.17</slf4j.version>
     <!--
@@ -552,7 +552,7 @@
         <plugin>
           <groupId>org.apache.maven.plugins</groupId>
           <artifactId>maven-ear-plugin</artifactId>
-          <version>3.3.0</version>
+          <version>3.4.0</version>
         </plugin>
         <plugin>
           <groupId>org.apache.maven.plugins</groupId>
@@ -562,12 +562,12 @@
         <plugin>
           <groupId>org.apache.maven.plugins</groupId>
           <artifactId>maven-enforcer-plugin</artifactId>
-          <version>3.5.0</version>
+          <version>3.6.1</version>
         </plugin>
         <plugin>
           <groupId>org.apache.maven.plugins</groupId>
           <artifactId>maven-gpg-plugin</artifactId>
-          <version>3.2.7</version>
+          <version>3.2.8</version>
         </plugin>
         <plugin>
           <groupId>org.apache.maven.plugins</groupId>
@@ -607,7 +607,7 @@
         <plugin>
           <groupId>org.apache.maven.plugins</groupId>
           <artifactId>maven-pmd-plugin</artifactId>
-          <version>3.26.0</version>
+          <version>3.27.0</version>
         </plugin>  
         <plugin>
           <groupId>org.apache.maven.plugins</groupId>
@@ -680,7 +680,7 @@
         <plugin>
           <groupId>com.github.spotbugs</groupId>
           <artifactId>spotbugs-maven-plugin</artifactId>
-          <version>4.9.3.0</version>
+          <version>4.9.3.2</version>
         </plugin>
         <plugin>
           <groupId>org.codehaus.mojo</groupId>
