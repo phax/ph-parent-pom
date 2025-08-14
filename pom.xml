@@ -911,6 +911,12 @@
           -->
           <source>17</source>
           <verbose>false</verbose>
+          <!--
+          Even though it is the default, it is e.g. required for ph-annotations
+          
+          Source: https://stackoverflow.com/questions/37958104/maven-javadoc-no-source-files-for-package 
+          -->
+          <sourcepath>src/main/java</sourcepath>
         </configuration>
       </plugin>
     </plugins>
