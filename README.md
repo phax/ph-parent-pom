@@ -5,7 +5,8 @@ It is pre-configured to handle the "ph-" software stack in a suitable way.
 
 The latest released version is **2.1.4** and requires JDK 11 or higher at build time.
 
-The latest version that uses JDK 8 as the baseline is *1.11.5**.
+* The latest version that uses JDK 11 as the baseline is *2.1.4**
+* The latest version that uses JDK 8 as the baseline is *1.11.5**
 
 To use it as your parent POM using the following snippet:
 
@@ -19,7 +20,8 @@ To use it as your parent POM using the following snippet:
 
 ## News and noteworthy
 
-* v2.1.5 - work in progress
+* v3.0.0 - work in progress
+    * Moving the baseline to Java 17
     * Updated to central-publishing-maven-plugin 0.8.0
     * Updated to dependency-check-maven 12.1.3
     * Updated to JUnit 5.13.4
