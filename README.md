@@ -3,7 +3,7 @@
 Generic Maven 3 parent POM with lots of default configuration.
 It is pre-configured to handle the "ph-" software stack in a suitable way.
 
-The latest released version is **2.1.4** and requires JDK 11 or higher at build time.
+The latest released version is **3.0.0** and requires JDK 17 or higher at build time.
 
 * The latest version that uses JDK 11 as the baseline is *2.1.4**
 * The latest version that uses JDK 8 as the baseline is *1.11.5**
@@ -14,7 +14,7 @@ To use it as your parent POM using the following snippet:
   <parent>
     <groupId>com.helger</groupId>
     <artifactId>parent-pom</artifactId>
-    <version>2.1.4</version>
+    <version>3.0.0</version>
   </parent>
 ```
 
