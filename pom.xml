@@ -53,14 +53,14 @@
     <slf4j.version>2.0.17</slf4j.version>
     <!--
     JakartaEE 9: 5.0.0
-    JakartaEE 10: 6.0.0 
+    JakartaEE 10: 6.0.0
     -->
-    <jakarta.servlet-api.version>5.0.0</jakarta.servlet-api.version>
+    <jakarta.servlet-api.version>6.1.0</jakarta.servlet-api.version>
     <!--
     JakartaEE 9: 3.0.0
-    JakartaEE 10: 3.1.1 
+    JakartaEE 10: 3.1.1
     -->
-    <jakarta.servlet.jsp-api.version>3.0.0</jakarta.servlet.jsp-api.version>
+    <jakarta.servlet.jsp-api.version>3.1.1</jakarta.servlet.jsp-api.version>
     <!-- Use properties for forbiddenapis integration -->
     <maven.compiler.source>${java.version}</maven.compiler.source>
     <maven.compiler.target>${java.version}</maven.compiler.target>
@@ -493,7 +493,7 @@
         <plugin>
           <groupId>org.apache.felix</groupId>
           <artifactId>maven-bundle-plugin</artifactId>
-          <version>5.1.9</version>
+          <version>6.0.0</version>
           <extensions>true</extensions>
           <configuration>
             <supportedProjectTypes>

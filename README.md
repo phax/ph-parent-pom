@@ -20,6 +20,10 @@ To use it as your parent POM using the following snippet:
 
 ## News and noteworthy
 
+v3.0.1 - work in progress
+* Updated to Jakarta servlet-api 6.1.0
+* Updated to Jakarta jsp-api 3.1.1
+* Updated to maven-bundle-plugin 6.0.0
 
 v3.0.0 - 2025-08-19
 * Moving the baseline to Java 17
