@@ -52,13 +52,17 @@
     <junit.vintage.version>${junit.jupiter.version}</junit.vintage.version>
     <slf4j.version>2.0.17</slf4j.version>
     <!--
-    JakartaEE 9: 5.0.0
-    JakartaEE 10: 6.0.0
+    JakartaEE 9:  5.0
+    JakartaEE 10: 6.0
+    JakartaEE 11: 6.1
+    JakartaEE 12: 6.2
     -->
-    <jakarta.servlet-api.version>6.1.0</jakarta.servlet-api.version>
+    <jakarta.servlet-api.version>6.0.0</jakarta.servlet-api.version>
     <!--
-    JakartaEE 9: 3.0.0
-    JakartaEE 10: 3.1.1
+    JakartaEE 9:  3.0
+    JakartaEE 10: 3.1
+    JakartaEE 11: 4.0
+    JakartaEE 12: 4.1
     -->
     <jakarta.servlet.jsp-api.version>3.1.1</jakarta.servlet.jsp-api.version>
     <!-- Use properties for forbiddenapis integration -->
