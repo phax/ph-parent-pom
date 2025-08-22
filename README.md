@@ -24,7 +24,7 @@ v3.0.1 - work in progress
 * Updated to Jakarta servlet-api 6.0.0 (JakartaEE 10)
 * Updated to Jakarta jsp-api 3.1.1 (JakartaEE 10)
 * Updated to maven-bundle-plugin 6.0.0
-* Updated to spotbugs-maven-plugin 4.9.3.4
+* Updated to spotbugs-maven-plugin 4.9.4.0
 
 v3.0.0 - 2025-08-19
 * Moving the baseline to Java 17
