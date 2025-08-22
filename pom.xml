@@ -24,7 +24,7 @@
   <version>3.0.1-SNAPSHOT</version>
   <packaging>pom</packaging>
   <name>ph-parent-pom</name>
-  <description>Generic parent POM for Java 11+ applications</description>
+  <description>Generic parent POM for Java 17+ applications</description>
   <url>https://github.com/phax/ph-parent-pom</url>
   <inceptionYear>2014</inceptionYear>
   
