@@ -772,7 +772,7 @@
     </pluginManagement>
 
     <plugins>
-      <!-- Compile as Java 11 code (lifecycle: compile) -->
+      <!-- Compile as Java 17 code (lifecycle: compile) -->
       <plugin>
         <groupId>org.apache.maven.plugins</groupId>
         <artifactId>maven-compiler-plugin</artifactId>
