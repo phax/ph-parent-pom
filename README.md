@@ -21,6 +21,7 @@ To use it as your parent POM using the following snippet:
 ## News and noteworthy
 
 v3.0.2 - work in progress
+* Commented out the JUnit 5 dependencies, as they interfere with Spring Boot applications and I don't use it anyway 
 * Updated to ph-buildinfo-maven-plugin 5.0.0
 * Updated to ph-csscompress-maven-plugin 8.0.0
 * Updated to ph-jscompress-maven-plugin 3.1.0
