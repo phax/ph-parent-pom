@@ -25,6 +25,7 @@ v3.0.2 - work in progress
 * Updated to ph-buildinfo-maven-plugin 5.0.0
 * Updated to ph-csscompress-maven-plugin 8.0.0
 * Updated to ph-jscompress-maven-plugin 3.1.0
+* Updated to spotbugs-maven-plugin 4.9.4.1
 
 v3.0.1 - 2025-08-22
 * Updated to Jakarta servlet-api 6.0.0 (JakartaEE 10)
