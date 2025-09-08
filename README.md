@@ -3,10 +3,10 @@
 Generic Maven 3 parent POM with lots of default configuration.
 It is pre-configured to handle the "ph-" software stack in a suitable way.
 
-The latest released version is **3.0.1** and requires JDK 17 or higher at build time.
+The latest released version is **3.0.2** and requires JDK 17 or higher at build time.
 
-* The latest version that uses JDK 11 as the baseline is *2.1.4**
-* The latest version that uses JDK 8 as the baseline is *1.11.5**
+* The latest version that uses JDK 11 as the baseline is **2.1.4**
+* The latest version that uses JDK 8 as the baseline is **1.11.5**
 
 To use it as your parent POM using the following snippet:
 
@@ -14,13 +14,13 @@ To use it as your parent POM using the following snippet:
   <parent>
     <groupId>com.helger</groupId>
     <artifactId>parent-pom</artifactId>
-    <version>3.0.1</version>
+    <version>3.0.2</version>
   </parent>
 ```
 
 ## News and noteworthy
 
-v3.0.2 - work in progress
+v3.0.2 - 2025-09-08
 * Commented out the JUnit 5 dependencies, as they interfere with Spring Boot applications and I don't use it anyway 
 * Updated to ph-buildinfo-maven-plugin 5.0.0
 * Updated to ph-csscompress-maven-plugin 8.0.0
