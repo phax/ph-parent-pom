@@ -20,6 +20,13 @@ To use it as your parent POM using the following snippet:
 
 ## News and noteworthy
 
+v3.0.3 - work in progress
+* Updated to maven-failsafe-plugin 3.5.4
+* Updated to maven-shade-plugin 3.6.1
+* Updated to maven-surefire-plugin 3.5.4
+* Updated to maven-surefire-report-plugin 3.5.4
+* Updated to spotbugs-maven-plugin 4.9.5.0
+
 v3.0.2 - 2025-09-08
 * Commented out the JUnit 5 dependencies, as they interfere with Spring Boot applications and I don't use it anyway 
 * Updated to ph-buildinfo-maven-plugin 5.0.0
