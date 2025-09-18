@@ -25,7 +25,7 @@ v3.0.3 - work in progress
 * Updated to maven-shade-plugin 3.6.1
 * Updated to maven-surefire-plugin 3.5.4
 * Updated to maven-surefire-report-plugin 3.5.4
-* Updated to spotbugs-maven-plugin 4.9.5.0
+* Updated to spotbugs-maven-plugin 4.9.6.0
 
 v3.0.2 - 2025-09-08
 * Commented out the JUnit 5 dependencies, as they interfere with Spring Boot applications and I don't use it anyway 
