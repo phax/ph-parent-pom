@@ -1,5 +1,7 @@
 # ph-parent-pom
 
+[![Maven Central](https://img.shields.io/maven-central/v/com.helger/parent-pom)](https://img.shields.io/maven-central/v/com.helger/parent-pom)
+
 Generic Maven 3 parent POM with lots of default configuration.
 It is pre-configured to handle the "ph-" software stack in a suitable way.
 
