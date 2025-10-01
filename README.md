@@ -8,7 +8,7 @@ It is pre-configured to handle the "ph-" software stack in a suitable way.
 The latest released version is **3.0.2** and requires JDK 17 or higher at build time.
 
 * The latest version that uses JDK 11 as the baseline is **2.1.4**
-* The latest version that uses JDK 8 as the baseline is **1.11.5**
+* The latest version that uses JDK 8 as the baseline is **1.12.0**
 
 To use it as your parent POM using the following snippet:
 
@@ -273,6 +273,9 @@ v2.0.0 - 2022-09-05
 * Updated to maven-resources-plugin 3.3.0
 * Updated to maven-site-plugin 3.12.1
 * Updated to spotbugs-maven-plugin 4.7.1.1
+
+v1.12.0 - 2025-10-01
+* Backport for Maven Central releases
 
 v1.11.5 - 2022-06-20
 * Updated to dependency-check-maven 7.1.1
