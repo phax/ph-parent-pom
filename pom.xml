@@ -21,7 +21,7 @@
   <modelVersion>4.0.0</modelVersion>
   <groupId>com.helger</groupId>
   <artifactId>parent-pom</artifactId>
-  <version>1.11.5</version>
+  <version>1.12.0-SNAPSHOT</version>
   <packaging>pom</packaging>
   <name>ph-parent-pom</name>
   <description>Generic parent POM for Java 1.8+ applications</description>
@@ -31,25 +31,22 @@
   <licenses>
     <license>
       <name>Apache 2</name>
-      <url>http://www.apache.org/licenses/LICENSE-2.0</url>
+      <url>https://www.apache.org/licenses/LICENSE-2.0</url>
       <distribution>repo</distribution>
     </license>
   </licenses>
 
   <scm>
-    <connection>scm:git:git@github.com:phax/ph-parent-pom.git</connection>
-    <developerConnection>scm:git:git@github.com:phax/ph-parent-pom.git</developerConnection>
-    <url>http://github.com/phax/ph-parent-pom</url>
-    <tag>parent-pom-1.11.5</tag>
+    <connection>scm:git:https://github.com/phax/ph-parent-pom.git</connection>
+    <developerConnection>scm:git:https://github.com/phax/ph-parent-pom.git</developerConnection>
+    <url>https://github.com/phax/ph-parent-pom</url>
+    <tag>v1.x</tag>
   </scm>
 
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     <java.version>1.8</java.version>
     <junit4.version>4.13.2</junit4.version>
-    <junit.platform.version>1.8.2</junit.platform.version>
-    <junit.jupiter.version>5.8.2</junit.jupiter.version>
-    <junit.vintage.version>5.8.2</junit.vintage.version>
     <slf4j.version>1.7.36</slf4j.version>
     <jakarta.servlet-api.version>5.0.0</jakarta.servlet-api.version>
     <jakarta.jsp-api.version>2.3.6</jakarta.jsp-api.version>
@@ -65,7 +62,7 @@
   <!-- Who are we? -->
   <organization>
     <name>Philip Helger</name>
-    <url>http://www.helger.com</url>
+    <url>https://www.helger.com</url>
   </organization>
 
   <!-- Who are we? -->
@@ -74,46 +71,35 @@
       <id>phax</id>
       <name>Philip Helger</name>
       <email>philip(at)helger.com</email>
-      <url>http://www.helger.com</url>
+      <url>https://www.helger.com</url>
     </developer>
   </developers>
 
-  <distributionManagement>
-    <snapshotRepository>
-      <!-- Username/password must be in settings.xml -->
-      <id>ossrh</id>
-      <url>https://oss.sonatype.org/content/repositories/snapshots/</url>
-    </snapshotRepository>
-    <repository>
-      <!-- Username/password must be in settings.xml -->
-      <id>ossrh</id>
-      <url>https://oss.sonatype.org/service/local/staging/deploy/maven2/</url>
-    </repository>
-  </distributionManagement>
-  
   <repositories>
     <repository>
-      <id>central.snapshots</id>
-      <url>https://oss.sonatype.org/content/repositories/snapshots/</url>
-      <snapshots>
-        <enabled>true</enabled>
-      </snapshots>
+      <name>Central Portal Snapshots</name>
+      <id>central-portal-snapshots</id>
+      <url>https://central.sonatype.com/repository/maven-snapshots/</url>
       <releases>
         <enabled>false</enabled>
       </releases>
+      <snapshots>
+        <enabled>true</enabled>
+      </snapshots>
     </repository>
   </repositories>
 
   <pluginRepositories>
     <pluginRepository>
-      <id>central.snapshots</id>
-      <url>https://oss.sonatype.org/content/repositories/snapshots/</url>
-      <snapshots>
-        <enabled>true</enabled>
-      </snapshots>
+      <name>Central Portal Snapshots</name>
+      <id>central-portal-snapshots</id>
+      <url>https://central.sonatype.com/repository/maven-snapshots/</url>
       <releases>
         <enabled>false</enabled>
       </releases>
+      <snapshots>
+        <enabled>true</enabled>
+      </snapshots>
     </pluginRepository>
   </pluginRepositories>
 
@@ -128,14 +114,6 @@
             <configuration>
               <debug>false</debug>
               <optimize>true</optimize>
-            </configuration>
-          </plugin>
-          <plugin>
-            <groupId>org.apache.maven.plugins</groupId>
-            <artifactId>maven-install-plugin</artifactId>
-            <configuration>
-              <createChecksum>true</createChecksum>
-              <updateReleaseInfo>true</updateReleaseInfo>
             </configuration>
           </plugin>
           <plugin>
@@ -156,6 +134,21 @@
               <!-- Stuff like https://stackoverflow.com/a/14245913/15254 only works, when useAgent is false -->
               <useAgent>true</useAgent>
             </configuration>
+          </plugin>
+          <plugin>
+            <groupId>org.sonatype.central</groupId>
+            <artifactId>central-publishing-maven-plugin</artifactId>
+          </plugin>
+        </plugins>
+      </build>
+    </profile>
+    <profile>
+      <id>release-snapshot</id>
+      <build>
+        <plugins>
+          <plugin>
+            <groupId>org.sonatype.central</groupId>
+            <artifactId>central-publishing-maven-plugin</artifactId>
           </plugin>
         </plugins>
       </build>
@@ -187,7 +180,7 @@
           <plugin>
             <groupId>org.jacoco</groupId>
             <artifactId>jacoco-maven-plugin</artifactId>
-            <version>0.8.8</version>
+            <version>0.8.13</version>
             <configuration>
               <excludes>
                 <!-- JavaCC generated token manager may contain too large method -->
@@ -222,38 +215,7 @@
         <artifactId>junit</artifactId>
         <version>${junit4.version}</version>
       </dependency>
-      
-      <!-- JUnit 5 -->
-      <dependency>
-        <groupId>org.junit.jupiter</groupId>
-        <artifactId>junit-jupiter-api</artifactId>
-        <version>${junit.jupiter.version}</version>
-      </dependency>
-      <!-- Only required to run tests in an IDE that bundles an older version -->
-      <dependency>
-        <groupId>org.junit.platform</groupId>
-        <artifactId>junit-platform-launcher</artifactId>
-        <version>${junit.platform.version}</version>
-      </dependency>
-      <!-- Only required to run tests in an IDE that bundles an older version -->
-      <dependency>
-        <groupId>org.junit.jupiter</groupId>
-        <artifactId>junit-jupiter-engine</artifactId>
-        <version>${junit.jupiter.version}</version>
-      </dependency>
-      <!-- Only required to run tests in an IDE that bundles an older version -->
-      <dependency>
-        <groupId>org.junit.vintage</groupId>
-        <artifactId>junit-vintage-engine</artifactId>
-        <version>${junit.vintage.version}</version>
-      </dependency>
-      <!-- To avoid compiler warnings about @API annotations in JUnit code -->
-      <dependency>
-        <groupId>org.apiguardian</groupId>
-        <artifactId>apiguardian-api</artifactId>
-        <version>1.1.2</version>
-      </dependency>
-      
+            
       <!-- Jakarta EE -->
       <dependency>
         <groupId>jakarta.servlet</groupId>
@@ -397,6 +359,8 @@
               <exclude>**/*.map</exclude>
               <!-- MD5 hash files -->
               <exclude>**/*.md5</exclude>
+              <!-- MIME encoded file -->
+              <exclude>**/*.mime</exclude>
               <!-- Minified CSS/JS files - usually generated -->
               <exclude>**/*.min.css</exclude>
               <exclude>**/*.min.js</exclude>
@@ -410,6 +374,8 @@
               <exclude>**/*.patch</exclude>
               <!-- PDF file -->
               <exclude>**/*.pdf</exclude>
+              <!-- PEM certificate file -->
+              <exclude>**/*.pem</exclude>
               <!-- PMD configuration file -->
               <exclude>**/*.pmd</exclude>
               <!-- Image files -->
@@ -444,21 +410,37 @@
               <exclude>**/*.woff*</exclude>
               <!-- Excel files -->
               <exclude>**/*.xls*</exclude>
+          
+              <!-- All local git files -->
+              <exclude>**/.git*</exclude>
+              <!-- Special PMD config file -->
+              <exclude>**/.pmd</exclude>
               <!-- Special license files without extension -->
               <exclude>**/NOTICE</exclude>
               <exclude>**/LICENSE</exclude>
               <exclude>**/LICENSE2</exclude>
-              <exclude>**/LICENSE.txt</exclude>
-              <!-- Special robots.txt file -->
-              <exclude>**/robots.txt</exclude>
-              <!-- Special PMD config file -->
-              <exclude>**/.pmd</exclude>
+              <!-- Google page index files -->
+              <exclude>**/google*.html</exclude>
+              <!-- Special temp files -->
+              <exclude>**/zz</exclude>
+              
               <!-- Special files not to be formatted -->
               <exclude>src/raw/**</exclude>
               <!-- Special index file which requires special formatting! -->
               <exclude>src/main/webapp/**/*.jsp</exclude>
-              <!-- Special temp files -->
-              <exclude>**/zz</exclude>
+              <!-- WSDL files are usually exclusive -->
+              <exclude>src/main/resources/WEB-INF/wsdl/**</exclude>
+              <!-- External resources -->
+              <exclude>src/main/resources/**/external/**</exclude>
+              <!-- External test resources -->
+              <exclude>src/test/resources/**/external/**</exclude>
+              <!-- SPI files -->
+              <exclude>src/main/resources/META-INF/services/**</exclude>
+              <exclude>src/test/resources/META-INF/services/**</exclude>
+              <!-- Documentation files -->
+              <exclude>docs/**</exclude>
+              <!-- Generated files -->
+              <exclude>generated/**</exclude>
             </excludes>
           </configuration>
         </plugin>
@@ -744,165 +726,14 @@
             </execution>
           </executions>
         </plugin>
-        <!--This plugin's configuration is used to store Eclipse m2e settings only. It has no influence on the Maven build itself.-->
         <plugin>
-          <groupId>org.eclipse.m2e</groupId>
-          <artifactId>lifecycle-mapping</artifactId>
-          <version>1.0.0</version>
+          <groupId>org.sonatype.central</groupId>
+          <artifactId>central-publishing-maven-plugin</artifactId>
+          <version>0.8.0</version>
+          <extensions>true</extensions>
           <configuration>
-            <lifecycleMappingMetadata>
-              <pluginExecutions>
-                <pluginExecution>
-                  <pluginExecutionFilter>
-                    <groupId>com.helger.maven</groupId>
-                    <artifactId>ph-javacc-maven-plugin</artifactId>
-                    <versionRange>[1,)</versionRange>
-                    <goals>
-                      <goal>javacc</goal>
-                      <goal>jjtree-javacc</goal>
-                    </goals>
-                  </pluginExecutionFilter>
-                  <action>
-                    <execute runOnIncremental="false" />
-                  </action>
-                </pluginExecution>
-                <pluginExecution>
-                  <pluginExecutionFilter>
-                    <groupId>org.jvnet.jaxb2.maven2</groupId>
-                    <artifactId>maven-jaxb2-plugin</artifactId>
-                    <versionRange>[0.7,)</versionRange>
-                    <goals>
-                      <goal>generate</goal>
-                    </goals>
-                  </pluginExecutionFilter>
-                  <action>
-                    <ignore />
-                  </action>
-                </pluginExecution>
-                <pluginExecution>
-                  <pluginExecutionFilter>
-                    <groupId>org.codehaus.mojo</groupId>
-                    <artifactId>jaxws-maven-plugin</artifactId>
-                    <versionRange>[1.0,)</versionRange>
-                    <goals>
-                      <goal>wsimport</goal>
-                      <goal>wsgen</goal>
-                    </goals>
-                  </pluginExecutionFilter>
-                  <action>
-                    <ignore />
-                  </action>
-                </pluginExecution>
-                <pluginExecution>
-                  <pluginExecutionFilter>
-                    <groupId>org.apache.felix</groupId>
-                    <artifactId>maven-bundle-plugin</artifactId>
-                    <versionRange>[1.0.0,)</versionRange>
-                    <goals>
-                      <goal>manifest</goal>
-                    </goals>
-                  </pluginExecutionFilter>
-                  <action>
-                    <ignore />
-                  </action>
-                </pluginExecution>
-                <pluginExecution>
-                  <pluginExecutionFilter>
-                    <groupId>org.jvnet.jax-ws-commons</groupId>
-                    <artifactId>jaxws-maven-plugin</artifactId>
-                    <versionRange>[1.0,)</versionRange>
-                    <goals>
-                      <goal>wsimport</goal>
-                      <goal>wsgen</goal>
-                    </goals>
-                  </pluginExecutionFilter>
-                  <action>
-                    <ignore />
-                  </action>
-                </pluginExecution>
-                <pluginExecution>
-                  <pluginExecutionFilter>
-                    <groupId>org.apache.maven.plugins</groupId>
-                    <artifactId>maven-plugin-plugin</artifactId>
-                    <versionRange>[1,)</versionRange>
-                    <goals>
-                      <goal>descriptor</goal>
-                      <goal>helpmojo</goal>
-                    </goals>
-                  </pluginExecutionFilter>
-                  <action>
-                    <ignore />
-                  </action>
-                </pluginExecution>
-                <pluginExecution>
-                  <pluginExecutionFilter>
-                    <groupId>org.apache.maven.plugins</groupId>
-                    <artifactId>maven-jdeps-plugin</artifactId>
-                    <versionRange>[3,)</versionRange>
-                    <goals>
-                      <goal>jdkinternals</goal>
-                      <goal>test-jdkinternals</goal>
-                    </goals>
-                  </pluginExecutionFilter>
-                  <action>
-                    <ignore />
-                  </action>
-                </pluginExecution>
-                <pluginExecution>
-                  <pluginExecutionFilter>
-                    <groupId>de.thetaphi</groupId>
-                    <artifactId>forbiddenapis</artifactId>
-                    <versionRange>[1.8,)</versionRange>
-                    <goals>
-                      <goal>testCheck</goal>
-                    </goals>
-                  </pluginExecutionFilter>
-                  <action>
-                    <ignore />
-                  </action>
-                </pluginExecution>
-                <pluginExecution>
-                  <pluginExecutionFilter>
-                    <groupId>org.codehaus.gmavenplus</groupId>
-                    <artifactId>gmavenplus-plugin</artifactId>
-                    <versionRange>[1.4,)</versionRange>
-                    <goals>
-                      <goal>compile</goal>
-                      <goal>testCompile</goal>
-                    </goals>
-                  </pluginExecutionFilter>
-                  <action>
-                    <ignore />
-                  </action>
-                </pluginExecution>
-                <pluginExecution>
-                  <pluginExecutionFilter>
-                    <groupId>org.apache.maven.plugins</groupId>
-                    <artifactId>maven-antrun-plugin</artifactId>
-                    <versionRange>[1.8,)</versionRange>
-                    <goals>
-                      <goal>run</goal>
-                    </goals>
-                  </pluginExecutionFilter>
-                  <action>
-                    <ignore />
-                  </action>
-                </pluginExecution>
-                <pluginExecution>
-                  <pluginExecutionFilter>
-                    <groupId>org.codehaus.gmavenplus</groupId>
-                    <artifactId>gmavenplus-plugin</artifactId>
-                    <versionRange>[1.6,)</versionRange>
-                    <goals>
-                      <goal>compileTests</goal>
-                    </goals>
-                  </pluginExecutionFilter>
-                  <action>
-                    <execute runOnIncremental="false" />
-                  </action>
-                </pluginExecution>
-              </pluginExecutions>
-            </lifecycleMappingMetadata>
+            <publishingServerId>central</publishingServerId>
+            <autoPublish>true</autoPublish>
           </configuration>
         </plugin>
       </plugins>
