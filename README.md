@@ -23,9 +23,12 @@ To use it as your parent POM using the following snippet:
 ## News and noteworthy
 
 v3.0.3 - work in progress
-* Updated to dependency-check-maven 12.1.5
+* Updated to central-publishing-maven-plugin 0.9.0
+* Updated to dependency-check-maven 12.1.6
 * Updated to maven-failsafe-plugin 3.5.4
 * Updated to maven-compiler-plugin 3.14.1
+* Updated to maven-dependency-plugin 3.9.0
+* Updated to maven-enforcer-plugin 3.6.2
 * Updated to maven-javadoc-plugin 3.12.0
 * Updated to maven-shade-plugin 3.6.1
 * Updated to maven-surefire-plugin 3.5.4
