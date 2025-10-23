@@ -27,6 +27,7 @@ v3.0.3 - work in progress
 * Updated to dependency-check-maven 12.1.8
 * Updated to forbiddenapis 3.10
 * Updated to jacoco-maven-plugin 0.8.14
+* Updated to maven-antrun-plugin 3.2.0
 * Updated to maven-failsafe-plugin 3.5.4
 * Updated to maven-compiler-plugin 3.14.1
 * Updated to maven-dependency-plugin 3.9.0
@@ -36,7 +37,7 @@ v3.0.3 - work in progress
 * Updated to maven-shade-plugin 3.6.1
 * Updated to maven-surefire-plugin 3.5.4
 * Updated to maven-surefire-report-plugin 3.5.4
-* Updated to spotbugs-maven-plugin 4.9.8.0
+* Updated to spotbugs-maven-plugin 4.9.8.1
 
 v3.0.2 - 2025-09-08
 * Commented out the JUnit 5 dependencies, as they interfere with Spring Boot applications and I don't use it anyway 
