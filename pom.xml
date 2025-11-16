@@ -708,12 +708,12 @@
         <plugin>
           <groupId>com.helger.maven</groupId>
           <artifactId>ph-buildinfo-maven-plugin</artifactId>
-          <version>5.0.0</version>
+          <version>5.0.1</version>
         </plugin>
         <plugin>
           <groupId>com.helger.maven</groupId>
           <artifactId>ph-jscompress-maven-plugin</artifactId>
-          <version>3.1.0</version>
+          <version>3.1.1</version>
           <configuration>
             <forceCreation>false</forceCreation>
             <recursive>true</recursive>

@@ -42,6 +42,9 @@ v3.0.3 - work in progress
 * Updated to maven-surefire-plugin 3.5.4
 * Updated to maven-surefire-report-plugin 3.5.4
 * Updated to maven-war-plugin 3.5.0
+* Updated to ph-buildinfo-maven-plugin 5.0.1
+* Updated to ph-csscompress-maven-plugin 8.0.1
+* Updated to ph-jscompress-maven-plugin 3.1.1
 * Updated to spotbugs-maven-plugin 4.9.8.1
 
 v3.0.2 - 2025-09-08
