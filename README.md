@@ -27,25 +27,31 @@ v3.0.3 - work in progress
 * Updated to dependency-check-maven 12.1.9
 * Updated to forbiddenapis 3.10
 * Updated to jacoco-maven-plugin 0.8.14
+* Updated to maven-acr-plugin 3.2.0
 * Updated to maven-antrun-plugin 3.2.0
+* Updated to maven-assembly-plugin 3.8.0
 * Updated to maven-failsafe-plugin 3.5.4
 * Updated to maven-compiler-plugin 3.14.1
 * Updated to maven-dependency-plugin 3.9.0
+* Updated to maven-ejb-plugin 3.3.0
 * Updated to maven-enforcer-plugin 3.6.2
 * Updated to maven-jar-plugin 3.5.0
 * Updated to maven-javadoc-plugin 3.12.0
 * Updated to maven-plugin-plugin 3.15.2
 * Updated to maven-pmd-plugin 3.28.0
 * Updated to maven-rar-plugin 3.1.0
-* Updated to maven-release-plugin 3.2.0
+* Updated to maven-release-plugin 3.3.0
+* Updated to maven-resources-plugin 3.4.0
 * Updated to maven-shade-plugin 3.6.1
+* Updated to maven-source-plugin 3.4.0
 * Updated to maven-surefire-plugin 3.5.4
 * Updated to maven-surefire-report-plugin 3.5.4
-* Updated to maven-war-plugin 3.5.0
+* Updated to maven-war-plugin 3.5.1
 * Updated to ph-buildinfo-maven-plugin 5.0.1
 * Updated to ph-csscompress-maven-plugin 8.1.0
 * Updated to ph-jscompress-maven-plugin 3.1.1
-* Updated to spotbugs-maven-plugin 4.9.8.1
+* Updated to spotbugs-maven-plugin 4.9.8.2
+* Updated to taglist-maven-plugin 3.2.2
 
 v3.0.2 - 2025-09-08
 * Commented out the JUnit 5 dependencies, as they interfere with Spring Boot applications and I don't use it anyway 
