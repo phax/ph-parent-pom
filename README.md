@@ -5,7 +5,7 @@
 Generic Maven 3 parent POM with lots of default configuration.
 It is pre-configured to handle the "ph-" software stack in a suitable way.
 
-The latest released version is **3.0.2** and requires JDK 17 or higher at build time.
+The latest released version is **3.0.3** and requires JDK 17 or higher at build time.
 
 * The latest version that uses JDK 11 as the baseline is **2.1.4**
 * The latest version that uses JDK 8 as the baseline is **1.12.0**
@@ -16,13 +16,13 @@ To use it as your parent POM using the following snippet:
   <parent>
     <groupId>com.helger</groupId>
     <artifactId>parent-pom</artifactId>
-    <version>3.0.2</version>
+    <version>3.0.3</version>
   </parent>
 ```
 
 ## News and noteworthy
 
-v3.0.3 - work in progress
+v3.0.3 - 2025-12-16
 * Updated to central-publishing-maven-plugin 0.9.0
 * Updated to dependency-check-maven 12.1.9
 * Updated to forbiddenapis 3.10
@@ -40,7 +40,7 @@ v3.0.3 - work in progress
 * Updated to maven-plugin-plugin 3.15.2
 * Updated to maven-pmd-plugin 3.28.0
 * Updated to maven-rar-plugin 3.1.0
-* Updated to maven-release-plugin 3.3.0
+* Updated to maven-release-plugin 3.3.1
 * Updated to maven-resources-plugin 3.4.0
 * Updated to maven-shade-plugin 3.6.1
 * Updated to maven-source-plugin 3.4.0
