@@ -372,6 +372,8 @@
                   <exclude>**/*.cat</exclude>
                   <!-- Certificate file -->
                   <exclude>**/*.cer</exclude>
+                  <!-- CRL file -->
+                  <exclude>**/*.crl</exclude>
                   <!-- CSV files -->
                   <exclude>**/*.csv</exclude>
                   <!-- Generic DAT files -->

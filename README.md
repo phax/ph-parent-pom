@@ -27,6 +27,7 @@ v3.0.4 - work in progress
 * Updated to dependency-check-maven 12.2.0
 * Updated to maven-jdeps-plugin 3.2.0
 * Updated to jdepend-maven-plugin 2.2.0
+* Extended the license exclusion extension list
 
 v3.0.3 - 2025-12-16
 * Updated to central-publishing-maven-plugin 0.9.0
