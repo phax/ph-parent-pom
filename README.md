@@ -25,8 +25,9 @@ To use it as your parent POM using the following snippet:
 v3.0.4 - work in progress
 * Updated to central-publishing-maven-plugin 0.10.0
 * Updated to dependency-check-maven 12.2.0
-* Updated to maven-jdeps-plugin 3.2.0
 * Updated to maven-compiler-plugin 3.15.0
+* Updated to maven-dependency-plugin 3.10.0
+* Updated to maven-jdeps-plugin 3.2.0
 * Updated to jdepend-maven-plugin 2.2.0
 * Extended the license exclusion extension list
 
