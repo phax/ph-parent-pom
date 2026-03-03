@@ -27,7 +27,10 @@ v3.0.4 - work in progress
 * Updated to dependency-check-maven 12.2.0
 * Updated to maven-compiler-plugin 3.15.0
 * Updated to maven-dependency-plugin 3.10.0
+* Updated to maven-failsafe-plugin 3.5.5
 * Updated to maven-jdeps-plugin 3.2.0
+* Updated to maven-surefire-plugin 3.5.5
+* Updated to maven-surefire-report-plugin 3.5.5
 * Updated to jdepend-maven-plugin 2.2.0
 * Extended the license exclusion extension list
 
