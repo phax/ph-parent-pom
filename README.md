@@ -29,6 +29,7 @@ v3.0.4 - work in progress
 * Updated to maven-dependency-plugin 3.10.0
 * Updated to maven-failsafe-plugin 3.5.5
 * Updated to maven-jdeps-plugin 3.2.0
+* Updated to maven-resources-plugin 3.5.0
 * Updated to maven-surefire-plugin 3.5.5
 * Updated to maven-surefire-report-plugin 3.5.5
 * Updated to jdepend-maven-plugin 2.2.0
@@ -42,6 +43,7 @@ v3.0.3 - 2025-12-16
 * Updated to maven-acr-plugin 3.2.0
 * Updated to maven-antrun-plugin 3.2.0
 * Updated to maven-assembly-plugin 3.8.0
+* Updated to maven-bundle-plugin 6.0.2
 * Updated to maven-failsafe-plugin 3.5.4
 * Updated to maven-compiler-plugin 3.14.1
 * Updated to maven-dependency-plugin 3.9.0
@@ -54,7 +56,7 @@ v3.0.3 - 2025-12-16
 * Updated to maven-rar-plugin 3.1.0
 * Updated to maven-release-plugin 3.3.1
 * Updated to maven-resources-plugin 3.4.0
-* Updated to maven-shade-plugin 3.6.1
+* Updated to maven-shade-plugin 3.6.2
 * Updated to maven-source-plugin 3.4.0
 * Updated to maven-surefire-plugin 3.5.4
 * Updated to maven-surefire-report-plugin 3.5.4
