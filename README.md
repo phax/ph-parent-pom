@@ -1,6 +1,8 @@
 # ph-parent-pom
 
-[![Maven Central](https://img.shields.io/maven-central/v/com.helger/parent-pom)](https://img.shields.io/maven-central/v/com.helger/parent-pom)
+<!-- ph-badge-start -->
+[![Sonatype Central](https://maven-badges.sml.io/sonatype-central/com.helger/parent-pom/badge.svg)](https://maven-badges.sml.io/sonatype-central/com.helger/parent-pom/)
+<!-- ph-badge-end -->
 
 Generic Maven 3 parent POM with lots of default configuration.
 It is pre-configured to handle the "ph-" software stack in a suitable way.
