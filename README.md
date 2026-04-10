@@ -35,6 +35,7 @@ v3.0.4 - work in progress
 * Updated to maven-surefire-plugin 3.5.5
 * Updated to maven-surefire-report-plugin 3.5.5
 * Updated to jdepend-maven-plugin 2.2.0
+* Updated to spotbugs-maven-plugin 4.9.8.3
 * Extended the license exclusion extension list
 
 v3.0.3 - 2025-12-16
