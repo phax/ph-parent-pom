@@ -26,7 +26,7 @@ To use it as your parent POM using the following snippet:
 
 v3.0.4 - work in progress
 * Updated to central-publishing-maven-plugin 0.10.0
-* Updated to dependency-check-maven 12.2.0
+* Updated to dependency-check-maven 12.2.1
 * Updated to maven-compiler-plugin 3.15.0
 * Updated to maven-dependency-plugin 3.10.0
 * Updated to maven-failsafe-plugin 3.5.5
