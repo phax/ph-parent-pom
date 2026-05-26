@@ -25,6 +25,7 @@ To use it as your parent POM using the following snippet:
 ## News and noteworthy
 
 v3.0.4 - work in progress
+* Added org.cyclonedx:cyclonedx-maven-plugin:2.9.1 as a standard-plugin
 * Updated to central-publishing-maven-plugin 0.10.0
 * Updated to dependency-check-maven 12.2.2
 * Updated to maven-compiler-plugin 3.15.0
