@@ -18,23 +18,25 @@ To use it as your parent POM using the following snippet:
   <parent>
     <groupId>com.helger</groupId>
     <artifactId>parent-pom</artifactId>
-    <version>3.0.3</version>
+    <version>3.0.4</version>
   </parent>
 ```
 
 ## News and noteworthy
 
-v3.0.4 - work in progress
+v3.0.4 - 2026-05-29
 * Added org.cyclonedx:cyclonedx-maven-plugin:2.9.1 as a standard-plugin
 * Updated to central-publishing-maven-plugin 0.10.0
 * Updated to dependency-check-maven 12.2.2
 * Updated to maven-compiler-plugin 3.15.0
 * Updated to maven-dependency-plugin 3.10.0
-* Updated to maven-failsafe-plugin 3.5.5
+* Updated to maven-enforcer-plugin 3.6.3
+* Updated to maven-failsafe-plugin 3.5.6
 * Updated to maven-jdeps-plugin 3.2.0
 * Updated to maven-resources-plugin 3.5.0
-* Updated to maven-surefire-plugin 3.5.5
-* Updated to maven-surefire-report-plugin 3.5.5
+* Updated to maven-site-plugin 3.22.0
+* Updated to maven-surefire-plugin 3.5.6
+* Updated to maven-surefire-report-plugin 3.5.6
 * Updated to jdepend-maven-plugin 2.2.0
 * Updated to ph-csscompress-maven-plugin 8.2.1
 * Updated to SLF4J 2.0.18
