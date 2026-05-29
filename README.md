@@ -7,7 +7,7 @@
 Generic Maven 3 parent POM with lots of default configuration.
 It is pre-configured to handle the "ph-" software stack in a suitable way.
 
-The latest released version is **3.0.3** and requires JDK 17 or higher at build time.
+The latest released version is **3.0.5** and requires JDK 17 or higher at build time.
 
 * The latest version that uses JDK 11 as the baseline is **2.1.4**
 * The latest version that uses JDK 8 as the baseline is **1.12.0**
@@ -18,11 +18,14 @@ To use it as your parent POM using the following snippet:
   <parent>
     <groupId>com.helger</groupId>
     <artifactId>parent-pom</artifactId>
-    <version>3.0.4</version>
+    <version>3.0.5</version>
   </parent>
 ```
 
 ## News and noteworthy
+
+v3.0.5 - 2026-05-29
+* Changed `skipNotDeployed` parameter of cyclonedx-maven-plugin
 
 v3.0.4 - 2026-05-29
 * Added org.cyclonedx:cyclonedx-maven-plugin:2.9.1 as a standard-plugin

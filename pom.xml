@@ -979,8 +979,8 @@
           <!-- Keep SBOM compact; flip to true only if legal review requires embedded license texts -->
           <includeLicenseText>false</includeLicenseText>
       
-          <!-- Skip modules that aren't deployed (parent POMs, internal test fixtures, etc.) -->
-          <skipNotDeployed>true</skipNotDeployed>
+          <!-- Don't skip any modules for Maven releases -->
+          <skipNotDeployed>false</skipNotDeployed>
       
           <!-- Detect runtime-only / classpath-bound dependencies the analyzer can't see by bytecode scan -->
           <detectUnusedForOptionalScope>true</detectUnusedForOptionalScope>
