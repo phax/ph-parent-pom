@@ -29,7 +29,7 @@ v3.0.4 - 2026-05-29
 * Updated to central-publishing-maven-plugin 0.10.0
 * Updated to dependency-check-maven 12.2.2
 * Updated to maven-compiler-plugin 3.15.0
-* Updated to maven-dependency-plugin 3.10.0
+* Updated to maven-dependency-plugin 3.11.0
 * Updated to maven-enforcer-plugin 3.6.3
 * Updated to maven-failsafe-plugin 3.5.6
 * Updated to maven-jdeps-plugin 3.2.0
