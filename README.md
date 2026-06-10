@@ -24,6 +24,10 @@ To use it as your parent POM using the following snippet:
 
 ## News and noteworthy
 
+v3.0.6 - work in progress
+* Updated to jacoco-maven-plugin 0.8.15
+* Updated to spotbugs-maven-plugin 4.10.2.0
+
 v3.0.5 - 2026-05-29
 * Changed `skipNotDeployed` parameter of cyclonedx-maven-plugin
 
