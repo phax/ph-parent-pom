@@ -764,7 +764,7 @@
         <plugin>
           <groupId>org.sonatype.central</groupId>
           <artifactId>central-publishing-maven-plugin</artifactId>
-          <version>0.10.0</version>
+          <version>0.11.0</version>
           <extensions>true</extensions>
           <configuration>
             <publishingServerId>central</publishingServerId>
@@ -849,6 +849,8 @@
           <useReleaseProfile>false</useReleaseProfile>
           <releaseProfiles>release</releaseProfiles>
           <goals>process-resources javadoc:jar deploy</goals>
+          <!-- Custom prefix to easily skip CI -->
+          <scmCommentPrefix>[maven-release-plugin] [skip ci] </scmCommentPrefix>
         </configuration>
       </plugin>
       <!-- Create build information for all artefacts -->
