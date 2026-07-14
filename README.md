@@ -7,7 +7,7 @@
 Generic Maven 3 parent POM with lots of default configuration.
 It is pre-configured to handle the "ph-" software stack in a suitable way.
 
-The latest released version is **3.0.5** and requires JDK 17 or higher at build time.
+The latest released version is **3.1.0** and requires JDK 17 or higher at build time.
 
 * The latest version that uses JDK 11 as the baseline is **2.1.4**
 * The latest version that uses JDK 8 as the baseline is **1.12.0**
@@ -18,18 +18,30 @@ To use it as your parent POM using the following snippet:
   <parent>
     <groupId>com.helger</groupId>
     <artifactId>parent-pom</artifactId>
-    <version>3.0.5</version>
+    <version>3.1.0</version>
   </parent>
 ```
 
 ## News and noteworthy
 
-v3.0.6 - work in progress
+v3.1.0 - 2026-07-14
 * Updated to central-publishing-maven-plugin 0.11.0
 * Updated to cyclonedx-maven-plugin 2.9.2
 * Updated to jacoco-maven-plugin 0.8.15
 * Updated to spotbugs-maven-plugin 4.10.3.0
+* Added a default execution of the maven-enforcer-plugin, requiring Maven 3.8.2+, Java 17+ and no duplicate POM dependencies
+* Added the property `project.build.outputTimestamp` to enable Reproducible Builds
+* Added the property `maven.compiler.release` and the according maven-compiler-plugin parameter, so that the Java 17 API baseline is verified at compile time even when building with a newer JDK
 * Changed SCM comment prefix of maven-release-plugin to include "skip ci"
+* Changed the `ph-buildinfo-maven-plugin` configuration to only emit an allowlist of non-sensitive system properties and environment variables, to avoid leaking local data into published artifacts
+* Added Unix locale (`LANG`, `LC_ALL`, `LC_CTYPE`) and GitHub Actions provenance environment variables (`CI`, `GITHUB_*`, `RUNNER_*`, `Image*`) to the ph-buildinfo-maven-plugin allowlist
+* Changed the `nvdApiKey` of dependency-check-maven to only be set if the `NVDAPIKEY` environment variable is present (via the new auto-activated profile `nvd-api-key`)
+* Changed the maven-javadoc-plugin `source` parameter to use `${java.version}` instead of a hardcoded value
+* Changed the POM XSD schema location to use `https`
+* Removed the `debug=false` and `optimize=true` maven-compiler-plugin parameters from the `release` profile, so that released artifacts keep their debug information
+* Removed the clirr-maven-plugin, the jdepend-maven-plugin and the maven-changes-plugin, as they are outdated and don't support modern bytecode
+* Documented why the Central Portal SNAPSHOT repositories are part of this POM
+* Restricted the GitHub Action SNAPSHOT deployment to pushes on the default branch and limited the workflow token to read-only access
 
 v3.0.5 - 2026-05-29
 * Changed `skipNotDeployed` parameter of cyclonedx-maven-plugin

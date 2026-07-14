@@ -17,11 +17,11 @@
     limitations under the License.
 
 -->
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
   <modelVersion>4.0.0</modelVersion>
   <groupId>com.helger</groupId>
   <artifactId>parent-pom</artifactId>
-  <version>3.0.6-SNAPSHOT</version>
+  <version>3.1.0-SNAPSHOT</version>
   <packaging>pom</packaging>
   <name>ph-parent-pom</name>
   <description>Generic parent POM for Java 17+ applications</description>
@@ -67,9 +67,16 @@
     JakartaEE 12: 4.1
     -->
     <jakarta.servlet.jsp-api.version>3.1.1</jakarta.servlet.jsp-api.version>
+    
     <!-- Use properties for forbiddenapis integration -->
     <maven.compiler.source>${java.version}</maven.compiler.source>
     <maven.compiler.target>${java.version}</maven.compiler.target>
+    <!-- Ensure the Java API baseline is checked at compile time, even when building with a newer JDK -->
+    <maven.compiler.release>${java.version}</maven.compiler.release>
+    
+    <!-- For Reproducible Builds; automatically updated by the maven-release-plugin on release -->
+    <project.build.outputTimestamp>2026-07-14T00:00:00Z</project.build.outputTimestamp>
+    
     <!-- Eclipse Maven integration settings -->
     <m2e.jaxrs.activation>false</m2e.jaxrs.activation>
     <m2e.jpa.activation>false</m2e.jpa.activation>
@@ -92,6 +99,10 @@
     </developer>
   </developers>
 
+  <!-- Note: these snapshot repositories are intentionally inherited by all child
+       projects, because they are required during the development phase to consume
+       SNAPSHOT builds of the ph-* stack. Release artifacts are never resolved from
+       here, as "releases" are disabled. -->
   <repositories>
     <repository>
       <name>Central Portal Snapshots</name>
@@ -125,14 +136,11 @@
       <id>release</id>
       <build>
         <plugins>
-          <plugin>
-            <groupId>org.apache.maven.plugins</groupId>
-            <artifactId>maven-compiler-plugin</artifactId>
-            <configuration>
-              <debug>false</debug>
-              <optimize>true</optimize>
-            </configuration>
-          </plugin>
+          <!-- Until v3.0.5 the maven-compiler-plugin was configured here with
+               "debug=false" and "optimize=true". "debug=false" was removed, so that
+               released artifacts keep line numbers and parameter names for easier
+               debugging by consumers; "optimize" was removed because it is ignored
+               by current maven-compiler-plugin versions. -->
           <plugin>
             <groupId>org.apache.maven.plugins</groupId>
             <artifactId>maven-gpg-plugin</artifactId>
@@ -220,6 +228,30 @@
             </executions>
           </plugin>
         </plugins>
+      </build>
+    </profile>
+    <!-- Only pass the NVD API key to dependency-check-maven when the environment
+         variable is present. Otherwise the unresolved expression would be used as
+         the literal API key, leading to confusing NVD errors. -->
+    <profile>
+      <id>nvd-api-key</id>
+      <activation>
+        <property>
+          <name>env.NVDAPIKEY</name>
+        </property>
+      </activation>
+      <build>
+        <pluginManagement>
+          <plugins>
+            <plugin>
+              <groupId>org.owasp</groupId>
+              <artifactId>dependency-check-maven</artifactId>
+              <configuration>
+                <nvdApiKey>${env.NVDAPIKEY}</nvdApiKey>
+              </configuration>
+            </plugin>
+          </plugins>
+        </pluginManagement>
       </build>
     </profile>
   </profiles>
@@ -528,11 +560,6 @@
         </plugin>
         <plugin>
           <groupId>org.apache.maven.plugins</groupId>
-          <artifactId>maven-changes-plugin</artifactId>
-          <version>2.12.1</version>
-        </plugin>
-        <plugin>
-          <groupId>org.apache.maven.plugins</groupId>
           <artifactId>maven-checkstyle-plugin</artifactId>
           <version>3.6.0</version>
         </plugin>
@@ -674,25 +701,10 @@
           <artifactId>maven-war-plugin</artifactId>
           <version>3.5.1</version>
         </plugin>
-        <!--  Find incompatible differences to previous release -->
-        <plugin>
-          <groupId>org.codehaus.mojo</groupId>
-          <artifactId>clirr-maven-plugin</artifactId>
-          <version>2.8</version>
-          <configuration>
-            <failOnError>false</failOnError>
-            <xmlOutputFile>${project.build.directory}/clirr.xml</xmlOutputFile>
-          </configuration>
-        </plugin>
         <plugin>
           <groupId>com.github.spotbugs</groupId>
           <artifactId>spotbugs-maven-plugin</artifactId>
           <version>4.10.3.0</version>
-        </plugin>
-        <plugin>
-          <groupId>org.codehaus.mojo</groupId>
-          <artifactId>jdepend-maven-plugin</artifactId>
-          <version>2.2.0</version>
         </plugin>
         <plugin>
           <groupId>org.codehaus.mojo</groupId>
@@ -703,10 +715,7 @@
           <groupId>org.owasp</groupId>
           <artifactId>dependency-check-maven</artifactId>
           <version>12.2.2</version>
-          <configuration>
-            <nvdApiKey>${env.NVDAPIKEY}</nvdApiKey>
-          </configuration>
-        </plugin>      
+        </plugin>
         <plugin>
           <groupId>com.helger.maven</groupId>
           <artifactId>ph-buildinfo-maven-plugin</artifactId>
@@ -775,17 +784,43 @@
     </pluginManagement>
 
     <plugins>
+      <!-- Enforce the minimum requirements documented in the README (lifecycle: validate) -->
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-enforcer-plugin</artifactId>
+        <executions>
+          <execution>
+            <id>enforce-versions</id>
+            <goals>
+              <goal>enforce</goal>
+            </goals>
+            <configuration>
+              <rules>
+                <requireMavenVersion>
+                  <version>[3.8.2,)</version>
+                </requireMavenVersion>
+                <requireJavaVersion>
+                  <version>[17,)</version>
+                </requireJavaVersion>
+                <banDuplicatePomDependencyVersions />
+              </rules>
+            </configuration>
+          </execution>
+        </executions>
+      </plugin>
       <!-- Compile as Java 17 code (lifecycle: compile) -->
       <plugin>
         <groupId>org.apache.maven.plugins</groupId>
         <artifactId>maven-compiler-plugin</artifactId>
         <configuration>
-          <!-- fork needs to be false to compile JAXB resources. Otherwise 
+          <!-- fork needs to be false to compile JAXB resources. Otherwise
             the problem with the forward slash in package-info.java on Windows occurs! -->
           <fork>false</fork>
           <showWarnings>true</showWarnings>
           <showDeprecation>true</showDeprecation>
           <encoding>${project.build.sourceEncoding}</encoding>
+          <!-- "release" takes precedence over "source" and "target"; those stay for forbiddenapis -->
+          <release>${java.version}</release>
           <source>${java.version}</source>
           <target>${java.version}</target>
         </configuration>
@@ -867,14 +902,41 @@
         <configuration>
           <formatProperties>false</formatProperties>
           <formatXML>true</formatXML>
-          <withAllSystemProperties>true</withAllSystemProperties>
+          <!-- Emit only an allowlist of non-sensitive system properties and environment
+               variables, to avoid leaking local paths, user names or credentials (e.g.
+               passed via "-D" or MAVEN_OPTS) into published artifacts -->
+          <selectedSystemProperties>
+            <param>java.version</param>
+            <param>java.vendor</param>
+            <param>java.vm.name</param>
+            <param>java.vm.version</param>
+            <param>os.arch</param>
+            <param>os.name</param>
+            <param>os.version</param>
+          </selectedSystemProperties>
           <selectedEnvVars>
-            <param>JAVA_.*</param>
-            <param>M2_.*</param>
-            <param>MAVEN_.*</param>
+            <!-- Windows hardware/OS information -->
             <param>NUMBER_OF_PROCESSORS</param>
             <param>OS</param>
             <param>PROCESSOR_.*</param>
+            <!-- Unix locale - frequent root cause of encoding differences -->
+            <param>LANG</param>
+            <param>LC_ALL</param>
+            <param>LC_CTYPE</param>
+            <!-- CI provenance (GitHub Actions); explicit names instead of "GITHUB_.*"
+                 to never pick up a mapped GITHUB_TOKEN or runner-internal paths -->
+            <param>CI</param>
+            <param>GITHUB_ACTIONS</param>
+            <param>GITHUB_REPOSITORY</param>
+            <param>GITHUB_WORKFLOW</param>
+            <param>GITHUB_RUN_ID</param>
+            <param>GITHUB_RUN_NUMBER</param>
+            <param>GITHUB_SHA</param>
+            <param>GITHUB_REF_NAME</param>
+            <param>RUNNER_OS</param>
+            <param>RUNNER_ARCH</param>
+            <param>ImageOS</param>
+            <param>ImageVersion</param>
           </selectedEnvVars>
         </configuration>
       </plugin>
@@ -918,7 +980,7 @@
 [ERROR] Exit code: 1 - error: [dash][dash]add-modules ALL-MODULE-PATH can only be used when compiling the unnamed module
 [ERROR] error: module not found: com.helger.collection
           -->
-          <source>17</source>
+          <source>${java.version}</source>
           <verbose>false</verbose>
           <!--
           Even though it is the default, it is e.g. required for ph-annotations
@@ -1116,20 +1178,10 @@
           <effort>Max</effort>
         </configuration>
       </plugin>
-      <!-- JDepend checks Java source dependencies -->
-      <plugin>
-        <groupId>org.codehaus.mojo</groupId>
-        <artifactId>jdepend-maven-plugin</artifactId>
-      </plugin>
       <!-- For plugins -->
       <plugin>
         <groupId>org.apache.maven.plugins</groupId>
         <artifactId>maven-plugin-plugin</artifactId>
-      </plugin>
-      <!-- Difference to last release report -->
-      <plugin>
-        <groupId>org.codehaus.mojo</groupId>
-        <artifactId>clirr-maven-plugin</artifactId>
       </plugin>
       <plugin>
         <groupId>org.owasp</groupId>
