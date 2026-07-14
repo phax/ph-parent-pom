@@ -21,7 +21,7 @@
   <modelVersion>4.0.0</modelVersion>
   <groupId>com.helger</groupId>
   <artifactId>parent-pom</artifactId>
-  <version>3.1.0-SNAPSHOT</version>
+  <version>3.1.0</version>
   <packaging>pom</packaging>
   <name>ph-parent-pom</name>
   <description>Generic parent POM for Java 17+ applications</description>
@@ -40,7 +40,7 @@
     <connection>scm:git:https://github.com/phax/ph-parent-pom.git</connection>
     <developerConnection>scm:git:https://github.com/phax/ph-parent-pom.git</developerConnection>
     <url>https://github.com/phax/ph-parent-pom</url>
-    <tag>HEAD</tag>
+    <tag>parent-pom-3.1.0</tag>
   </scm>
 
   <properties>
@@ -75,7 +75,7 @@
     <maven.compiler.release>${java.version}</maven.compiler.release>
     
     <!-- For Reproducible Builds; automatically updated by the maven-release-plugin on release -->
-    <project.build.outputTimestamp>2026-07-14T00:00:00Z</project.build.outputTimestamp>
+    <project.build.outputTimestamp>2026-07-14T12:00:19Z</project.build.outputTimestamp>
     
     <!-- Eclipse Maven integration settings -->
     <m2e.jaxrs.activation>false</m2e.jaxrs.activation>
