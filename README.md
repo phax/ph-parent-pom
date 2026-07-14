@@ -26,8 +26,9 @@ To use it as your parent POM using the following snippet:
 
 v3.0.6 - work in progress
 * Updated to central-publishing-maven-plugin 0.11.0
+* Updated to cyclonedx-maven-plugin 2.9.2
 * Updated to jacoco-maven-plugin 0.8.15
-* Updated to spotbugs-maven-plugin 4.10.2.0
+* Updated to spotbugs-maven-plugin 4.10.3.0
 * Changed SCM comment prefix of maven-release-plugin to include "skip ci"
 
 v3.0.5 - 2026-05-29
