@@ -24,6 +24,9 @@ To use it as your parent POM using the following snippet:
 
 ## News and noteworthy
 
+v3.1.1 - work in progress
+* Updated to maven-jar-plugin 3.5.1
+
 v3.1.0 - 2026-07-14
 * Updated to central-publishing-maven-plugin 0.11.0
 * Updated to cyclonedx-maven-plugin 2.9.2
