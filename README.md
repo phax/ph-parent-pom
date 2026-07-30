@@ -26,6 +26,7 @@ To use it as your parent POM using the following snippet:
 
 v3.1.1 - work in progress
 * Updated to license-maven-plugin 5.1.1
+* Updated to maven-bundle-plugin 6.1.0
 * Updated to maven-jar-plugin 3.5.1
 
 v3.1.0 - 2026-07-14
