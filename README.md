@@ -25,6 +25,7 @@ To use it as your parent POM using the following snippet:
 ## News and noteworthy
 
 v3.1.1 - work in progress
+* Updated to cyclonedx-maven-plugin 2.9.3
 * Updated to license-maven-plugin 5.1.1
 * Updated to maven-bundle-plugin 6.1.0
 * Updated to maven-jar-plugin 3.5.1
