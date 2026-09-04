@@ -29,7 +29,12 @@ v3.1.1 - work in progress
 * Updated to dependency-check-maven 13.0.0
 * Updated to license-maven-plugin 5.1.2
 * Updated to maven-bundle-plugin 6.1.2
+* Updated to maven-compiler-plugin 3.16.0
+* Updated to maven-failsafe-plugin 3.6.0
 * Updated to maven-jar-plugin 3.5.1
+* Updated to maven-surefire-plugin 3.6.0
+* Updated to maven-surefire-report-plugin 3.6.0
+* Updated to SLF4J 2.0.19
 * Updated to spotbugs-maven-plugin 4.10.4.0
 
 v3.1.0 - 2026-07-14
