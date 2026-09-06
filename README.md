@@ -35,7 +35,7 @@ v3.1.1 - work in progress
 * Updated to maven-surefire-plugin 3.6.0
 * Updated to maven-surefire-report-plugin 3.6.0
 * Updated to SLF4J 2.0.19
-* Updated to spotbugs-maven-plugin 4.10.4.0
+* Updated to spotbugs-maven-plugin 4.10.4.1
 
 v3.1.0 - 2026-07-14
 * Updated to central-publishing-maven-plugin 0.11.0
