@@ -28,9 +28,12 @@ v3.1.1 - work in progress
 * Updated to cyclonedx-maven-plugin 2.9.3
 * Updated to dependency-check-maven 13.0.0
 * Updated to license-maven-plugin 5.1.2
-* Updated to maven-bundle-plugin 6.1.2
+* Updated to maven-bundle-plugin 6.2.0
 * Updated to maven-compiler-plugin 3.16.0
+* Updated to maven-deploy-plugin 3.2.0
 * Updated to maven-failsafe-plugin 3.6.0
+* Updated to maven-install-plugin 3.2.0
+* Updated to maven-plugin-plugin 3.16.0
 * Updated to maven-jar-plugin 3.5.1
 * Updated to maven-surefire-plugin 3.6.0
 * Updated to maven-surefire-report-plugin 3.6.0
@@ -108,7 +111,7 @@ v3.0.3 - 2025-12-16
 * Updated to ph-csscompress-maven-plugin 8.1.1
 * Updated to ph-jscompress-maven-plugin 3.1.1
 * Updated to spotbugs-maven-plugin 4.9.8.2
-* Updated to taglist-maven-plugin 3.2.2
+* Updated to taglist-maven-plugin 3.2.3
 
 v3.0.2 - 2025-09-08
 * Commented out the JUnit 5 dependencies, as they interfere with Spring Boot applications and I don't use it anyway 
