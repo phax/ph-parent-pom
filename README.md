@@ -27,6 +27,7 @@ To use it as your parent POM using the following snippet:
 v3.1.1 - work in progress
 * Updated to cyclonedx-maven-plugin 2.9.3
 * Updated to dependency-check-maven 13.0.0
+* Updated to forbiddenapis 3.11
 * Updated to license-maven-plugin 5.1.2
 * Updated to maven-bundle-plugin 6.2.0
 * Updated to maven-compiler-plugin 3.16.0
@@ -37,7 +38,7 @@ v3.1.1 - work in progress
 * Updated to maven-jar-plugin 3.5.1
 * Updated to maven-surefire-plugin 3.6.0
 * Updated to maven-surefire-report-plugin 3.6.0
-* Updated to SLF4J 2.0.19
+* Updated to SLF4J 2.0.20
 * Updated to spotbugs-maven-plugin 4.10.4.1
 
 v3.1.0 - 2026-07-14
