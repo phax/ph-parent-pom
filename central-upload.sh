@@ -59,12 +59,14 @@ echo
 # "base64 -w0" is GNU only - macOS base64 has no -w, so strip newlines instead
 AUTH="$(printf '%s:%s' "$CENTRAL_USER" "$CENTRAL_TOKEN" | base64 | tr -d '\n')"
 
+# The same as "-#":
 # --progress-bar \
+
+#  -v \
   
 DEPLOYMENT_ID="$(curl \
   --fail-with-body --retry 0 --retry-all-errors --retry-delay 30 \
   --connect-timeout 30 \
-  -v \
   -w '\nver=%{http_version} code=%{http_code} sent=%{size_upload} rate=%{speed_upload} B/s total=%{time_total}s\n' \
   -X POST \
   -H "Authorization: Bearer $AUTH" \
