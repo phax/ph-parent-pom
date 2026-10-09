@@ -142,6 +142,9 @@ v3.0.0 - 2025-08-19
 * Updated to ph-csscompress-maven-plugin 7.0.5
 * Updated to spotbugs-maven-plugin 4.9.3.2
 
+v2.1.5 - 2026-10-09 [backport]
+* Updated to `central-publishing-maven-plugin` 0.11.0
+
 v2.1.4 - 2025-05-13
 * Added new predefined profile `release-snapshot` to be used for deploying SNAPSHOTs to Maven Central
 
