@@ -25,6 +25,7 @@ To use it as your parent POM using the following snippet:
 ## News and noteworthy
 
 v3.1.1 - work in progress
+* Updated to ph-buildinfo-maven-plugin 5.0.2
 * Updated to cyclonedx-maven-plugin 2.9.3
 * Updated to dependency-check-maven 13.0.0
 * Updated to forbiddenapis 3.11
@@ -32,12 +33,12 @@ v3.1.1 - work in progress
 * Updated to maven-bundle-plugin 6.2.0
 * Updated to maven-compiler-plugin 3.16.0
 * Updated to maven-deploy-plugin 3.2.0
-* Updated to maven-failsafe-plugin 3.6.0
+* Updated to maven-failsafe-plugin 3.6.1
 * Updated to maven-install-plugin 3.2.0
 * Updated to maven-plugin-plugin 3.16.0
 * Updated to maven-jar-plugin 3.5.1
-* Updated to maven-surefire-plugin 3.6.0
-* Updated to maven-surefire-report-plugin 3.6.0
+* Updated to maven-surefire-plugin 3.6.1
+* Updated to maven-surefire-report-plugin 3.6.1
 * Updated to ph-csscompress-maven-plugin 8.2.3
 * Updated to SLF4J 2.0.20
 * Updated to spotbugs-maven-plugin 4.10.5.0
