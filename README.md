@@ -29,6 +29,7 @@ v3.1.1 - work in progress
 * Updated to cyclonedx-maven-plugin 2.9.3
 * Updated to dependency-check-maven 13.0.0
 * Updated to forbiddenapis 3.11
+* Updated to jacoco-maven-plugin 0.8.16
 * Updated to license-maven-plugin 5.1.2
 * Updated to maven-bundle-plugin 6.2.0
 * Updated to maven-compiler-plugin 3.16.0
