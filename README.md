@@ -34,6 +34,7 @@ v3.1.1 - work in progress
 * Updated to maven-bundle-plugin 6.2.0
 * Updated to maven-compiler-plugin 3.16.0
 * Updated to maven-deploy-plugin 3.2.0
+* Updated to maven-enforcer-plugin 3.7.0
 * Updated to maven-failsafe-plugin 3.6.1
 * Updated to maven-install-plugin 3.2.0
 * Updated to maven-plugin-plugin 3.16.0
