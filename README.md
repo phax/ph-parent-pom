@@ -41,7 +41,7 @@ v3.1.1 - work in progress
 * Updated to maven-jar-plugin 3.5.1
 * Updated to maven-surefire-plugin 3.6.1
 * Updated to maven-surefire-report-plugin 3.6.1
-* Updated to ph-csscompress-maven-plugin 8.3.0
+* Updated to ph-csscompress-maven-plugin 8.4.0
 * Updated to SLF4J 2.0.20
 * Updated to spotbugs-maven-plugin 4.10.5.0
 
