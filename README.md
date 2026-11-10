@@ -44,6 +44,7 @@ v3.1.1 - work in progress
 * Updated to ph-csscompress-maven-plugin 8.4.0
 * Updated to SLF4J 2.0.20
 * Updated to spotbugs-maven-plugin 4.10.5.0
+* Updated to taglist-maven-plugin 3.3.0
 
 v3.1.0 - 2026-07-14
 * Updated to central-publishing-maven-plugin 0.11.0
