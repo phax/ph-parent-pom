@@ -18,13 +18,13 @@ To use it as your parent POM using the following snippet:
   <parent>
     <groupId>com.helger</groupId>
     <artifactId>parent-pom</artifactId>
-    <version>3.1.0</version>
+    <version>3.1.1</version>
   </parent>
 ```
 
 ## News and noteworthy
 
-v3.1.1 - work in progress
+v3.1.1 - 2026-11-10
 * Updated to ph-buildinfo-maven-plugin 5.0.2
 * Updated to cyclonedx-maven-plugin 2.9.3
 * Updated to dependency-check-maven 13.0.0
