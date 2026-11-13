@@ -934,13 +934,6 @@
             <link>https://docs.oracle.com/en/java/javase/17/docs/api/</link>
           </links>
           <quiet>true</quiet>
-          <!--
-          Circumvent the following problem when running "javadoc:javadoc" 
-            when using the "bundle" packaging
-                     
-[ERROR] Exit code: 1 - error: [dash][dash]add-modules ALL-MODULE-PATH can only be used when compiling the unnamed module
-[ERROR] error: module not found: com.helger.collection
-          -->
           <source>${java.version}</source>
           <verbose>false</verbose>
           <!--

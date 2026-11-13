@@ -7,7 +7,7 @@
 Generic Maven 3 parent POM with lots of default configuration.
 It is pre-configured to handle the "ph-" software stack in a suitable way.
 
-The latest released version is **3.1.0** and requires JDK 17 or higher at build time.
+The latest released version is **3.2.0** and requires JDK 17 or higher at build time.
 
 * The latest version that uses JDK 11 as the baseline is **2.1.4**
 * The latest version that uses JDK 8 as the baseline is **1.12.0**
@@ -18,13 +18,13 @@ To use it as your parent POM using the following snippet:
   <parent>
     <groupId>com.helger</groupId>
     <artifactId>parent-pom</artifactId>
-    <version>3.1.1</version>
+    <version>3.2.0</version>
   </parent>
 ```
 
 ## News and noteworthy
 
-v3.2.0 - work in progress
+v3.2.0 - 2026-11-13
 * Removed JUnit 4 (`junit:junit`) from the `dependencyManagement` - declare the version in the consuming project (property `junit4.version` is still available)
 * Removed `jakarta.servlet-api` and `jakarta.servlet.jsp-api` from the `dependencyManagement` - declare the versions in the consuming project (properties `jakarta.servlet-api.version` and `jakarta.servlet.jsp-api.version` are still available)
 * Removed `ph-jscompress-maven-plugin` and `ph-csscompress-maven-plugin` from the `pluginManagement` section
