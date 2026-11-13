@@ -21,7 +21,7 @@
   <modelVersion>4.0.0</modelVersion>
   <groupId>com.helger</groupId>
   <artifactId>parent-pom</artifactId>
-  <version>3.1.2-SNAPSHOT</version>
+  <version>3.2.0-SNAPSHOT</version>
   <packaging>pom</packaging>
   <name>ph-parent-pom</name>
   <description>Generic parent POM for Java 17+ applications</description>
@@ -258,13 +258,6 @@
 
   <dependencyManagement>
     <dependencies>
-      <!-- JUnit 4 -->
-      <dependency>
-        <groupId>junit</groupId>
-        <artifactId>junit</artifactId>
-        <version>${junit4.version}</version>
-      </dependency>
-      
       <!-- JUnit 5 -->
       <!-- Commented out, because it may create unwanted conflicts -->
       <!--
@@ -294,18 +287,6 @@
         <version>1.1.2</version>
       </dependency>
       -->
-      
-      <!-- Jakarta EE -->
-      <dependency>
-        <groupId>jakarta.servlet</groupId>
-        <artifactId>jakarta.servlet-api</artifactId>
-        <version>${jakarta.servlet-api.version}</version>
-      </dependency>
-      <dependency>
-        <groupId>jakarta.servlet.jsp</groupId>
-        <artifactId>jakarta.servlet.jsp-api</artifactId>
-        <version>${jakarta.servlet.jsp-api.version}</version>
-      </dependency>
       
       <!-- SLF4J -->
       <dependency>
@@ -720,26 +701,6 @@
           <groupId>com.helger.maven</groupId>
           <artifactId>ph-buildinfo-maven-plugin</artifactId>
           <version>5.0.2</version>
-        </plugin>
-        <plugin>
-          <groupId>com.helger.maven</groupId>
-          <artifactId>ph-jscompress-maven-plugin</artifactId>
-          <version>3.1.1</version>
-          <configuration>
-            <forceCreation>false</forceCreation>
-            <recursive>true</recursive>
-          </configuration>
-        </plugin>
-        <plugin>
-          <groupId>com.helger.maven</groupId>
-          <artifactId>ph-csscompress-maven-plugin</artifactId>
-          <version>8.4.0</version>
-          <configuration>
-            <forceCompress>false</forceCompress>
-            <removeUnnecessaryCode>true</removeUnnecessaryCode>
-            <quoteURLs>true</quoteURLs>
-            <verbose>false</verbose>
-          </configuration>
         </plugin>
         <plugin>
           <groupId>de.thetaphi</groupId>

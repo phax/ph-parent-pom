@@ -24,6 +24,11 @@ To use it as your parent POM using the following snippet:
 
 ## News and noteworthy
 
+v3.2.0 - work in progress
+* Removed JUnit 4 (`junit:junit`) from the `dependencyManagement` - declare the version in the consuming project (property `junit4.version` is still available)
+* Removed `jakarta.servlet-api` and `jakarta.servlet.jsp-api` from the `dependencyManagement` - declare the versions in the consuming project (properties `jakarta.servlet-api.version` and `jakarta.servlet.jsp-api.version` are still available)
+* Removed `ph-jscompress-maven-plugin` and `ph-csscompress-maven-plugin` from the `pluginManagement` section
+
 v3.1.1 - 2026-11-10
 * Updated to ph-buildinfo-maven-plugin 5.0.2
 * Updated to cyclonedx-maven-plugin 2.9.3
